@@ -7,15 +7,26 @@ var methodOverride = require('method-override');
 
 //app.use(express.favicon()); // отдаем стандартную фавиконку, можем здесь же свою задать
 app.use(morgan('dev')); // выводим все запросы со статусами в консоль
-app.use(bodyParser()); // стандартный модуль, для парсинга JSON в запросах
+app.use(bodyParser.json({limit: '50mb'})); // стандартный модуль, для парсинга JSON в запросах
+app.use(bodyParser.raw({limit: '50mb'})); // стандартный модуль, для парсинга JSON в запросах
+app.use(bodyParser.text({limit: '50mb'})); // стандартный модуль, для парсинга JSON в запросах
 app.use(methodOverride()); // поддержка put и delete
 //app.use(app.router); // модуль для простого задания обработчиков путей
 //app.use(express.static(path.join(__dirname, "public"))); // запуск статического файлового сервера, который смотрит на папку public/ (в нашем случае отдает index.html)
 
 
-app.get('/save', function (req, res) {
-    var controller = require('./controllers/main');
-    controller.save(req, res);
+app.post('/extract_fields_by_url', function (request, response) {
+    console.log('Controller main extract_fields_by_url');
+    var constructor = require('./controllers/main');
+    var controller = new constructor.MainController(request, response);
+    controller.extract_fields_by_url();
+});
+
+app.post('/extract_fields_by_html', function (request, response) {
+    console.log('Controller main extract_fields_by_html');
+    var constructor = require('./controllers/main');
+    var controller = new constructor.MainController(request, response);
+    controller.extract_fields_by_html();
 });
 
 app.listen(8088, function(){
