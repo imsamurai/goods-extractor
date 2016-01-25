@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="fields-extractor" default="build">
+	<target name="build"
+			depends="init,update,deploy"/>
+
+	<target name="init" description="Init project">
+		<exec executable="chmod">
+			<arg value="+x" />
+			<arg path="${basedir}/init.sh" />
+		</exec>
+		<exec executable="${basedir}/init.sh" failonerror="true"></exec>
+	</target>
+	<target name="deploy" description="Deploy project">
+		<exec executable="chmod">
+			<arg value="+x" />
+			<arg path="${basedir}/deploy.sh" />
+		</exec>
+		<exec executable="${basedir}/deploy.sh" failonerror="true"></exec>
+	</target>
+	<target name="update" description="Update project">
+		<exec executable="chmod">
+			<arg value="+x" />
+			<arg path="${basedir}/update.sh" />
+		</exec>
+		<exec executable="${basedir}/update.sh" failonerror="true"></exec>
+	</target>
+</project>
