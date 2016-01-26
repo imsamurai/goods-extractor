@@ -22,6 +22,20 @@ app.post('/extract_fields_by_url', function (request, response) {
     controller.extract_fields_by_url();
 });
 
+app.post('/extract_template_by_url', function (request, response) {
+    console.log('Controller main extract_template_by_url');
+    var constructor = require('./controllers/main');
+    var controller = new constructor.MainController(request, response);
+    controller.extract_template_by_url();
+});
+
+app.post('/extract_template_by_html', function (request, response) {
+    console.log('Controller main extract_template_by_html');
+    var constructor = require('./controllers/main');
+    var controller = new constructor.MainController(request, response);
+    controller.extract_template_by_html();
+});
+
 app.post('/extract_fields_by_html', function (request, response) {
     console.log('Controller main extract_fields_by_html');
     var constructor = require('./controllers/main');
@@ -29,6 +43,6 @@ app.post('/extract_fields_by_html', function (request, response) {
     controller.extract_fields_by_html();
 });
 
-app.listen(8088, function(){
-    console.log('Express server listening on port 1337');
+app.listen(8080, function(){
+    console.log('Express server listening on port 8080');
 });

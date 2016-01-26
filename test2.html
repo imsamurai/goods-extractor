@@ -16,11 +16,15 @@
     <script type="text/javascript" src="lib/extractor/tree_extractor.js"></script>
     <script type="text/javascript" src="lib/extractor/fields_extractor.js"></script>
     <script type="text/javascript" src="lib/extractor/field_value_extractor.js"></script>
+    <script type="text/javascript" src="lib/extractor/template_extractor.js"></script>
+    <script type="text/javascript" src="lib/extractor/xpath_extractor.js"></script>
     <script type="text/javascript" src="lib/utility/field/field.js"></script>
     <script type="text/javascript" src="lib/utility/field/fieldset.js"></script>
     <script type="text/javascript" src="lib/utility/field/field_builder.js"></script>
     <script type="text/javascript" src="lib/utility/field/fields_visualizer.js"></script>
     <script type="text/javascript" src="lib/filter/fields_filter.js"></script>
+    <script type="text/javascript" src="lib/utility/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="lib/utility/xpath/xpathrefine.js"></script>
 </head>
 <body id="top">
 <ul id="ListViewInner">
@@ -2077,7 +2081,7 @@
     //var treeBuilder = new TreeBuilder(document.getElementById('top'));
     //var tree =treeBuilder.build();
     //console.log(tree);
-    Logger.enabled = true;
+    Logger.enabled = false;
     var options = {
         compareRate: 0.38,
         complexityNeigbourRate: 1,
@@ -2090,8 +2094,10 @@
     var fieldsExtractor = new FieldsExtractor(extractedTree);
     var fieldSet = fieldsExtractor.run();
     var filter = new FieldsFilter(fieldSet);
-    var visualizer = new FieldVisualizer(filter.run(), document);
-    visualizer.run();
+//    var visualizer = new FieldVisualizer(filter.run(), document);
+//    visualizer.run();
+    var templateExtractor = new TemplateExtractor(filter.run(), new XPathExtractor(window));
+    console.log(templateExtractor.run());
 </script>
 </body>
 </html>
