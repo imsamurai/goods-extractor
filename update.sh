@@ -2,4 +2,4 @@
 set -e
 
 #run tasks
-cd ${WORKSPACE}/app
+cd ${WORKSPACE}/
