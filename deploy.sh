@@ -9,3 +9,5 @@ cd ${WORKSPACE}/
 rsync -L -a -d -r --ignore-errors --delete --force \
 ${WORKSPACE}/ ${PROJECT_HOST_PATH}
 
+sudo /etc/init.d/nodejs stop
+sudo /etc/init.d/nodejs start
