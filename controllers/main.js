@@ -17,22 +17,8 @@ exports.MainController = function(request, response) {
             //    SkipExternalResources: false
             //},
             done: function(e, window) {
-
-
-                var options = {
-                    compareRate: 0.38,
-                    complexityNeigbourRate: 1,
-                    complexityDeepRate: 2,
-                    similarityCutoff: 90,
-                    complexityCutoff: 1
-                }
-                var treeExtractor = new extractor.TreeExtractor(window.document.body, options);
-                var extractedTree = treeExtractor.run();
-                var fieldsExtractor = new extractor.FieldsExtractor(extractedTree);
-                var fieldSet = fieldsExtractor.run();
-                var filter = new extractor.FieldsFilter(fieldSet);
                 var document = jsdom.jsdom("");
-                var visualizer = new extractor.FieldVisualizer(filter.run(), document);
+                var visualizer = new extractor.FieldVisualizer(extract(window), document);
                 visualizer.run();
                 response.send(document.documentElement.outerHTML);
             }
@@ -60,20 +46,8 @@ exports.MainController = function(request, response) {
                     //var expression = window.document.createExpression(expressionString, resolver);
                     //return expression.evaluate(contextNode,type, result);
                     return "";
-                }
-                var options = {
-                    compareRate: 0.38,
-                    complexityNeigbourRate: 1,
-                    complexityDeepRate: 2,
-                    similarityCutoff: 90,
-                    complexityCutoff: 1
-                }
-                var treeExtractor = new extractor.TreeExtractor(window.document.body, options);
-                var extractedTree = treeExtractor.run();
-                var fieldsExtractor = new extractor.FieldsExtractor(extractedTree);
-                var fieldSet = fieldsExtractor.run();
-                var filter = new extractor.FieldsFilter(fieldSet);
-                var templateExtractor = new extractor.TemplateExtractor(filter.run(), new extractor.XPathExtractor(window));
+                };
+                var templateExtractor = new extractor.TemplateExtractor(extract(window), new extractor.XPathExtractor(window));
                 response.send(templateExtractor.run());
             }
         });
@@ -100,20 +74,8 @@ exports.MainController = function(request, response) {
                     //var expression = window.document.createExpression(expressionString, resolver);
                     //return expression.evaluate(contextNode,type, result);
                     return "";
-                }
-                var options = {
-                    compareRate: 0.38,
-                    complexityNeigbourRate: 1,
-                    complexityDeepRate: 2,
-                    similarityCutoff: 90,
-                    complexityCutoff: 1
-                }
-                var treeExtractor = new extractor.TreeExtractor(window.document.body, options);
-                var extractedTree = treeExtractor.run();
-                var fieldsExtractor = new extractor.FieldsExtractor(extractedTree);
-                var fieldSet = fieldsExtractor.run();
-                var filter = new extractor.FieldsFilter(fieldSet);
-                var templateExtractor = new extractor.TemplateExtractor(filter.run(), new extractor.XPathExtractor(window));
+                };
+                var templateExtractor = new extractor.TemplateExtractor(extract(window), new extractor.XPathExtractor(window));
                 response.send(templateExtractor.run());
             }
         });
@@ -129,25 +91,49 @@ exports.MainController = function(request, response) {
             //    SkipExternalResources: false
             //},
             done: function(e, window) {
-
-
-                var options = {
-                    compareRate: 0.38,
-                    complexityNeigbourRate: 1,
-                    complexityDeepRate: 2,
-                    similarityCutoff: 90,
-                    complexityCutoff: 1
-                }
-                var treeExtractor = new extractor.TreeExtractor(window.document.body, options);
-                var extractedTree = treeExtractor.run();
-                var fieldsExtractor = new extractor.FieldsExtractor(extractedTree);
-                var fieldSet = fieldsExtractor.run();
-                var filter = new extractor.FieldsFilter(fieldSet);
                 var document = jsdom.jsdom("");
-                var visualizer = new extractor.FieldVisualizer(filter.run(), document);
+                var visualizer = new extractor.FieldVisualizer(extract(window), document);
                 visualizer.run();
                 response.send(document.documentElement.outerHTML);
             }
         });
+    }
+
+    function extract(window) {
+        var net = new extractor.brain.NeuralNetwork();
+        net.fromJSON(extractor.getProductNeural());
+        var options = {
+            compareRate: 0.38,
+            complexityNeigbourRate: 1,
+            complexityDeepRate: 2,
+            similarityCutoff: 90,
+            complexityCutoff: 1
+        }
+        var likelyThreshold = 0.9;
+        var network = {
+            net: net,
+            dic: extractor.Dict,
+            likely: function (input) {
+                var output = net.run(input);
+                var maxProp = null;
+                var maxValue = -1;
+                for (var prop in output) if (output.hasOwnProperty(prop)) {
+                    var value = output[prop];
+                    if (value > maxValue) {
+                        maxProp = prop;
+                        maxValue = value
+                    }
+                }
+                if (output[maxProp] >= likelyThreshold) {
+                    return [maxProp, output[maxProp]];
+                }
+                return false;
+            }}
+        var treeExtractor = new extractor.TreeExtractor(window.document.body, options);
+        var extractedTree = treeExtractor.run();
+            var fieldsExtractor = new extractor.FieldsExtractor(extractedTree, new extractor.FieldBuilder(new extractor.FieldValueExtractor(), new extractor.FieldsTaggerProduct(network, extractor.ProductModel)));
+        var fieldSet = fieldsExtractor.run();
+        var filter = new extractor.FieldsFilter(fieldSet);
+        return filter.run();
     }
 }
