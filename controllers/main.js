@@ -109,7 +109,7 @@ exports.MainController = function(request, response) {
             similarityCutoff: 90,
             complexityCutoff: 1
         }
-        var likelyThreshold = 0.9;
+        var likelyThreshold = 0.5;
         var network = {
             net: net,
             dic: extractor.Dict,
@@ -130,8 +130,8 @@ exports.MainController = function(request, response) {
                 return false;
             }}
         var treeExtractor = new extractor.TreeExtractor(window.document.body, options);
-        var extractedTree = treeExtractor.run();
-            var fieldsExtractor = new extractor.FieldsExtractor(extractedTree, new extractor.FieldBuilder(new extractor.FieldValueExtractor(), new extractor.FieldsTaggerProduct(network, extractor.ProductModel)));
+        var candidates = treeExtractor.run();
+            var fieldsExtractor = new extractor.FieldsExtractor(candidates, new extractor.FieldBuilder(new extractor.FieldValueExtractor(), new extractor.FieldsTaggerProduct(network, extractor.ProductModel)));
         var fieldSet = fieldsExtractor.run();
         var filter = new extractor.FieldsFilter(fieldSet);
         return filter.run();
