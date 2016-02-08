@@ -97,7 +97,102 @@ exports.MainController = function(request, response) {
                 response.send(document.documentElement.outerHTML);
             }
         });
-    }
+    };
+
+    this.learn_fields = function() {
+        var opt = request.body;
+        var fs = require("fs");
+        var net = new extractor.brain.NeuralNetwork();
+        net.fromJSON(extractor.getProductNeural());
+
+        function extractProps(elements, attribute, labels) {
+            var dict = extractor.Dict;
+            var data = [];
+            for(var elNum =0;elNum<elements.length;elNum++) {
+                var element = elements[elNum];
+                if (attribute == 'innerText') {
+                    var value = element.innerHTML.replace(/<\/?[^>]+>/gi, '').trim();
+                } else {
+                    var value = element[attribute];
+                }
+                if (!value || !value.trim()) {
+                    console.warn('no attr '+attribute+' for #' + elNum);
+                    //console.warn(element);
+                    continue;
+                }
+
+                var model = new extractor.ProductModel(element, value, dict);
+
+                data.push(model.getLabeledSample(labels));
+            }
+            return data;
+        };
+
+        var trainData = [];
+        var sitesCounter = opt.length;
+
+        function trainAndSave() {
+            if (--sitesCounter > 0) {
+                return;
+            }
+
+            console.info('train net');
+            net.train(trainData, {
+                errorThresh: 0.000002,  // error threshold to reach
+                //errorThresh: 0.02,  // error threshold to reach
+                iterations: 20000,   // maximum training iterations
+                log: true,           // console.log() progress periodically
+                logPeriod: 1,       // number of iterations between logging
+                learningRate: 0.3    // learning rate
+            });
+
+            console.info('write net');
+            fs.writeFile(__dirname + '/../lib/data/neural/product.js', 'function getProductNeural() { return ' + JSON.stringify(net.toJSON()) + ';}', function (err) {
+                if (err) {
+                    console.error('Network not saved!');
+                    console.error(err);
+                } else {
+                    console.log('Network saved!');
+                }
+                response.send('ok');
+            });
+
+            //response.send('ok');
+        }
+
+        for (var n=0;n<opt.length;n++) {
+            var site = opt[n];
+            console.info('got site');
+            console.info(site);
+            jsdom.env({
+                url: site.url,
+                src: [
+                    fs.readFileSync(__dirname + '/../lib/utility/jquery-2.2.0.min.js', {encoding: 'utf8'})
+                ],
+                features: {
+                    FetchExternalResources: ["script"],
+                    ProcessExternalResources: ["script"],
+                    SkipExternalResources: false
+                },
+                done: function (e, window) {
+                    console.info('process site');
+                    for (var i=0;i<site.data.length;i++) {
+                        var rule = site.data[i];
+                        console.info('rule');
+                        console.info(rule);
+
+                        var props = extractProps(window.$(rule.selector), rule.attribute, rule.labels);
+                        console.info('get props');
+                        //console.info(props);
+                        trainData = trainData.concat(props);
+                    }
+                    window.close();
+                    trainAndSave();
+                }
+            });
+        }
+        //response.send('ok');
+    };
 
     function extract(window) {
         var net = new extractor.brain.NeuralNetwork();

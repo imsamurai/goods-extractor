@@ -43,6 +43,14 @@ app.post('/extract_fields_by_html', function (request, response) {
     controller.extract_fields_by_html();
 });
 
-app.listen(8080, function(){
+app.post('/learn_fields', function (request, response) {
+    console.log('Controller main learn_fields');
+    var constructor = require('./controllers/main');
+    var controller = new constructor.MainController(request, response);
+    controller.learn_fields();
+});
+
+var server = app.listen(8080, function(){
     console.log('Express server listening on port 8080');
 });
+server.timeout = 1000000000;
