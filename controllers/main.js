@@ -9,7 +9,7 @@ exports.MainController = function(request, response) {
 
     this.extract_fields_by_url = function() {
         var url = request.body.url;
-        jsdom.env({
+        makeAndProcessDOM({
             url: url,
             //features: {
             //    FetchExternalResources: ["script"],
@@ -28,7 +28,7 @@ exports.MainController = function(request, response) {
     this.extract_template_by_url = function() {
         var url = request.body.url;
         var fs = require("fs");
-        jsdom.env({
+        makeAndProcessDOM({
             url: url,
             src: [
                 fs.readFileSync(__dirname+'/../lib/utility/jquery-2.2.0.min.js', {encoding:'utf8'}),
@@ -56,7 +56,7 @@ exports.MainController = function(request, response) {
     this.extract_template_by_html = function() {
         var html = request.body;
         var fs = require("fs");
-        jsdom.env({
+        makeAndProcessDOM({
             html: html,
             src: [
                 fs.readFileSync(__dirname+'/../lib/utility/jquery-2.2.0.min.js', {encoding:'utf8'}),
@@ -83,7 +83,7 @@ exports.MainController = function(request, response) {
 
     this.extract_fields_by_html = function() {
         var html = request.body;
-        jsdom.env({
+        makeAndProcessDOM({
             html: html,
             //features: {
             //    FetchExternalResources: ["script"],
@@ -194,6 +194,15 @@ exports.MainController = function(request, response) {
         //response.send('ok');
     };
 
+    function makeAndProcessDOM(params) {
+        //params.features= {
+        //        FetchExternalResources: ["script"],
+        //        ProcessExternalResources: ["script"],
+        //        SkipExternalResources: false
+        //    };
+        jsdom.env(params);
+    }
+
     function extract(window) {
         var net = new extractor.brain.NeuralNetwork();
         net.fromJSON(extractor.getProductNeural());
@@ -204,7 +213,7 @@ exports.MainController = function(request, response) {
             similarityCutoff: 90,
             complexityCutoff: 1
         }
-        var likelyThreshold = 0.5;
+        var likelyThreshold = 0.1;
         var network = {
             net: net,
             dic: extractor.Dict,

@@ -17,6 +17,7 @@ app.use(methodOverride()); // поддержка put и delete
 
 app.post('/extract_fields_by_url', function (request, response) {
     console.log('Controller main extract_fields_by_url');
+    response.setHeader("Access-Control-Allow-Origin", "*");
     var constructor = require('./controllers/main');
     var controller = new constructor.MainController(request, response);
     controller.extract_fields_by_url();
