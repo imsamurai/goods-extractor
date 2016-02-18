@@ -15,6 +15,23 @@
     <script type="text/javascript" src="lib2/TreeComplexity.js"></script>
     <script type="text/javascript" src="lib2/TreeComplexityBi.js"></script>
     <script type="text/javascript" src="lib2/RecordsMetrics.js"></script>
+    <script type="text/javascript" src="lib2/Field.js"></script>
+    <script type="text/javascript" src="lib2/FieldCollection.js"></script>
+    <script type="text/javascript" src="lib2/FieldsExtractor.js"></script>
+    <script type="text/javascript" src="lib2/FieldsTagger.js"></script>
+    <script type="text/javascript" src="lib2/FieldGroup.js"></script>
+    <script type="text/javascript" src="lib2/Extractor.js"></script>
+    <script type="text/javascript" src="lib2/FieldValueExtractor.js"></script>
+    <script type="text/javascript" src="lib2/neural/brain-0.6.3.js"></script>
+    <script type="text/javascript" src="lib2/data/neural/dict.js"></script>
+    <script type="text/javascript" src="lib2/data/neural/product.js"></script>
+    <script type="text/javascript" src="lib2/ProductModel.js"></script>
+    <script type="text/javascript" src="lib2/FieldsMetrics.js"></script>
+    <script type="text/javascript" src="lib2/FieldOutputHTML.js"></script>
+    <script type="text/javascript" src="lib2/FieldOutputTRTemplate.js"></script>
+    <script type="text/javascript" src="lib2/utility/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="lib2/utility/xpath/xpathrefine.js"></script>
+    <script type="text/javascript" src="lib2/XpathExtractor.js"></script>
 </head>
 <body id="top">
 <div class="wide">
@@ -4706,13 +4723,44 @@
 
 </div>
 <script type="text/javascript">
+    var compareRate = 0.38;
+    var compareCutoff = 0.9;
+    var complexityRateNeighbour = 1;
+    var complexityRateDeep = 2;
+    var complexityCutoff = 0.51;
+    var recordRateCutoff = 0.7;
+    var fieldTaggerCutoff = 0.7;
+    var fieldMetricsCutoff = 0.7;
+
     var treeBuilder = new TreeBuilder(document.getElementById('top'));
     var tree = treeBuilder.build();
     console.log(tree);
-    var metricRate = new RecordsMetrics(new TreeComparatorBi(0.38, 0.9), new TreeComplexityBi(1, 2, 0.51), 0.5);
+
+    var metricRate = new RecordsMetrics(new TreeComparatorBi(compareRate, compareCutoff), new TreeComplexityBi(complexityRateNeighbour, complexityRateDeep, complexityCutoff), recordRateCutoff);
     var recordsExtractor = new RecordsExtractor(metricRate);
-    var records = recordsExtractor.run(tree);
-    console.log(records);
+
+
+    var neuralNet = new brain.NeuralNetwork();
+    neuralNet.fromJSON(getProductNeural());
+    var productModel = new ProductModel(new Dict(), new TreeComplexity(complexityRateNeighbour, complexityRateDeep, complexityCutoff));
+
+    var fieldsTagger = new FieldsTagger(neuralNet, productModel, fieldTaggerCutoff);
+
+    var fieldValueExtractor = new FieldValueExtractor();
+    var fieldMetrics = new FieldsMetrics(fieldMetricsCutoff);
+    var fieldsExtractor = new FieldsExtractor(fieldValueExtractor, fieldsTagger, fieldMetrics);
+
+    var extractor = new Extractor(recordsExtractor, fieldsExtractor)
+    var fieldCollections = extractor.run(tree);
+    console.log(fieldCollections);
+    var fieldOutputHTML = new FieldOutputHTML();
+    fieldCollections.slice(0,1).forEach(function(fieldCollection) {
+        document.body.innerHTML += fieldOutputHTML.run(fieldCollection);
+    });
+    var fieldOutputTRTemplate = new FieldOutputTRTemplate(new XpathExtractor(XPathRefine));
+    fieldCollections.slice(0,1).forEach(function(fieldCollection) {
+        console.log(fieldOutputTRTemplate.run(fieldCollection));
+    });
 </script>
 </body>
 </html>

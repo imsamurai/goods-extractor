@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/lib/data/neural/dict.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib2/data/neural/dict.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test2.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test2_lib2.html" charset="UTF-8" />
   </component>

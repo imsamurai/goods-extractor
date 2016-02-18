@@ -1,14 +1,11 @@
 /**
  * Created by imsamurai on 15.02.2016.
  */
-function FieldCollection(fields, records) {
-    var tags = {};
-    this.setTag = function(tag) {
-        tags[tag.name] = tag;
-    }
-    this.getTag = function(name) {
-        tags[tag.name] = tag;
-    }
+function FieldCollection(fieldGroups, recordCollection, rate) {
+    this.fieldGroups = fieldGroups;
+    this.recordCollection = recordCollection;
+    this.rate = rate;
+
 }
 
 exports.FieldCollection = FieldCollection;
