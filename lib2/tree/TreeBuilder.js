@@ -41,4 +41,4 @@ function TreeBuilder(DOMRootNode) {
 
 }
 
-exports.TreeBuilder = TreeBuilder;
+exports = TreeBuilder;

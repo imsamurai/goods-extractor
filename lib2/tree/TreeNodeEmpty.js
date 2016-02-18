@@ -24,4 +24,4 @@ function TreeNodeEmpty() {
 
 }
 
-exports.TreeNodeEmpty = TreeNodeEmpty;
+exports = TreeNodeEmpty;

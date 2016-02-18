@@ -110,3 +110,5 @@ function Tree(node, children, builder) {
         return -1;
     };
 }
+
+exports = Tree;

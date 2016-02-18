@@ -24,4 +24,4 @@ function TreeComparator(rate, cutoff) {
 
 }
 
-exports.TreeComparator = TreeComparator;
+exports = TreeComparator;

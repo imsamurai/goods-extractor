@@ -92,4 +92,4 @@ function RecordsExtractor(metricRate) {
     }
 }
 
-exports.RecordsExtractor = RecordsExtractor;
+exports = RecordsExtractor;

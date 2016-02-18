@@ -7,4 +7,4 @@ function Record(tree, rate) {
     this.id = tree.node.id;
 }
 
-exports.Record = Record;
+exports = Record;

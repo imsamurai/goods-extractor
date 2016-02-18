@@ -11,4 +11,4 @@ function TreeComparatorBi(rate, cutoff) {
 
 }
 
-exports.TreeComparatorBi = TreeComparatorBi;
+exports = TreeComparatorBi;

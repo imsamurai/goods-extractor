@@ -7,4 +7,4 @@ function RecordCollection(tree, rate, records) {
     this.records = records;
 }
 
-exports.RecordCollection = RecordCollection;
+exports = RecordCollection;

@@ -7,4 +7,4 @@ function Field(value, record, tree) {
     this.tree = tree;
 }
 
-exports.Field = Field;
+exports = Field;

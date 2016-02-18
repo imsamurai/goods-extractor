@@ -33,4 +33,4 @@ function TreeComparatorDeep(deep, simple) {
 
 }
 
-exports.TreeComparatorDeep = TreeComparatorDeep;
+exports = TreeComparatorDeep;

@@ -9,4 +9,4 @@ function FieldGroup(fields, name, type, rate, tree) {
     this.tree = tree;
 }
 
-exports.FieldGroup = FieldGroup;
+exports = FieldGroup;

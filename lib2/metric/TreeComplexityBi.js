@@ -14,4 +14,4 @@ function TreeComplexityBi(rateNeigbour, rateDeep, cutoff) {
     }
 }
 
-exports.TreeComplexityBi = TreeComplexityBi;
+exports = TreeComplexityBi;

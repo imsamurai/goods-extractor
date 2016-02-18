@@ -377,4 +377,4 @@ function ProductModel(dic, complexityMetric) {
     }
 }
 
-exports.ProductModel = ProductModel;
+exports = ProductModel;

@@ -17,4 +17,4 @@ function FieldsMetrics(cutoff) {
 
 }
 
-exports.FieldsMetrics = FieldsMetrics;
+exports = FieldsMetrics;

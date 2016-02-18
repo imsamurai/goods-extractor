@@ -8,4 +8,4 @@ function FieldCollection(fieldGroups, recordCollection, rate) {
 
 }
 
-exports.FieldCollection = FieldCollection;
+exports = FieldCollection;

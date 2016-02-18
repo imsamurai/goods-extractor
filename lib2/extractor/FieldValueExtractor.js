@@ -38,4 +38,4 @@ function FieldValueExtractor() {
     }
 }
 
-exports.FieldValueExtractor = FieldValueExtractor;
+exports = FieldValueExtractor;

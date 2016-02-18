@@ -17,4 +17,4 @@ function Extractor(recordsExtractor, fieldsExtractor, fieldsTagger) {
     }
 }
 
-exports.Extractor = Extractor;
+exports = Extractor;

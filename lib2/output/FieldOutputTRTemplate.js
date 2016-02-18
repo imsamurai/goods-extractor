@@ -50,4 +50,4 @@ function FieldOutputTRTemplate(xPathExtractor) {
     }
 }
 
-exports.FieldOutputTRTemplate = FieldOutputTRTemplate;
+exports = FieldOutputTRTemplate;

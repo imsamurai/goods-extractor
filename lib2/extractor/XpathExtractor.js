@@ -23,4 +23,4 @@
     };
 }
 
-exports.XPathExtractor = XPathExtractor;
+exports = XPathExtractor;
