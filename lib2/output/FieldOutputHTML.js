@@ -20,20 +20,21 @@ function FieldOutputHTML() {
             }).join('') +
             '</tr>';
 
+        var maxKey = Math.max.apply(null, fieldsByRecords.flatMap(function (fields) {
+            return Object.keys(fields);
+        }));
         var tableBody = fieldsByRecords.map(function (fields, index) {
             var row = '<td>' + (index + 1) + '</td>';
-            var count = fieldCollection.fieldGroups.length;
             var counter = 0;
-            while (count > 0) {
+            while (counter <= maxKey) {
                 if (fields[counter]) {
                     row += "<td>" + fields[counter].value + "</td>";
-                    count--;
                 } else {
                     row += "<td></td>";
                 }
                 counter++;
             }
-            return "<tr>" + row + "<tr>";
+            return "<tr>" + row + "</tr>";
         }).join('');
         return '<table border="1"><thead>' + tableHead + '</thead><tbody>' + tableBody + '</tbody></table>';
     }
