@@ -4,7 +4,8 @@
 exports.MainController = function (request, response) {
     var jsdom = require("jsdom");
     var extractorComponent = require(__dirname+"/../component/ExtractorComponent.js");
-    //var wgxpath = require('wgxpath');
+    var wgxpath = require('wgxpath');
+    //var xpath = require('xpath');
 
     //var extractor = require(__dirname+"/../component/extractor.js");
 
@@ -38,13 +39,14 @@ exports.MainController = function (request, response) {
             //    SkipExternalResources: false
             //},
             done: function (e, window) {
-                //wgxpath.install(window);
+                window.document.evaluate = null;
+                wgxpath.install(window);
                 //TODO: find perfomance problem
-                window.document.evaluate = function (expressionString, contextNode, resolver, type, result) {
-                    //var expression = window.document.createExpression(expressionString, resolver);
-                    //return expression.evaluate(contextNode,type, result);
-                    return "";
-                };
+                //window.document.evaluate = function (expressionString, contextNode, resolver, type, result) {
+                //    var expression = window.document.createExpression(expressionString, resolver);
+                //    return expression.evaluate(contextNode,type, result);
+                //    return xpath.select(expressionString, contextNode);
+                //};
                 response.send(extractorComponent.extractTemplate(window));
             }
         });
@@ -65,13 +67,14 @@ exports.MainController = function (request, response) {
             //    SkipExternalResources: false
             //},
             done: function (e, window) {
-                //wgxpath.install(window);
+                window.document.evaluate = null;
+                wgxpath.install(window);
                 //TODO: find perfomance problem
-                window.document.evaluate = function (expressionString, contextNode, resolver, type, result) {
-                    //var expression = window.document.createExpression(expressionString, resolver);
-                    //return expression.evaluate(contextNode,type, result);
-                    return "";
-                };
+                //window.document.evaluate = function (expressionString, contextNode, resolver, type, result) {
+                //    //var expression = window.document.createExpression(expressionString, resolver);
+                //    //return expression.evaluate(contextNode,type, result);
+                //    return "";
+                //};
                 response.send(extractorComponent.extractTemplate(window));
             }
         });

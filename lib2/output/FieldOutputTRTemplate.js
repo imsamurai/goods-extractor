@@ -36,7 +36,7 @@ function FieldOutputTRTemplate(xPathExtractor) {
                 "default": "",
                 "begin": "",
                 "end": "",
-                "target": xPathExtractor.getXpath(fieldGroup.tree.node.DOMNode, fieldGroup.type),
+                "target": xPathExtractor.getXpath(fieldGroup.tree.node.DOMNode, mapType(fieldGroup.type)),
                 "postProcessing": "",
                 "join": "concat",
                 "delimiter": " ",

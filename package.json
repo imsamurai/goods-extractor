@@ -25,6 +25,9 @@
     "kerberos": "0.0.17",
     "method-override": "^2.3.5",
     "mongodb": "^2.0.49",
-    "morgan": "^1.6.1"
+    "morgan": "^1.6.1",
+    "wgxpath": "^1.2.0",
+    "xmldom": "^0.1.22",
+    "xpath": "0.0.21"
   }
 }
