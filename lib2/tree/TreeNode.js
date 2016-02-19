@@ -43,4 +43,3 @@ function TreeNode(DOMNode, builder) {
     }
 }
 
-exports = TreeNode;

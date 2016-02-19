@@ -111,4 +111,3 @@ function Tree(node, children, builder) {
     };
 }
 
-exports = Tree;

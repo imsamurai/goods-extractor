@@ -21,4 +21,3 @@ function TreeComplexity(rateNeigbour, rateDeep, cutoff) {
 
 }
 
-exports = TreeComplexity;

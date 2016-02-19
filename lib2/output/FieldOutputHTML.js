@@ -39,4 +39,3 @@ function FieldOutputHTML() {
     }
 }
 
-exports = FieldOutputHTML;

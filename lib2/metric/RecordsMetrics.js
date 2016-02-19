@@ -25,4 +25,3 @@ function RecordsMetrics(metricCompare, metricComplexity, cutoff) {
 
 }
 
-exports = RecordsMetrics;

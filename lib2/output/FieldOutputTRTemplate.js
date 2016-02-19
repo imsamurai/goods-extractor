@@ -15,7 +15,7 @@ function FieldOutputTRTemplate(xPathExtractor) {
     }
 
     function getOuputFormat(fieldGroups) {
-        var format = fieldGroups.reduce(function(format, fieldGroup) {
+        var format = fieldGroups.reduce(function (format, fieldGroup) {
             format[fieldGroup.type] = "%" + fieldGroup.type + "%";
             return format;
         }, {});
@@ -31,7 +31,7 @@ function FieldOutputTRTemplate(xPathExtractor) {
     }
 
     function getTags(fieldGroups) {
-        return fieldGroups.reduce(function(tags, fieldGroup) {
+        return fieldGroups.reduce(function (tags, fieldGroup) {
             tags[fieldGroup.type] = [{
                 "default": "",
                 "begin": "",
@@ -42,12 +42,19 @@ function FieldOutputTRTemplate(xPathExtractor) {
                 "delimiter": " ",
                 "canonicalizeURLs": 0,
                 "mandatory": 0,
-                "type": fieldGroup.type,
+                "type": mapType(fieldGroup.type),
                 "format": ""
             }];
             return tags;
         }, {});
     }
+
+    function mapType(type) {
+        var knownTypes = ['link', 'image'];
+        if (knownTypes.indexOf(type) === -1) {
+            return 'text';
+        }
+        return type;
+    }
 }
 
-exports = FieldOutputTRTemplate;

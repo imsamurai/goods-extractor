@@ -76,4 +76,3 @@ function FieldsExtractor(fieldValueExtractor, fieldTagger, metricRate) {
 
 }
 
-exports = FieldsExtractor;

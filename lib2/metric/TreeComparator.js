@@ -24,4 +24,3 @@ function TreeComparator(rate, cutoff) {
 
 }
 
-exports = TreeComparator;

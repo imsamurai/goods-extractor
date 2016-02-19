@@ -92,4 +92,3 @@ function RecordsExtractor(metricRate) {
     }
 }
 
-exports = RecordsExtractor;

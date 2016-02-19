@@ -41,4 +41,3 @@ function TreeBuilder(DOMRootNode) {
 
 }
 
-exports = TreeBuilder;

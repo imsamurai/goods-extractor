@@ -256,5 +256,3 @@ function Dict() {
         return result;
     }
 }
-
-exports.Dict = Dict;

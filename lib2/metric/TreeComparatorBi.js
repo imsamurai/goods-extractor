@@ -11,4 +11,3 @@ function TreeComparatorBi(rate, cutoff) {
 
 }
 
-exports = TreeComparatorBi;

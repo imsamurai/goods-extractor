@@ -18,35 +18,35 @@ app.use(methodOverride()); // поддержка put и delete
 app.post('/extract_fields_by_url', function (request, response) {
     console.log('Controller main extract_fields_by_url');
     response.setHeader("Access-Control-Allow-Origin", "*");
-    var constructor = require('./controllers/main');
+    var constructor = require('./controllers/main2');
     var controller = new constructor.MainController(request, response);
     controller.extract_fields_by_url();
 });
 
 app.post('/extract_template_by_url', function (request, response) {
     console.log('Controller main extract_template_by_url');
-    var constructor = require('./controllers/main');
+    var constructor = require('./controllers/main2');
     var controller = new constructor.MainController(request, response);
     controller.extract_template_by_url();
 });
 
 app.post('/extract_template_by_html', function (request, response) {
     console.log('Controller main extract_template_by_html');
-    var constructor = require('./controllers/main');
+    var constructor = require('./controllers/main2');
     var controller = new constructor.MainController(request, response);
     controller.extract_template_by_html();
 });
 
 app.post('/extract_fields_by_html', function (request, response) {
     console.log('Controller main extract_fields_by_html');
-    var constructor = require('./controllers/main');
+    var constructor = require('./controllers/main2');
     var controller = new constructor.MainController(request, response);
     controller.extract_fields_by_html();
 });
 
 app.post('/learn_fields', function (request, response) {
     console.log('Controller main learn_fields');
-    var constructor = require('./controllers/main');
+    var constructor = require('./controllers/main2');
     var controller = new constructor.MainController(request, response);
     controller.learn_fields();
 });

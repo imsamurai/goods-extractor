@@ -53,4 +53,3 @@ function FieldsTagger(neuralNet, neuralModel, cutoff) {
     }
 }
 
-exports = FieldsTagger;

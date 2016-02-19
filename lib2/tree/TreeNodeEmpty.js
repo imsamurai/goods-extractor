@@ -24,4 +24,3 @@ function TreeNodeEmpty() {
 
 }
 
-exports = TreeNodeEmpty;

@@ -17,4 +17,3 @@ function Extractor(recordsExtractor, fieldsExtractor, fieldsTagger) {
     }
 }
 
-exports = Extractor;

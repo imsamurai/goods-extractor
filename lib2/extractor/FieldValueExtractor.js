@@ -38,4 +38,3 @@ function FieldValueExtractor() {
     }
 }
 
-exports = FieldValueExtractor;
