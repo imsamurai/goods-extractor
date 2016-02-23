@@ -1,11 +1,11 @@
 <html>
 <head>
-    <script type="text/javascript" src="lib/utility/jquery-2.2.0.min.js"></script>
-    <script type="text/javascript" src="lib/utility/neural/brain-0.6.3.js"></script>
-    <script type="text/javascript" src="lib/utility/lang/extensions.js"></script>
-    <script type="text/javascript" src="lib/utility/neural/product_model.js"></script>
-    <script type="text/javascript" src="lib/analysis/tree_complexity.js"></script>
-    <script type="text/javascript" src="lib/data/neural/dict.js"></script>
+    <script type="text/javascript" src="lib2/utility/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="lib2/neural/brain-0.6.3.js"></script>
+    <script type="text/javascript" src="lib2/utility/lang/extensions.js"></script>
+    <script type="text/javascript" src="lib2/neural/model/ProductModel.js"></script>
+    <script type="text/javascript" src="lib2/metric/TreeComplexity.js"></script>
+    <script type="text/javascript" src="lib2/data/neural/dict.js"></script>
 </head>
 <body id="top" style="display:none">
 <div data-spm="30" id="alibaba" data-spm-max-idx="353">
@@ -37453,7 +37453,10 @@ See Price in Cart
     </li>
 </ul>
 <script type="text/javascript">
-
+    var complexityRateNeighbour = 1;
+    var complexityRateDeep = 2;
+    var complexityCutoff = 0.51;
+    var productModel = new ProductModel(new Dict(), new TreeComplexity(complexityRateNeighbour, complexityRateDeep, complexityCutoff));
 var titlesData = [
     extractProps($('#alibaba .title > a'), 'innerText', {title: 1}),
     extractProps($('#ebay .lvtitle > a.vip'), 'innerText', {title: 1}),
@@ -37631,9 +37634,7 @@ function extractProps(elements, attribute, labels) {
             continue;
         }
 
-        var model = new ProductModel(element, value, dict);
-
-        data.push(model.getLabeledSample(labels));
+        data.push(productModel.getLabeledSample(element, value, labels));
     }
     return data;
 }

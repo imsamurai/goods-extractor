@@ -3,7 +3,7 @@
  */
 exports.MainController = function (request, response) {
     var jsdom = require("jsdom");
-    var extractorComponent = require(__dirname+"/../component/ExtractorComponent.js");
+    var extractorComponent = require(__dirname + "/../component/ExtractorComponent.js");
     var wgxpath = require('wgxpath');
     //var xpath = require('xpath');
 
@@ -19,7 +19,12 @@ exports.MainController = function (request, response) {
             //    SkipExternalResources: false
             //},
             done: function (e, window) {
-                response.send(extractorComponent.extractFields(window));
+                var fields = extractorComponent.extractFields(window);
+                if (fields) {
+                    response.send(fields);
+                } else {
+                    response.status(404).send('Fields no found!');
+                }
             }
         });
     };
@@ -47,7 +52,12 @@ exports.MainController = function (request, response) {
                 //    return expression.evaluate(contextNode,type, result);
                 //    return xpath.select(expressionString, contextNode);
                 //};
-                response.send(extractorComponent.extractTemplate(window));
+                var template = extractorComponent.extractTemplate(window);
+                if (template) {
+                    response.send(template);
+                } else {
+                    response.status(404).send('Fields no found, can\'t make template!');
+                }
             }
         });
     };
@@ -75,7 +85,12 @@ exports.MainController = function (request, response) {
                 //    //return expression.evaluate(contextNode,type, result);
                 //    return "";
                 //};
-                response.send(extractorComponent.extractTemplate(window));
+                var template = extractorComponent.extractTemplate(window);
+                if (template) {
+                    response.send(template);
+                } else {
+                    response.status(404).send('Fields no found, can\'t make template!');
+                }
             }
         });
     };
@@ -90,7 +105,12 @@ exports.MainController = function (request, response) {
             //    SkipExternalResources: false
             //},
             done: function (e, window) {
-                response.send(extractorComponent.extractFields(window));
+                var fields = extractorComponent.extractFields(window);
+                if (fields) {
+                    response.send(fields);
+                } else {
+                    response.status(404).send('Fields no found!');
+                }
             }
         });
     };
@@ -104,7 +124,4 @@ exports.MainController = function (request, response) {
         jsdom.env(params);
     }
 
-    function extract(window) {
-
-    }
 }

@@ -9,9 +9,9 @@
         var tr = new xPathRefine.Rect(0, 0, 0, 0);
         var irs = xPathRefine.findIntersection(tr, tr);
         var tagItem = new xPathRefine.TagItem(dOMNode, irs, tr, tr);
-        var refineTagsItems = xPathRefine.refineTagsItems([tagItem], type);
-        return refineTagsItems[0].xpath;
-        //return tagItem.xpath;
+        //var refineTagsItems = xPathRefine.refineTagsItems([tagItem], type);
+        //return refineTagsItems[0].xpath;
+        return tagItem.xpath;
     };
 }
 

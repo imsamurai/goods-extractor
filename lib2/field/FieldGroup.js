@@ -7,5 +7,6 @@ function FieldGroup(fields, name, type, rate, tree) {
     this.type = type;
     this.rate = rate;
     this.tree = tree;
+
 }
 

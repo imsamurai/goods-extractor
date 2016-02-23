@@ -59,6 +59,7 @@ function ExtractorComponent() {
         var complexityRateDeep = 2;
         var complexityCutoff = 0.51;
         var recordRateCutoff = 0.7;
+        var recordSeedRateCutoff = 0.6;
         var fieldTaggerCutoff = 0.7;
         var fieldMetricsCutoff = 0.7;
 
@@ -66,7 +67,8 @@ function ExtractorComponent() {
         var tree = treeBuilder.build();
 
         var metricRate = new RecordsMetrics(new TreeComparatorBi(compareRate, compareCutoff), new TreeComplexityBi(complexityRateNeighbour, complexityRateDeep, complexityCutoff), recordRateCutoff);
-        var recordsExtractor = new RecordsExtractor(metricRate);
+        var metricSeedRate = new RecordsMetrics(new TreeComparatorBi(compareRate, compareCutoff), new TreeComplexityBi(complexityRateNeighbour, complexityRateDeep, complexityCutoff), recordSeedRateCutoff);
+        var recordsExtractor = new RecordsExtractor(metricRate, metricSeedRate);
 
 
         var neuralNet = new brain.NeuralNetwork();

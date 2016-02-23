@@ -57,12 +57,8 @@ function Tree(node, children, builder) {
         return that;
     };
 
-    this.merge = function(tree) {
-        return new Tree(new TreeNodeEmpty(), [this.clone(), tree.clone()], builder);
-    };
-
-    this.mergeChildren = function(tree) {
-        return new Tree(new TreeNodeEmpty(), this.clone().children.concat(tree.clone().children), builder);
+    this.merge = function(trees) {
+        return new Tree(new TreeNodeEmpty(), trees, builder);
     };
 
     this.mergeAligned = function (tree) {

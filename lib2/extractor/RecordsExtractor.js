@@ -1,7 +1,7 @@
 /**
  * Created by imsamurai on 15.02.2016.
  */
-function RecordsExtractor(metricRate) {
+function RecordsExtractor(metricRate, metricSeedRate) {
 
     this.run = function(tree) {
         return sortRecords(findRecordsDeep(findRecords(tree), []));
@@ -14,13 +14,15 @@ function RecordsExtractor(metricRate) {
 
         var recordCollectionFirst = inRecordCollections.shift();
         for (var c2=0;c2<inRecordCollections.length;c2++) {
-            var seedTree = recordCollectionFirst.tree.merge(inRecordCollections[c2].tree);
-            var seedRecords = findRecordsOne(seedTree);
+            var seedTree = recordCollectionFirst.tree.merge([recordCollectionFirst.tree, inRecordCollections[c2].tree]);
+            var seedRecords = findRecordsOne(seedTree, metricSeedRate);
             if (!seedRecords.rate) {
                 continue;
             }
-            var tree = recordCollectionFirst.tree.mergeChildren((inRecordCollections[c2].tree));
-            var recordCollection = findRecordsOne(tree);
+            var tree = recordCollectionFirst.tree.merge(recordCollectionFirst.records.concat(inRecordCollections[c2].records).map(function(record) {
+                return record.tree;
+            }));
+            var recordCollection = findRecordsOne(tree, metricRate);
             if (!recordCollection.rate) {
                 continue;
             }
@@ -33,7 +35,7 @@ function RecordsExtractor(metricRate) {
     }
 
     function findRecords(tree) {
-        var res = findRecordsOne(tree);
+        var res = findRecordsOne(tree, metricRate);
         var childRes = [];
         for (var i = 0; i < tree.children.length; i++) {
             childRes = childRes.concat(findRecords(tree.children[i]));
@@ -44,7 +46,7 @@ function RecordsExtractor(metricRate) {
         });
     }
 
-    function findRecordsOne(tree) {
+    function findRecordsOne(tree, metricRate) {
         if (tree.children.length <= 1) {
             return new RecordCollection();
         }
@@ -70,13 +72,21 @@ function RecordsExtractor(metricRate) {
             return new RecordCollection();
         }
         var records = recordsRaw.map(function (records) {
-            var rank = metricRate.rateAvg(records);
-            return new Record(records[0].tree, rank);
-        });
+            var rate = metricRate.rateAvg(records);
+            return new Record(records[0].tree, rate);
+        });/*.sort(function (record1, record2) {
+            if (record1.rate > record2.rate) {
+                return -1;
+            } else if (record1.rate < record2.rate) {
+                return 1;
+            }
+            return 0;
+        });*/
+
 
         var seed = records.slice(1).reduce(function (seed, record) {
             return seed.mergeAligned(record.tree.clone());
-        }, records[0].tree.simplify());
+        }, records[0].tree.clone());
         return new RecordCollection(seed, metricRate.rateTotal(records), records);
     }
 

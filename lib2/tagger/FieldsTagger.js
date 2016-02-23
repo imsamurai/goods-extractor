@@ -4,9 +4,9 @@
 function FieldsTagger(neuralNet, neuralModel, cutoff) {
     var labels = Object.keys(neuralNet.outputLookup);
 
-    this.run = function(fieldCollection) {
-        fieldCollection.fieldGroups.forEach(function(fieldGroup) {
-            var bestLabel = getBestLabel(fieldGroup, fieldCollection);
+    this.run = function (fieldCollection) {
+        fieldCollection.fieldGroups.forEach(function (fieldGroup) {
+            var bestLabel = getBestLabel(fieldGroup.fields, fieldCollection);
             if (bestLabel.rate > cutoff) {
                 fieldGroup.rate = bestLabel.rate;
                 fieldGroup.type = bestLabel.label;
@@ -16,40 +16,51 @@ function FieldsTagger(neuralNet, neuralModel, cutoff) {
         return fieldCollection;
     }
 
-    function getBestLabel(fieldGroup, fieldCollection) {
-        var rates = getRates(fieldGroup, fieldCollection);
+    function getBestLabel(fields, fieldCollection) {
+        var rates = getRates(fields, fieldCollection);
 
-        return labels.reduce(function(rate, label) {
+        var bestLabel = labels.reduce(function (rate, label) {
             if (rate.rate <= rates[label]) {
                 rate = {label: label, rate: rates[label]}
             }
             return rate;
         }, {label: "", rate: 0.0});
 
+        var fieldsValues = fields.map(function(field) {
+            return field.value;
+        });
+        var rateUnique = fieldsValues.unique().length / fieldsValues.length;
+        bestLabel.rate = 0.9 * bestLabel.rate + 0.1 * rateUnique;
+        return bestLabel;
     }
 
     function getInitRates() {
-        return labels.reduce(function(acc, label) {
+        return labels.reduce(function (acc, label) {
             acc[label] = 0;
             return acc;
         }, {});
     }
 
-    function getRates(fieldGroup, fieldCollection) {
-        var initRates = getInitRates();
-        var rates = fieldGroup.fields.map(function(field) {
+    function getRates(fields, fieldCollection) {
+        var rates = fields.map(function (field) {
             return neuralNet.run(neuralModel.getSampleFromField(field));
-        }).reduce(function(acc, rate) {
-            labels.forEach(function(label) {
+        });
+
+        var avgRates = rates.reduce(function (acc, rate) {
+            labels.forEach(function (label) {
                 acc[label] += rate[label];
             });
             return acc;
-        }, initRates);
+        }, getInitRates());
 
-        labels.forEach(function(label) {
-            rates[label] /= fieldCollection.recordCollection.records.length;
+
+        var length = fields.length;//Math.max(fieldCollection.recordCollection.records.length, fieldGroup.fields.length);
+        var lengthRate = length / Math.max(fieldCollection.recordCollection.records.length, fields.length);
+
+        labels.forEach(function (label) {
+            avgRates[label] = 0.2 * lengthRate + 0.8 * avgRates[label] / length;
         });
-        return rates;
+        return avgRates;
     }
 }
 
