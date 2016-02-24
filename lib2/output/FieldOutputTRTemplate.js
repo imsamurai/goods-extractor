@@ -10,7 +10,7 @@ function FieldOutputTRTemplate(xPathExtractor) {
                 "state": 1,
                 "is_filled": 0,
                 "output_format": getOuputFormat(fieldCollection.fieldGroups),
-                "tags": getTags(fieldCollection.fieldGroups)
+                "tags": getTags(fieldCollection)
             }];
     }
 
@@ -30,13 +30,13 @@ function FieldOutputTRTemplate(xPathExtractor) {
         };
     }
 
-    function getTags(fieldGroups) {
-        return fieldGroups.reduce(function (tags, fieldGroup) {
+    function getTags(fieldCollection) {
+        return fieldCollection.fieldGroups.reduce(function (tags, fieldGroup) {
             tags[fieldGroup.type] = [{
                 "default": "",
                 "begin": "",
                 "end": "",
-                "target": xPathExtractor.getXpath(fieldGroup.tree.node.DOMNode, mapType(fieldGroup.type)),
+                "target": xPathExtractor.getMultiXpath(fieldCollection.recordCollection.tree.node.DOMNode, fieldGroup.tree.node.DOMNode, mapType(fieldGroup.type)),
                 "postProcessing": "",
                 "join": "concat",
                 "delimiter": " ",

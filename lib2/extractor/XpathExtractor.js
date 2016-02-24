@@ -13,5 +13,12 @@
         //return refineTagsItems[0].xpath;
         return tagItem.xpath;
     };
+
+    this.getMultiXpath = function(rootDOMNode, dOMNode, type) {
+        var rootXpath = this.getXpath(rootDOMNode, 'text');
+        var nodeXpath = this.getXpath(dOMNode, type);
+        var rootXpathMulti = rootXpath.replace(/([^\\]*)\[\d+\]([^\\]*)$/, '\$1\$2');
+        return nodeXpath.replace(rootXpath, rootXpathMulti);
+    };
 }
 
