@@ -17,6 +17,7 @@ function FieldOutputTRTemplate(xPathExtractor) {
     function getOuputFormat(fieldGroups) {
         var format = fieldGroups.reduce(function (format, fieldGroup) {
             format[fieldGroup.type] = "%" + fieldGroup.type + "%";
+            format[fieldGroup.type+'_xpath'] = "%" + fieldGroup.type + '_xpath' + "%";
             return format;
         }, {});
         return {
