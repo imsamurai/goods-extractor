@@ -43,7 +43,7 @@ function FieldOutputTRTemplate(xPathExtractor) {
                 "canonicalizeURLs": 0,
                 "mandatory": 0,
                 "type": mapType(fieldGroup.type),
-                "format": ""
+                "format": mapFormat(fieldGroup.type)
             }];
             return tags;
         }, {});
@@ -55,6 +55,13 @@ function FieldOutputTRTemplate(xPathExtractor) {
             return 'text';
         }
         return type;
+    }
+
+    function mapFormat(type) {
+        switch(mapType(type)) {
+            case 'image': return 'URL';
+            default: return "";
+        };
     }
 }
 
