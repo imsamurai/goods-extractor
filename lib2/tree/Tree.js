@@ -21,15 +21,8 @@ function Tree(node, children, builder) {
     this.findLike = function(tree) {
         var items = [];
         for (var pos = 0; pos < this.children.length; pos++) {
-            if (builder.findLikeComparators[0].run(tree, this.children[pos], 1) === 1) {
+            if (builder.findLikeComparator.run(tree, this.children[pos], 1)) {
                 items.push(this.children[pos]);
-            }
-        }
-        if (items.length == 0) {
-            for (var pos = 0; pos < this.children.length; pos++) {
-                if (builder.findLikeComparators[1].run(tree, this.children[pos], 1) === 1) {
-                    items.push(this.children[pos]);
-                }
             }
         }
         return items;

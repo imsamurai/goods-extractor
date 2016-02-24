@@ -11,6 +11,8 @@
     <script type="text/javascript" src="lib2/record/Record.js"></script>
     <script type="text/javascript" src="lib2/metric/TreeComparatorBi.js"></script>
     <script type="text/javascript" src="lib2/metric/TreeComparator.js"></script>
+    <script type="text/javascript" src="lib2/metric/TreeComparatorFull.js"></script>
+    <script type="text/javascript" src="lib2/metric/TreeComparatorFullBi.js"></script>
     <script type="text/javascript" src="lib2/metric/TreeComparatorDeep.js"></script>
     <script type="text/javascript" src="lib2/metric/TreeComplexity.js"></script>
     <script type="text/javascript" src="lib2/metric/TreeComplexityBi.js"></script>
@@ -17297,20 +17299,22 @@ class:
 <script type="text/javascript">
     var compareRate = 0.38;
     var compareCutoff = 0.9;
+    var findLikeCompareCutoff = 0.55;
+    var alignIndexCompareCutoff = 0.9;
     var complexityRateNeighbour = 1;
     var complexityRateDeep = 2;
     var complexityCutoff = 0.51;
-    var recordRateCutoff = 0.7;
+    var recordRateCutoff = 0.6;
     var recordSeedRateCutoff = 0.6;
     var fieldTaggerCutoff = 0.7;
     var fieldMetricsCutoff = 0.7;
 
-    var treeBuilder = new TreeBuilder(document.getElementById('top'));
+    var treeBuilder = new TreeBuilder(document.getElementById('top'), new TreeComparatorFullBi(compareRate, alignIndexCompareCutoff), new TreeComparatorFullBi(compareRate, findLikeCompareCutoff));
     var tree = treeBuilder.build();
     console.log(tree);
 
-    var metricRate = new RecordsMetrics(new TreeComparatorBi(compareRate, compareCutoff), new TreeComplexityBi(complexityRateNeighbour, complexityRateDeep, complexityCutoff), recordRateCutoff);
-    var metricSeedRate = new RecordsMetrics(new TreeComparatorBi(compareRate, compareCutoff), new TreeComplexityBi(complexityRateNeighbour, complexityRateDeep, complexityCutoff), recordSeedRateCutoff);
+    var metricRate = new RecordsMetrics(new TreeComparatorFullBi(compareRate, compareCutoff), new TreeComplexityBi(complexityRateNeighbour, complexityRateDeep, complexityCutoff), recordRateCutoff);
+    var metricSeedRate = new RecordsMetrics(new TreeComparatorFullBi(compareRate, compareCutoff), new TreeComplexityBi(complexityRateNeighbour, complexityRateDeep, complexityCutoff), recordSeedRateCutoff);
     var recordsExtractor = new RecordsExtractor(metricRate, metricSeedRate);
 
 

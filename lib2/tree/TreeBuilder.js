@@ -7,10 +7,10 @@
  *
  * @constructor
  */
-function TreeBuilder(DOMRootNode) {
+function TreeBuilder(DOMRootNode, alignComparator, findLikeComparator) {
     var self = this;
-    this.alignComparator = new TreeComparatorDeep(true);
-    this.findLikeComparators = [new TreeComparatorDeep(), new TreeComparatorDeep(false, true)];
+    this.alignComparator = alignComparator;
+    this.findLikeComparator = findLikeComparator;
 
     function _build(DOMNode) {
         var children = [];
