@@ -63,15 +63,15 @@ function XpathExtractor(xPathRefine) {
                 return path1;
             }
 
-            if (pathCur2.name) {
-                pathCur2.skip = true;
-                var elems2 = xPathRefine.xpathEvaluate(path2.toString(), 1);
-                if (isSameElems(elems1, elems2)) {
-                    pathCur1.skip = true;
-                } else {
-                    pathCur2.skip = false;
-                }
-            }
+            //if (pathCur2.name) {
+            //    pathCur2.skip = true;
+            //    var elems2 = xPathRefine.xpathEvaluate(path2.toString(), 1);
+            //    if (isSameElems(elems1, elems2)) {
+            //        pathCur1.skip = true;
+            //    } else {
+            //        pathCur2.skip = false;
+            //    }
+            //}
 
             if (!pathCur2.skip) {
                 pathCur2.skip = false;
