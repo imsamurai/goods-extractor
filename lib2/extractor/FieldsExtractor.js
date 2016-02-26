@@ -77,7 +77,7 @@ function FieldsExtractor(fieldValueExtractor, fieldTagger, metricRate) {
             return fg.fields.filter(function(field) {
                     return field.value !== "";
                 }).length > 0;
-        });;
+        });
     }
 
     function removeDuplicatedFields(fieldCollection) {

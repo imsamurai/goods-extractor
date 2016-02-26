@@ -36,6 +36,11 @@ function ExtractorComponent() {
     extRequire(__dirname+"/../lib2/output/FieldOutputTRTemplate.js");
     extRequire(__dirname+"/../lib2/extractor/XpathExtractor.js");
 
+    extRequire(__dirname+"/../lib2/xpath/XPathAttr.js");
+    extRequire(__dirname+"/../lib2/xpath/XPathEmptyNode.js");
+    extRequire(__dirname+"/../lib2/xpath/XPathNode.js");
+    extRequire(__dirname+"/../lib2/xpath/XPathParser.js");
+
     this.extractFields = function(window) {
         var fieldCollections = this.extract(window);
         var fieldOutputHTML = new FieldOutputHTML();

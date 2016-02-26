@@ -33,19 +33,23 @@ function FieldOutputTRTemplate(xPathExtractor) {
 
     function getTags(fieldCollection) {
         return fieldCollection.fieldGroups.reduce(function (tags, fieldGroup) {
-            tags[fieldGroup.type] = [{
-                "default": "",
-                "begin": "",
-                "end": "",
-                "target": xPathExtractor.getMultiXpath(fieldCollection.recordCollection.tree.node.DOMNode, fieldGroup.tree.node.DOMNode, mapType(fieldGroup.type)),
-                "postProcessing": "",
-                "join": "concat",
-                "delimiter": " ",
-                "canonicalizeURLs": 0,
-                "mandatory": 0,
-                "type": mapType(fieldGroup.type),
-                "format": mapFormat(fieldGroup.type)
-            }];
+            tags[fieldGroup.type] = xPathExtractor.getMultiItemXpath(fieldGroup.fields.map(function(field) {
+                return field.tree.node.DOMNode;
+            }), mapType(fieldGroup.type)).map(function(path) {
+               return {
+                   "default": "",
+                   "begin": "",
+                   "end": "",
+                   "target": path,
+                   "postProcessing": "",
+                   "join": "concat",
+                   "delimiter": " ",
+                   "canonicalizeURLs": 0,
+                   "mandatory": 0,
+                   "type": mapType(fieldGroup.type),
+                   "format": mapFormat(fieldGroup.type)
+               }
+            });
             return tags;
         }, {});
     }
