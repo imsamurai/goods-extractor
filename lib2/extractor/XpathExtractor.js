@@ -57,21 +57,37 @@ function XpathExtractor(xPathRefine) {
         var pathCur2 = path2;
         while (true) {
             var pathStr = pathCur1.toString();
-            pathCur2.removeAttributes();
             var elems1 = xPathRefine.xpathEvaluate(path1.toString(), 1);
-            var elems2 = xPathRefine.xpathEvaluate(path2.toString(), 1);
 
             if (!pathStr || elems1.length === 0) {
                 return path1;
             }
 
-            if (isSameElems(elems1, elems2)) {
-                pathCur1.removeAttributes();
+            if (pathCur2.name) {
+                pathCur2.skip = true;
+                var elems2 = xPathRefine.xpathEvaluate(path2.toString(), 1);
+                if (isSameElems(elems1, elems2)) {
+                    pathCur1.skip = true;
+                } else {
+                    pathCur2.skip = false;
+                }
             }
+
+            if (!pathCur2.skip) {
+                pathCur2.skip = false;
+                pathCur2.removeAttributes();
+                var elems3 = xPathRefine.xpathEvaluate(path2.toString(), 1);
+                if (isSameElems(elems1, elems3)) {
+                    pathCur1.removeAttributes();
+                }
+            }
+
             pathCur1 = pathCur1.children;
             pathCur2 = pathCur2.children;
         }
     }
+
+
 
     function isSameElems(elems1, elems2) {
         if (elems1.length !== elems2.length) {

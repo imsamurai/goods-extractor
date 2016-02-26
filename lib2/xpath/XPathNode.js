@@ -5,6 +5,7 @@ function XPathNode(name, attributes, children) {
     this.name = name;
     this.attributes = attributes;
     this.children = children;
+    this.skip = false;
 
     this.clone = function () {
         return new XPathNode(this.name, this.attributes.map(function(attr) {
@@ -26,7 +27,7 @@ function XPathNode(name, attributes, children) {
     };
 
     this.toString = function() {
-        return '/'+(this.name ? this.name : '')+this.attributes.map(function(attr) {
+        return this.skip ? this.children.toString() : '/'+(this.name ? this.name : '')+this.attributes.map(function(attr) {
                 return '['+attr.toString()+']';
             }).join('')+this.children.toString();
     };

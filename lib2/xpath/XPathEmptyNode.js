@@ -3,6 +3,8 @@
  */
 function XPathEmptyNode() {
     this.name = 'EMPTYNODE';
+    this.parent = null;
+    this.skip = false;
 
     this.equalsByStructure = function(node) {
         return node instanceof XPathEmptyNode;
