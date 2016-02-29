@@ -41,9 +41,14 @@ function XpathExtractor(xPathRefine) {
         var path1 = inPaths.shift();
         for (var c2 = 0; c2 < inPaths.length; c2++) {
             if (path1.equalsByStructure(inPaths[c2])) {
+                var elems1 = xPathRefine.xpathEvaluate(path1.toString(), 1);
+                var elems2 = xPathRefine.xpathEvaluate(inPaths[c2].toString(), 1);
                 var path = path1.merge(inPaths[c2]);
-                return reduceXPaths([path].concat(inPaths.slice(0, c2))
-                    .concat(inPaths.slice(c2 + 1)), outPats);
+                var elems = xPathRefine.xpathEvaluate(path.toString(), 1);
+                if (isSameElems(elems, elems1.concat(elems2))) {
+                    return reduceXPaths([path].concat(inPaths.slice(0, c2))
+                        .concat(inPaths.slice(c2 + 1)), outPats);
+                }
             }
         }
 

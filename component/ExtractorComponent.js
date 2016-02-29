@@ -5,7 +5,8 @@
 function ExtractorComponent() {
     var extRequire = require(__dirname+'/../utility/ext_require.js');
     extRequire(__dirname+"/../lib2/utility/lang/extensions.js");
-    var brain = require("brain");
+    //var brain = require("brain");
+    extRequire(__dirname+"/../lib2/neural/brain-0.6.3.js");
     extRequire(__dirname+"/../lib2/metric/TreeComparatorDeep.js");
     extRequire(__dirname+"/../lib2/tree/Tree.js");
     extRequire(__dirname+"/../lib2/tree/TreeNode.js");
@@ -22,6 +23,7 @@ function ExtractorComponent() {
     extRequire(__dirname+"/../lib2/metric/TreeComplexityBi.js");
     extRequire(__dirname+"/../lib2/metric/RecordsMetrics.js");
     extRequire(__dirname+"/../lib2/field/Field.js");
+    extRequire(__dirname+"/../lib2/field/FieldVariant.js");
     extRequire(__dirname+"/../lib2/field/FieldCollection.js");
     extRequire(__dirname+"/../lib2/extractor/FieldsExtractor.js");
     extRequire(__dirname+"/../lib2/tagger/FieldsTagger.js");

@@ -28,7 +28,7 @@ function FieldOutputHTML() {
             var counter = 0;
             while (counter <= maxKey) {
                 if (fields[counter]) {
-                    row += "<td>" + fields[counter].value + "</td>";
+                    row += '<td title="' + JSON.stringify(fields[counter].rates).replace(/"/g, "") + '">' + fields[counter].value + "</td>";
                 } else {
                     row += "<td></td>";
                 }

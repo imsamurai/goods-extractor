@@ -30,8 +30,8 @@ function ProductModel(dic, complexityMetric) {
         var parentClasses = getClassesChunk(element.parentElement);
         var grandParentClasses = getClassesChunk(element.parentElement.parentElement);
         var currencies = getCurrencies(value);
-        var parentCurrencies = getCurrencies(element.parentElement.innerText);
-        var grandParentCurrencies = getCurrencies(element.parentElement.parentElement.innerText);
+        var parentCurrencies = getCurrencies(getAttribute(element.parentElement, 'innerText'));
+        var grandParentCurrencies = getCurrencies(getAttribute(element.parentElement.parentElement, 'innerText'));
 
         addProp('tag', getNormalizedTagName(element), INT_TRUE);
         addProp('tag', 'complexity', getComplexityRate(element));
@@ -178,7 +178,7 @@ function ProductModel(dic, complexityMetric) {
     }
 
     function isAttributeNonEmpty(elem, attr) {
-        return elem[attr] ? INT_TRUE : INT_FALSE;
+        return getAttribute(elem, attr) ? INT_TRUE : INT_FALSE;
     }
 
     function hasLink(val) {
