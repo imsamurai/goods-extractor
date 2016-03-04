@@ -8,7 +8,7 @@ function FieldsExtractor(fieldValueExtractor, fieldTagger, metricRate, fieldCuto
         });
         var seedTrees = completeSeeds(recordCollection.tree.transformInsideOut(), trees);
         var fieldGroups = extract(seedTrees, trees, recordCollection.records, []);
-        var fieldCollection = fieldTagger.run(groupFields(new FieldCollection(fieldGroups, recordCollection)));
+        var fieldCollection = fieldTagger.run(groupFields(new FieldCollection(groupFieldGroups(fieldGroups), recordCollection)));
 
         fieldCollection.fieldGroups = filterGroups(fieldCollection.fieldGroups).sort(function (fieldGroup1, fieldGroup2) {
             if (fieldGroup1.rate > fieldGroup2.rate) {
@@ -68,6 +68,18 @@ function FieldsExtractor(fieldValueExtractor, fieldTagger, metricRate, fieldCuto
             fieldGroup.fields = Object.values(fields);
         });
         return fieldCollection;
+    }
+
+    function groupFieldGroups(fieldGroups) {
+        return Object.values(fieldGroups.reduce(function (groups, fieldGroup) {
+            var valuesHash = fieldGroup.fields.map(function(field) {
+                return field.tree.node.outerHTML+field.value;
+            }).join('###');
+            if (!groups[valuesHash]) {
+                groups[valuesHash] = fieldGroup;
+            }
+            return groups;
+        }, {}));
     }
 
     function filterGroups(fieldGroups) {

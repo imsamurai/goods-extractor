@@ -7,7 +7,7 @@ function FieldValueExtractor() {
 
     this.detectExtractors = function(tree) {
         if (tree.node.name === 'IMG') {
-            return findLinks(tree.node, ['src']).map(function(link) {
+            return findLinks(tree.node).map(function(link) {
                 return ['image_'+link.attr, getAttributeExtractor(link.attr)]
             });
         } else if (tree.node.name === 'A') {

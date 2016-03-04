@@ -12,6 +12,7 @@ function TreeNode(DOMNode, builder) {
     this.src = DOMNode.src;
     this.href = DOMNode.href;
     this.text = DOMNode.innerHTML.replace(/<\/?[^>]+>/gi, '').trim();
+    this.outerHTML = DOMNode.outerHTML;
     this.id = builder.generateNodeID();
     this.DOMNode = DOMNode;
     this.texts = function() {
