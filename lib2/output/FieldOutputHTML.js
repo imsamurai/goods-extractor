@@ -3,7 +3,7 @@
  */
 function FieldOutputHTML() {
     this.run = function (fieldCollection) {
-        // var output = '';
+        var bestGroups = fieldCollection.getBestGroups();
         var fieldsByRecords = Object.values(fieldCollection.fieldGroups.reduce(function (records, fieldGroup, groupIndex) {
             return fieldGroup.fields.reduce(function (records, field) {
                 if (!records[field.record.id]) {
@@ -16,7 +16,13 @@ function FieldOutputHTML() {
 
         var tableHead = '<tr><th>#</th>' +
             fieldCollection.fieldGroups.map(function (fieldGroup) {
-                return '<th>' + fieldGroup.name + '(' + fieldGroup.type + ': ' + fieldGroup.rate + ')' + '</th>'
+                var out = '';
+                if (bestGroups.indexOf(fieldGroup) !== -1) {
+                    out += '<th style="background-color: darkgrey;">';
+                } else {
+                    out += '<th>';
+                }
+                return out + fieldGroup.name + '(' + fieldGroup.type + ': ' + fieldGroup.rate + ')' + '</th>'
             }).join('') +
             '</tr>';
 
@@ -28,7 +34,13 @@ function FieldOutputHTML() {
             var counter = 0;
             while (counter <= maxKey) {
                 if (fields[counter]) {
-                    row += '<td title="' + JSON.stringify(fields[counter].rates).replace(/"/g, "") + '">' + fields[counter].value + "</td>";
+                    row += '<td><strong title="' + JSON.stringify(fields[counter].rates).replace(/"/g, "") + '">'+ fields[counter].value + '</strong>';
+                    row += fields[counter].getFields().filter(function(field) {
+                        return field !== fields[counter].field;
+                    }).map(function(field) {
+                        return '<span style="color: gray;" title="' + JSON.stringify(field.rates).replace(/"/g, "") + '">'+ field.value + '</span>'
+                    }, row).join(' ||| ');
+                    row += "</td>";
                 } else {
                     row += "<td></td>";
                 }

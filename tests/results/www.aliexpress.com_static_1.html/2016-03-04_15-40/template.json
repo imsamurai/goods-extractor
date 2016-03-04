@@ -1,0 +1,664 @@
+[
+    {
+        "priority": "0",
+        "mandatory": 0,
+        "state": 1,
+        "is_filled": 0,
+        "output_format": {
+            "type": "template",
+            "name": "json",
+            "header": "[\n",
+            "items_header": "",
+            "item": "{\"price\":\"%price%\",\"price_xpath\":\"%price_xpath%\",\"price_1\":\"%price_1%\",\"price_1_xpath\":\"%price_1_xpath%\",\"link\":\"%link%\",\"link_xpath\":\"%link_xpath%\",\"link_1\":\"%link_1%\",\"link_1_xpath\":\"%link_1_xpath%\",\"title\":\"%title%\",\"title_xpath\":\"%title_xpath%\",\"title_1\":\"%title_1%\",\"title_1_xpath\":\"%title_1_xpath%\",\"image\":\"%image%\",\"image_xpath\":\"%image_xpath%\",\"title_2\":\"%title_2%\",\"title_2_xpath\":\"%title_2_xpath%\",\"title_3\":\"%title_3%\",\"title_3_xpath\":\"%title_3_xpath%\",\"link_2\":\"%link_2%\",\"link_2_xpath\":\"%link_2_xpath%\",\"title_4\":\"%title_4%\",\"title_4_xpath\":\"%title_4_xpath%\",\"link_3\":\"%link_3%\",\"link_3_xpath\":\"%link_3_xpath%\",\"price_2\":\"%price_2%\",\"price_2_xpath\":\"%price_2_xpath%\",\"price_3\":\"%price_3%\",\"price_3_xpath\":\"%price_3_xpath%\",\"title_5\":\"%title_5%\",\"title_5_xpath\":\"%title_5_xpath%\",\"link_4\":\"%link_4%\",\"link_4_xpath\":\"%link_4_xpath%\",\"title_6\":\"%title_6%\",\"title_6_xpath\":\"%title_6_xpath%\",\"link_5\":\"%link_5%\",\"link_5_xpath\":\"%link_5_xpath%\",\"price_4\":\"%price_4%\",\"price_4_xpath\":\"%price_4_xpath%\",\"price_5\":\"%price_5%\",\"price_5_xpath\":\"%price_5_xpath%\",\"price_6\":\"%price_6%\",\"price_6_xpath\":\"%price_6_xpath%\",\"title_7\":\"%title_7%\",\"title_7_xpath\":\"%title_7_xpath%\",\"title_8\":\"%title_8%\",\"title_8_xpath\":\"%title_8_xpath%\",\"link_6\":\"%link_6%\",\"link_6_xpath\":\"%link_6_xpath%\",\"price_7\":\"%price_7%\",\"price_7_xpath\":\"%price_7_xpath%\",\"image_1\":\"%image_1%\",\"image_1_xpath\":\"%image_1_xpath%\",\"price_8\":\"%price_8%\",\"price_8_xpath\":\"%price_8_xpath%\",\"title_9\":\"%title_9%\",\"title_9_xpath\":\"%title_9_xpath%\",\"title_10\":\"%title_10%\",\"title_10_xpath\":\"%title_10_xpath%\",\"field#13337_text\":\"%field#13337_text%\",\"field#13337_text_xpath\":\"%field#13337_text_xpath%\",\"field#22319_text\":\"%field#22319_text%\",\"field#22319_text_xpath\":\"%field#22319_text_xpath%\",\"field#22344_text\":\"%field#22344_text%\",\"field#22344_text_xpath\":\"%field#22344_text_xpath%\",\"field#13337_textInner\":\"%field#13337_textInner%\",\"field#13337_textInner_xpath\":\"%field#13337_textInner_xpath%\",\"field#13372_textInner\":\"%field#13372_textInner%\",\"field#13372_textInner_xpath\":\"%field#13372_textInner_xpath%\",\"field#13375_linkText\":\"%field#13375_linkText%\",\"field#13375_linkText_xpath\":\"%field#13375_linkText_xpath%\",\"field#22319_textInner\":\"%field#22319_textInner%\",\"field#22319_textInner_xpath\":\"%field#22319_textInner_xpath%\",\"field#22310_textInner\":\"%field#22310_textInner%\",\"field#22310_textInner_xpath\":\"%field#22310_textInner_xpath%\",\"field#22312_textInner\":\"%field#22312_textInner%\",\"field#22312_textInner_xpath\":\"%field#22312_textInner_xpath%\",\"field#22312_text\":\"%field#22312_text%\",\"field#22312_text_xpath\":\"%field#22312_text_xpath%\",\"field#13323_textInner\":\"%field#13323_textInner%\",\"field#13323_textInner_xpath\":\"%field#13323_textInner_xpath%\",\"field#18794_text\":\"%field#18794_text%\",\"field#18794_text_xpath\":\"%field#18794_text_xpath%\",\"field#22303_textInner\":\"%field#22303_textInner%\",\"field#22303_textInner_xpath\":\"%field#22303_textInner_xpath%\",\"field#22279_link_href\":\"%field#22279_link_href%\",\"field#22279_link_href_xpath\":\"%field#22279_link_href_xpath%\"}",
+            "items_footer": "",
+            "footer": "]\n"
+        },
+        "tags": {
+            "price": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/span/span[1][@class='value']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/span/span[1][@class='value']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "link",
+                    "format": ""
+                }
+            ],
+            "link_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/div/a[1][@class='store ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/div/a[1][@class='store ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/div/a[1][@class='store ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "image": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/a/img[1][@class='picCore']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "image",
+                    "format": "URL"
+                }
+            ],
+            "title_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/span/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/h3/a[1][@class='history-item product ' or @class='history-item product j-p4plog']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/h3/a[1][@class='history-item product ' or @class='history-item product j-p4plog']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/h3/a[1][@class='history-item product ' or @class='history-item product j-p4plog']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/a[1][@class='rate-num ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/a[1][@class='rate-num ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/a[1][@class='rate-num ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/h3[1][@class='icon-hotproduct']/a[1][@class='history-item product ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/h3[1][@class='icon-hotproduct']/a[1][@class='history-item product ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/h3[1][@class='icon-hotproduct']/a[1][@class='history-item product ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/span/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/dl/dd/span[1][@class='value']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/dl/dd/span[1][@class='value']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/del",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/div/a[1][@class='store j-p4plog']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_8": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/div/a[1][@class='store j-p4plog']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/div/a[1][@class='store j-p4plog']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/span[3][@class='order-num']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "image_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/a/img[1][@class='picCore pic-Core-v']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_8": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li[@class='list-item  ']/div[1][@class='item']/div[2][@class='info']/span[1][@class='price price-m']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_9": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/h3",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_10": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/div/span/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#13337_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/span[1][@class='new-discount-rate']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22319_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/span/span[3][@class='unit']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22344_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/span/a/em",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#13337_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/span[1][@class='new-discount-rate']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#13372_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/div/span[@class='mobile-exclusive']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#13375_linkText": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/div/span/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22319_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/span/span[3][@class='unit']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22310_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/h3[1][@class='icon-hotproduct']/a[1][@class='history-item product ']/font",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22312_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/h3/a/font[1]/b[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22312_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/h3/a/font[1]/b[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#13323_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/h3/a/font[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18794_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/dl/dd",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22303_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/h3[1][@class='icon-hotproduct']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22279_link_href": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/ul/li/div/div/div/a[1][@class='picRind history-item ' or @class='picRind history-item j-p4plog']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ]
+        }
+    }
+]

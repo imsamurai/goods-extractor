@@ -51,6 +51,20 @@ app.post('/learn_fields', function (request, response) {
     controller.learn_fields();
 });
 
+app.post('/tests', function (request, response) {
+    console.log('Controller main tests');
+    var constructor = require('./controllers/main2');
+    var controller = new constructor.MainController(request, response);
+    controller.tests();
+});
+
+app.post('/learn', function (request, response) {
+    console.log('Controller main learn');
+    var constructor = require('./controllers/main2');
+    var controller = new constructor.MainController(request, response);
+    controller.learn();
+});
+
 var server = app.listen(8080, function(){
     console.log('Express server listening on port 8080');
 });

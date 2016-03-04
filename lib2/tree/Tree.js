@@ -18,6 +18,22 @@ function Tree(node, children, builder) {
         }), builder);
     };
 
+    this.transformInsideOut = function(children) {
+        var that = this.clone();
+        that.children = children || [];
+        var out = [];
+        if (this.children.length === 0) {
+            out.push(that);
+            return out;
+        } else {
+            out.push(that);
+        }
+
+        return out.concat(this.children.flatMap(function (childTree) {
+            return childTree.transformInsideOut([that]);
+        }));
+    };
+
     this.findLike = function(tree) {
         var items = [];
         for (var pos = 0; pos < this.children.length; pos++) {
@@ -27,6 +43,13 @@ function Tree(node, children, builder) {
         }
         return items;
 
+    };
+
+    this.findLikeMany = function(trees) {
+        var that = this;
+        return trees.filter(function(tree) {
+            return builder.findLikeComparator.run(that, tree);
+        });
     };
 
     this.simplify = function() {

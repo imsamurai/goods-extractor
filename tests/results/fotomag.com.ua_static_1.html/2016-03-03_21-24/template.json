@@ -1,0 +1,304 @@
+[
+    {
+        "priority": "0",
+        "mandatory": 0,
+        "state": 1,
+        "is_filled": 0,
+        "output_format": {
+            "type": "template",
+            "name": "json",
+            "header": "[\n",
+            "items_header": "",
+            "item": "{\"price\":\"%price%\",\"price_xpath\":\"%price_xpath%\",\"image\":\"%image%\",\"image_xpath\":\"%image_xpath%\",\"link\":\"%link%\",\"link_xpath\":\"%link_xpath%\",\"title\":\"%title%\",\"title_xpath\":\"%title_xpath%\",\"link_1\":\"%link_1%\",\"link_1_xpath\":\"%link_1_xpath%\",\"link_2\":\"%link_2%\",\"link_2_xpath\":\"%link_2_xpath%\",\"link_3\":\"%link_3%\",\"link_3_xpath\":\"%link_3_xpath%\",\"link_4\":\"%link_4%\",\"link_4_xpath\":\"%link_4_xpath%\",\"link_5\":\"%link_5%\",\"link_5_xpath\":\"%link_5_xpath%\",\"link_6\":\"%link_6%\",\"link_6_xpath\":\"%link_6_xpath%\",\"link_7\":\"%link_7%\",\"link_7_xpath\":\"%link_7_xpath%\",\"price_1\":\"%price_1%\",\"price_1_xpath\":\"%price_1_xpath%\",\"title_1\":\"%title_1%\",\"title_1_xpath\":\"%title_1_xpath%\",\"link_8\":\"%link_8%\",\"link_8_xpath\":\"%link_8_xpath%\",\"field#4313_textInner\":\"%field#4313_textInner%\",\"field#4313_textInner_xpath\":\"%field#4313_textInner_xpath%\",\"field#4313_text\":\"%field#4313_text%\",\"field#4313_text_xpath\":\"%field#4313_text_xpath%\",\"field#4314_text\":\"%field#4314_text%\",\"field#4314_text_xpath\":\"%field#4314_text_xpath%\",\"field#4312_textInner\":\"%field#4312_textInner%\",\"field#4312_textInner_xpath\":\"%field#4312_textInner_xpath%\",\"field#4312_text\":\"%field#4312_text%\",\"field#4312_text_xpath\":\"%field#4312_text_xpath%\"}",
+            "items_footer": "",
+            "footer": "]\n"
+        },
+        "tags": {
+            "price": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/b",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "image": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/a/img",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "image",
+                    "format": "URL"
+                }
+            ],
+            "link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/a[1][@class='name']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "link",
+                    "format": ""
+                }
+            ],
+            "title": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/a[1][@class='name']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/div[@class='links']/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/div[@class='links']/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/div[@class='links']/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/div[@class='links']/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div[2][@class='img']/a[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/div[@class='descr']/a[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/div[@class='descr']/a[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/del",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/div[@class='links']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_8": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/div[1][@class='promo']/a[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#4313_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/small/span[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#4313_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/small/span[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#4314_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/div[@class='descr']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#4312_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/small/span[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#4312_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/ul/li/div/small/span[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ]
+        }
+    }
+]

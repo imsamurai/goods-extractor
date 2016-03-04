@@ -1,0 +1,229 @@
+[
+    {
+        "priority": "0",
+        "mandatory": 0,
+        "state": 1,
+        "is_filled": 0,
+        "output_format": {
+            "type": "template",
+            "name": "json",
+            "header": "[\n",
+            "items_header": "",
+            "item": "{\"image\":\"%image%\",\"image_xpath\":\"%image_xpath%\",\"title\":\"%title%\",\"title_xpath\":\"%title_xpath%\",\"title_1\":\"%title_1%\",\"title_1_xpath\":\"%title_1_xpath%\",\"link\":\"%link%\",\"link_xpath\":\"%link_xpath%\",\"link_1\":\"%link_1%\",\"link_1_xpath\":\"%link_1_xpath%\",\"title_2\":\"%title_2%\",\"title_2_xpath\":\"%title_2_xpath%\",\"price\":\"%price%\",\"price_xpath\":\"%price_xpath%\",\"price_1\":\"%price_1%\",\"price_1_xpath\":\"%price_1_xpath%\",\"price_2\":\"%price_2%\",\"price_2_xpath\":\"%price_2_xpath%\",\"field#18234_textInner\":\"%field#18234_textInner%\",\"field#18234_textInner_xpath\":\"%field#18234_textInner_xpath%\",\"field#18236_text\":\"%field#18236_text%\",\"field#18236_text_xpath\":\"%field#18236_text_xpath%\",\"field#18236_textInner\":\"%field#18236_textInner%\",\"field#18236_textInner_xpath\":\"%field#18236_textInner_xpath%\",\"field#18225_textInner\":\"%field#18225_textInner%\",\"field#18225_textInner_xpath\":\"%field#18225_textInner_xpath%\",\"field#18234_text\":\"%field#18234_text%\",\"field#18234_text_xpath\":\"%field#18234_text_xpath%\"}",
+            "items_footer": "",
+            "footer": "]\n"
+        },
+        "tags": {
+            "image": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li/div/a/img",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "image",
+                    "format": "URL"
+                }
+            ],
+            "title": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li/div/h4/a/strong",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li/div/h4/a/strong",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li/div/h4/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "link",
+                    "format": ""
+                }
+            ],
+            "link_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li/div/a[1][@class='thumb tdnone scale1 detailsLink linkWithHash ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li/div/h4/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li[@class='tleft rel fleft ad_idiSZLC ' or @class='tleft rel fleft ad_idiSZL6 ' or @class='tleft rel fleft ad_idiSZL2 ']/div[3][@class='price ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li[@class='tleft rel fleft ad_idiSZLv ' or @class='tleft rel fleft ad_idiSZL6 ' or @class='tleft rel fleft ad_idiSZL2 ']/div[3][@class='price ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li[@class='tleft rel fleft ad_idiSZMs ' or @class='tleft rel fleft ad_idiSZM0 ']/div[3][@class='price ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18234_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li/div/p/span",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18236_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li/div/p/span/span",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18236_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li/div/p/span/span",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18225_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li/div/h4",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18234_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/section/div/section/ul/li/div/p/span",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ]
+        }
+    }
+]

@@ -3,8 +3,8 @@
  */
 function TreeComparatorFull(rate, cutoff) {
 
-    var nameRate = 0.6;
-    var attributesRate = 0.3;
+    var nameRate = 0.51;
+    var attributesRate = 0.39;
     var attributeClassRate = 0.8;
     var attributeIdRate = 0.1;
     var attributeOtherRate = 0.1;

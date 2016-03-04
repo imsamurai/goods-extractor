@@ -7,6 +7,8 @@ function FieldVariant(fields) {
     this.record = null;
     this.tree = null;
     this.rates = null;
+    this.fields = fields;
+    this.field = null;
 
     setField(fields[0]);
 
@@ -15,6 +17,7 @@ function FieldVariant(fields) {
         self.record = field.record;
         self.tree = field.tree;
         self.rates = field.rates;
+        self.field = field;
     }
 
     this.refresh = function() {

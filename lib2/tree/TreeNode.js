@@ -34,12 +34,17 @@ function TreeNode(DOMNode, builder) {
     }
 
     function _getAttributes() {
-        var atts = DOMNode.attributes;
-        var attr = {};
-        for (var i = 0; i < atts.length; i++) {
-            attr[atts[i].name] = atts[i].value;
+        var attrRegexp = /([^=" ]+)="([^"]*)"/g;
+        var attributes = {};
+        var tag = DOMNode.outerHTML.match(/<[^>]+>/);
+        if (!tag) {
+            return attributes;
         }
-        return Object.sortByKeys(attr);
+        var match;
+        while(match = attrRegexp.exec(tag[0])) {
+            attributes[match[1].toLowerCase()] = match[2].trim();
+        }
+        return Object.sortByKeys(attributes);
     }
 }
 

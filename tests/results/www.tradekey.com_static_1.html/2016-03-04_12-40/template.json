@@ -1,0 +1,454 @@
+[
+    {
+        "priority": "0",
+        "mandatory": 0,
+        "state": 1,
+        "is_filled": 0,
+        "output_format": {
+            "type": "template",
+            "name": "json",
+            "header": "[\n",
+            "items_header": "",
+            "item": "{\"link\":\"%link%\",\"link_xpath\":\"%link_xpath%\",\"image\":\"%image%\",\"image_xpath\":\"%image_xpath%\",\"link_1\":\"%link_1%\",\"link_1_xpath\":\"%link_1_xpath%\",\"link_2\":\"%link_2%\",\"link_2_xpath\":\"%link_2_xpath%\",\"title\":\"%title%\",\"title_xpath\":\"%title_xpath%\",\"price\":\"%price%\",\"price_xpath\":\"%price_xpath%\",\"price_1\":\"%price_1%\",\"price_1_xpath\":\"%price_1_xpath%\",\"price_2\":\"%price_2%\",\"price_2_xpath\":\"%price_2_xpath%\",\"price_3\":\"%price_3%\",\"price_3_xpath\":\"%price_3_xpath%\",\"link_3\":\"%link_3%\",\"link_3_xpath\":\"%link_3_xpath%\",\"link_4\":\"%link_4%\",\"link_4_xpath\":\"%link_4_xpath%\",\"link_5\":\"%link_5%\",\"link_5_xpath\":\"%link_5_xpath%\",\"title_1\":\"%title_1%\",\"title_1_xpath\":\"%title_1_xpath%\",\"title_2\":\"%title_2%\",\"title_2_xpath\":\"%title_2_xpath%\",\"title_3\":\"%title_3%\",\"title_3_xpath\":\"%title_3_xpath%\",\"field#32179_textInner\":\"%field#32179_textInner%\",\"field#32179_textInner_xpath\":\"%field#32179_textInner_xpath%\",\"field#32130_text\":\"%field#32130_text%\",\"field#32130_text_xpath\":\"%field#32130_text_xpath%\",\"field#32131_text\":\"%field#32131_text%\",\"field#32131_text_xpath\":\"%field#32131_text_xpath%\",\"field#32182_text\":\"%field#32182_text%\",\"field#32182_text_xpath\":\"%field#32182_text_xpath%\",\"field#32170_text\":\"%field#32170_text%\",\"field#32170_text_xpath\":\"%field#32170_text_xpath%\",\"field#32170_textInner\":\"%field#32170_textInner%\",\"field#32170_textInner_xpath\":\"%field#32170_textInner_xpath%\",\"field#31638_link_rel\":\"%field#31638_link_rel%\",\"field#31638_link_rel_xpath\":\"%field#31638_link_rel_xpath%\",\"field#32293_text\":\"%field#32293_text%\",\"field#32293_text_xpath\":\"%field#32293_text_xpath%\",\"field#32359_text\":\"%field#32359_text%\",\"field#32359_text_xpath\":\"%field#32359_text_xpath%\",\"field#32128_text\":\"%field#32128_text%\",\"field#32128_text_xpath\":\"%field#32128_text_xpath%\",\"field#32424_link_href\":\"%field#32424_link_href%\",\"field#32424_link_href_xpath\":\"%field#32424_link_href_xpath%\",\"field#10747_text\":\"%field#10747_text%\",\"field#10747_text_xpath\":\"%field#10747_text_xpath%\",\"field#32129_text\":\"%field#32129_text%\",\"field#32129_text_xpath\":\"%field#32129_text_xpath%\",\"field#32179_text\":\"%field#32179_text%\",\"field#32179_text_xpath\":\"%field#32179_text_xpath%\"}",
+            "items_footer": "",
+            "footer": "]\n"
+        },
+        "tags": {
+            "link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/a[1][@class='product_title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "link",
+                    "format": ""
+                }
+            ],
+            "image": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/div/table/tbody/tr/td/a/img",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "image",
+                    "format": "URL"
+                }
+            ],
+            "link_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/a[1][@class='trust_point_link tooltip']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/a[1][@class='company']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_14' or @id='list_15' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_22' or @id='list_23' or @id='list_24']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[1]/div[1]/a[1][@class='product_title']/h2[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_24']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1][@class='attribute_table']/tbody[1]/tr/td[1]/span[2][@class='attribute_value']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_24']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1][@class='attribute_table']/tbody[1]/tr/td[1]/span[2][@class='attribute_value']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_24']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1][@class='attribute_table']/tbody[1]/tr/td[1]/span[2][@class='attribute_value']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_24']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1][@class='attribute_table']/tbody[1]/tr/td[1]/span[2][@class='attribute_value']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/div/table/tbody/tr/td/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/span/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/a[1][@class='company']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/a[1][@class='company']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/a[1][@class='product_title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32179_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/span[1][@class='attribute_label']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32130_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[1]/div[1]/a[1][@class='product_title']/h2[1]/strong[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32131_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[1]/div[1]/a[1][@class='product_title']/h2[1]/strong[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32182_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div[5][@class='noUnderLine']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32170_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/span[1][@class='attribute_label']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32170_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/span[1][@class='attribute_label']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#31638_link_rel": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/div/table/tbody/tr/td/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32293_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr[2]/td[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32359_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/span/font",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32128_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[1]/div[1]/a[1][@class='product_title']/h2[1]/strong[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32424_link_href": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/a[1][@class='contact_now_link']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#10747_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/strong[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32129_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[1]/div[1]/a[1][@class='product_title']/h2[1]/strong[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32179_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/span[1][@class='attribute_label']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ]
+        }
+    }
+]

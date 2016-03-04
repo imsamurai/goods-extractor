@@ -1,88 +1,63 @@
 /**
  * Created by imsamurai on 15.02.2016.
  */
-function FieldsExtractor(fieldValueExtractor, fieldTagger, metricRate) {
+function FieldsExtractor(fieldValueExtractor, fieldTagger, metricRate, fieldCutoff) {
     this.run = function (recordCollection) {
-        var fieldGroups = extract(recordCollection.tree.children, recordCollection.records.map(function (record) {
-            return record.tree;
-        }), recordCollection.records, []);
+        var trees = recordCollection.records.map(function (record) {
+            return record.tree.transformInsideOut();
+        });
+        var seedTrees = completeSeeds(recordCollection.tree.transformInsideOut(), trees);
+        var fieldGroups = extract(seedTrees, trees, recordCollection.records, []);
         var fieldCollection = fieldTagger.run(groupFields(new FieldCollection(fieldGroups, recordCollection)));
 
-        var filterType = {};
-        fieldCollection.fieldGroups = fieldCollection.fieldGroups.sort(function (fieldGroup1, fieldGroup2) {
+        fieldCollection.fieldGroups = filterGroups(fieldCollection.fieldGroups).sort(function (fieldGroup1, fieldGroup2) {
             if (fieldGroup1.rate > fieldGroup2.rate) {
                 return -1;
             } else if (fieldGroup1.rate < fieldGroup2.rate) {
                 return 1;
             }
             return 0;
-        }).filter(function (fieldGroup) {
-            return fieldGroup.rate > 0;
-        }).filter(function (fieldGroup) {
-            if (filterType[fieldGroup.type]) {
-                return false;
-            }
-            filterType[fieldGroup.type] = 1;
-            return true;
-        });
+        }).map(filterFields);
 
 
-        fieldCollection.rate = (metricRate.rateGroups(fieldCollection.fieldGroups) + recordCollection.rate) / 2;
+        fieldCollection.rate = (metricRate.rateGroups(fieldCollection.getBestGroups()) + recordCollection.rate) / 2;
         //console.log(fieldCollection);
         return fieldCollection;
     };
 
-
-    function extract(seedTrees, trees, records, fieldGroupsAcc) {
-        return fieldGroupsAcc.concat(seedTrees.flatMap(function (seedTree) {
-                var extractors = fieldValueExtractor.detectExtractors(seedTree);
-                var fieldGroups = extractors.map(function (extractor) {
-                    var extractorName = extractor[0];
-                    var extractorMethod = extractor[1];
-
-                    var fields = records.flatMap(function (record, index) {
-                        var tree = trees[index];
-                        //TODO: implement case if findLike returns more than 1 tree
-                        return tree.findLike(seedTree).map(function (matchTree) {
-                            var val = extractorMethod(matchTree);
-                            return new Field(val, record, matchTree);
-
-                        });
-                    });
-
-                    return new FieldGroup(fields, 'field#' + seedTree.node.id + '_' + extractorName, null, 0.0, seedTree);
-
-                });
+    function completeSeeds(seedTrees, trees) {
+        return trees.reduce(function(seeds, tree) {
+            return seeds.concat(tree.filter(function(treeItem) {
+                return treeItem.findLikeMany(seeds).length === 0;
+            }));
+        }, seedTrees);
+    }
 
 
-                //var subTreesRecords = records.flatMap(function (record, index) {
-                //    return trees[index].findLike(seedTree).map(function (matchTree) {
-                //        return [matchTree, record];
-                //
-                //    });
-                //});
+    function extract(seedTrees, trees, records) {
+        return seedTrees.flatMap(function (seedTree) {
+            var extractors = fieldValueExtractor.detectExtractors(seedTree);
+            return extractors.map(function (extractor) {
+                var extractorName = extractor[0];
+                var extractorMethod = extractor[1];
 
-                var subTreesRecords = fieldGroups.flatMap(function(fieldGroup) {
-                    return fieldGroup.fields.map(function (field) {
-                        return [field.tree, field.record];
+                var fields = records.flatMap(function (record, index) {
+                    return seedTree.findLikeMany(trees[index]).map(function (matchTree) {
+                        var val = extractorMethod(matchTree);
+                        return new Field(val, record, matchTree);
+
                     });
                 });
 
-                return extract(seedTree.children, subTreesRecords.map(function (it) {
-                    return it[0];
-                }), subTreesRecords.map(function (it) {
-                    return it[1];
-                }), fieldGroups);
-            })).filter(function(fg) {
-            return fg.fields.filter(function(field) {
-                    return field.value !== "";
-                }).length > 0;
+                return new FieldGroup(fields, 'field#' + seedTree.node.id + '_' + extractorName, null, 0.0, seedTree);
+
+            });
         });
     }
 
     function groupFields(fieldCollection) {
-        fieldCollection.fieldGroups.forEach(function(fieldGroup) {
-            var fields = fieldGroup.fields.reduce(function(acc, field) {
+        fieldCollection.fieldGroups.forEach(function (fieldGroup) {
+            var fields = fieldGroup.fields.reduce(function (acc, field) {
                 if (!acc[field.record.id]) {
                     acc[field.record.id] = new FieldVariant([field]);
                 } else {
@@ -93,6 +68,22 @@ function FieldsExtractor(fieldValueExtractor, fieldTagger, metricRate) {
             fieldGroup.fields = Object.values(fields);
         });
         return fieldCollection;
+    }
+
+    function filterGroups(fieldGroups) {
+        return fieldGroups.filter(function (fieldGroup) {
+            var fieldValues = fieldGroup.fields.map(function (field) {
+                return field.value;
+            });
+            return fieldValues.unique().length > 1;
+        });
+    }
+
+    function filterFields(fieldGroup) {
+        fieldGroup.fields = fieldGroup.fields.filter(function (field) {
+            return fieldGroup.type == null || field.rates[fieldGroup.type] > fieldCutoff;
+        });
+        return fieldGroup;
     }
 
 }

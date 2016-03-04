@@ -1,0 +1,1054 @@
+[
+    {
+        "priority": "0",
+        "mandatory": 0,
+        "state": 1,
+        "is_filled": 0,
+        "output_format": {
+            "type": "template",
+            "name": "json",
+            "header": "[\n",
+            "items_header": "",
+            "item": "{\"image\":\"%image%\",\"image_xpath\":\"%image_xpath%\",\"title\":\"%title%\",\"title_xpath\":\"%title_xpath%\",\"link\":\"%link%\",\"link_xpath\":\"%link_xpath%\",\"link_1\":\"%link_1%\",\"link_1_xpath\":\"%link_1_xpath%\",\"link_2\":\"%link_2%\",\"link_2_xpath\":\"%link_2_xpath%\",\"link_3\":\"%link_3%\",\"link_3_xpath\":\"%link_3_xpath%\",\"title_1\":\"%title_1%\",\"title_1_xpath\":\"%title_1_xpath%\",\"link_4\":\"%link_4%\",\"link_4_xpath\":\"%link_4_xpath%\",\"title_2\":\"%title_2%\",\"title_2_xpath\":\"%title_2_xpath%\",\"title_3\":\"%title_3%\",\"title_3_xpath\":\"%title_3_xpath%\",\"title_4\":\"%title_4%\",\"title_4_xpath\":\"%title_4_xpath%\",\"link_5\":\"%link_5%\",\"link_5_xpath\":\"%link_5_xpath%\",\"link_6\":\"%link_6%\",\"link_6_xpath\":\"%link_6_xpath%\",\"link_7\":\"%link_7%\",\"link_7_xpath\":\"%link_7_xpath%\",\"link_8\":\"%link_8%\",\"link_8_xpath\":\"%link_8_xpath%\",\"link_9\":\"%link_9%\",\"link_9_xpath\":\"%link_9_xpath%\",\"link_10\":\"%link_10%\",\"link_10_xpath\":\"%link_10_xpath%\",\"link_11\":\"%link_11%\",\"link_11_xpath\":\"%link_11_xpath%\",\"link_12\":\"%link_12%\",\"link_12_xpath\":\"%link_12_xpath%\",\"title_5\":\"%title_5%\",\"title_5_xpath\":\"%title_5_xpath%\",\"title_6\":\"%title_6%\",\"title_6_xpath\":\"%title_6_xpath%\",\"title_7\":\"%title_7%\",\"title_7_xpath\":\"%title_7_xpath%\",\"title_8\":\"%title_8%\",\"title_8_xpath\":\"%title_8_xpath%\",\"title_9\":\"%title_9%\",\"title_9_xpath\":\"%title_9_xpath%\",\"title_10\":\"%title_10%\",\"title_10_xpath\":\"%title_10_xpath%\",\"title_11\":\"%title_11%\",\"title_11_xpath\":\"%title_11_xpath%\",\"title_12\":\"%title_12%\",\"title_12_xpath\":\"%title_12_xpath%\",\"title_13\":\"%title_13%\",\"title_13_xpath\":\"%title_13_xpath%\",\"title_14\":\"%title_14%\",\"title_14_xpath\":\"%title_14_xpath%\",\"title_15\":\"%title_15%\",\"title_15_xpath\":\"%title_15_xpath%\",\"title_16\":\"%title_16%\",\"title_16_xpath\":\"%title_16_xpath%\",\"title_17\":\"%title_17%\",\"title_17_xpath\":\"%title_17_xpath%\",\"title_18\":\"%title_18%\",\"title_18_xpath\":\"%title_18_xpath%\",\"link_13\":\"%link_13%\",\"link_13_xpath\":\"%link_13_xpath%\",\"title_19\":\"%title_19%\",\"title_19_xpath\":\"%title_19_xpath%\",\"title_20\":\"%title_20%\",\"title_20_xpath\":\"%title_20_xpath%\",\"title_21\":\"%title_21%\",\"title_21_xpath\":\"%title_21_xpath%\",\"price\":\"%price%\",\"price_xpath\":\"%price_xpath%\",\"price_1\":\"%price_1%\",\"price_1_xpath\":\"%price_1_xpath%\",\"title_22\":\"%title_22%\",\"title_22_xpath\":\"%title_22_xpath%\",\"title_23\":\"%title_23%\",\"title_23_xpath\":\"%title_23_xpath%\",\"title_24\":\"%title_24%\",\"title_24_xpath\":\"%title_24_xpath%\",\"title_25\":\"%title_25%\",\"title_25_xpath\":\"%title_25_xpath%\",\"title_26\":\"%title_26%\",\"title_26_xpath\":\"%title_26_xpath%\",\"field#21822_textInner\":\"%field#21822_textInner%\",\"field#21822_textInner_xpath\":\"%field#21822_textInner_xpath%\",\"field#21822_text\":\"%field#21822_text%\",\"field#21822_text_xpath\":\"%field#21822_text_xpath%\",\"field#21815_linkText\":\"%field#21815_linkText%\",\"field#21815_linkText_xpath\":\"%field#21815_linkText_xpath%\",\"field#14644_linkText\":\"%field#14644_linkText%\",\"field#14644_linkText_xpath\":\"%field#14644_linkText_xpath%\",\"field#14646_text\":\"%field#14646_text%\",\"field#14646_text_xpath\":\"%field#14646_text_xpath%\",\"field#14646_textInner\":\"%field#14646_textInner%\",\"field#14646_textInner_xpath\":\"%field#14646_textInner_xpath%\",\"field#13499_text\":\"%field#13499_text%\",\"field#13499_text_xpath\":\"%field#13499_text_xpath%\",\"field#21787_textInner\":\"%field#21787_textInner%\",\"field#21787_textInner_xpath\":\"%field#21787_textInner_xpath%\",\"field#14685_linkText\":\"%field#14685_linkText%\",\"field#14685_linkText_xpath\":\"%field#14685_linkText_xpath%\",\"field#14687_text\":\"%field#14687_text%\",\"field#14687_text_xpath\":\"%field#14687_text_xpath%\",\"field#14687_textInner\":\"%field#14687_textInner%\",\"field#14687_textInner_xpath\":\"%field#14687_textInner_xpath%\",\"field#21787_text\":\"%field#21787_text%\",\"field#21787_text_xpath\":\"%field#21787_text_xpath%\",\"field#14728_textInner\":\"%field#14728_textInner%\",\"field#14728_textInner_xpath\":\"%field#14728_textInner_xpath%\",\"field#21785_linkText\":\"%field#21785_linkText%\",\"field#21785_linkText_xpath\":\"%field#21785_linkText_xpath%\",\"field#14747_linkText\":\"%field#14747_linkText%\",\"field#14747_linkText_xpath\":\"%field#14747_linkText_xpath%\",\"field#21870_textInner\":\"%field#21870_textInner%\",\"field#21870_textInner_xpath\":\"%field#21870_textInner_xpath%\",\"field#21870_text\":\"%field#21870_text%\",\"field#21870_text_xpath\":\"%field#21870_text_xpath%\",\"field#15115_text\":\"%field#15115_text%\",\"field#15115_text_xpath\":\"%field#15115_text_xpath%\",\"field#15115_textInner\":\"%field#15115_textInner%\",\"field#15115_textInner_xpath\":\"%field#15115_textInner_xpath%\",\"field#13499_textInner\":\"%field#13499_textInner%\",\"field#13499_textInner_xpath\":\"%field#13499_textInner_xpath%\",\"field#21853_textInner\":\"%field#21853_textInner%\",\"field#21853_textInner_xpath\":\"%field#21853_textInner_xpath%\",\"field#15169_text\":\"%field#15169_text%\",\"field#15169_text_xpath\":\"%field#15169_text_xpath%\",\"field#18778_text\":\"%field#18778_text%\",\"field#18778_text_xpath\":\"%field#18778_text_xpath%\",\"field#18778_textInner\":\"%field#18778_textInner%\",\"field#18778_textInner_xpath\":\"%field#18778_textInner_xpath%\",\"field#20872_imageSrc\":\"%field#20872_imageSrc%\",\"field#20872_imageSrc_xpath\":\"%field#20872_imageSrc_xpath%\"}",
+            "items_footer": "",
+            "footer": "]\n"
+        },
+        "tags": {
+            "image": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/a/img",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "image",
+                    "format": "URL"
+                }
+            ],
+            "title": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/a/h2",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div[1][@class='a-row a-spacing-mini']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "link",
+                    "format": ""
+                }
+            ],
+            "link_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div[2][@class='a-row a-spacing-small']/a[1][@class='a-link-normal s-access-detail-page  a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[@class='a-row a-spacing-mini']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div[2][@class='a-row a-spacing-small']/a[1][@class='a-link-normal s-access-detail-page  a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div[@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div[1][@class='a-row a-spacing-mini']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/span/span/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_0' or @id='result_1' or @id='result_3' or @id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_13' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[@class='a-row a-spacing-mini']/div[1][@class='a-row a-spacing-mini']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[1][@class='a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div[@class='a-row a-spacing-none']/a[1][@class='a-link-normal s-access-detail-page  a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_0' or @id='result_1' or @id='result_2' or @id='result_3' or @id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_13' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[1][@class='a-fixed-left-grid-col a-col-left']/div[1][@class='a-row']/div[1][@class='a-column a-span12 a-text-center']/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[1][@class='a-row a-spacing-small']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_8": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[1][@class='a-row a-spacing-none']/a[1][@class='a-link-normal   a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_9": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[1][@class='a-row a-spacing-none']/a[1][@class='a-link-normal   a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_10": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/table/tbody/tr/td[2][@class='a-text-left s-full-width-column']/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_11": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/table/tbody/tr/td[1][@class='a-text-left a-nowrap']/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_12": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_0' or @id='result_1' or @id='result_3' or @id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_13' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[@class='a-row a-spacing-mini']/div[1][@class='a-row a-spacing-mini']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[1][@class='a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div/a/span[4][@class='a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div/a/span[4][@class='a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_8": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_0' or @id='result_1' or @id='result_2' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[@class='a-column a-span5 a-span-last' or @class='a-column a-span7']/div[@class='a-row a-spacing-mini']/div[1][@class='a-row a-spacing-none']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_9": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_0' or @id='result_1' or @id='result_2' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[@class='a-column a-span5 a-span-last' or @class='a-column a-span7']/div[@class='a-row a-spacing-mini']/div[1][@class='a-row a-spacing-none']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_10": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_0' or @id='result_1' or @id='result_2' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[@class='a-column a-span5 a-span-last' or @class='a-column a-span7']/div[@class='a-row a-spacing-mini']/div[1][@class='a-row a-spacing-none']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_11": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_0' or @id='result_1' or @id='result_2' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[@class='a-column a-span5 a-span-last' or @class='a-column a-span7']/div[@class='a-row a-spacing-mini']/div[1][@class='a-row a-spacing-none']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_12": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div[@class='a-row a-spacing-none']/a[1][@class='a-link-normal s-access-detail-page  a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_13": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[3][@class='a-row a-spacing-mini']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_14": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[5][@class='a-row a-spacing-none']/a[1][@class='a-link-normal   a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_15": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[5][@class='a-row a-spacing-none']/a[1][@class='a-link-normal   a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_16": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/a/h3",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_17": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/a/h3",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_18": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-top-mini']/div[@class='a-row a-spacing-none' or @class='a-row a-spacing-micro']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_13": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div/a[1][@class='a-link-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_19": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-top-mini']/div[@class='a-row a-spacing-none' or @class='a-row a-spacing-micro']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_20": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[@class='a-row a-spacing-mini']/span[@class='a-size-small a-color-secondary a-text-bold' or @class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_21": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/span[1][@class='a-size-small a-color-secondary a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_1' or @id='result_5' or @id='result_9' or @id='result_10']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-none']/span[2][@class='a-size-small a-color-secondary a-text-strike']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_1' or @id='result_5' or @id='result_9' or @id='result_10']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-none']/span[2][@class='a-size-small a-color-secondary a-text-strike']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_22": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_15' or @id='result_16']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-mini' or @class='a-row a-spacing-small']/span[1]/span[1][@class='a-declarative']/a[1][@class='a-popover-trigger a-declarative']/i[1][@class='a-icon a-icon-star a-star-5']/span[1][@class='a-icon-alt']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_23": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_15' or @id='result_16']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-mini' or @class='a-row a-spacing-small']/span[1]/span[1][@class='a-declarative']/a[1][@class='a-popover-trigger a-declarative']/i[1][@class='a-icon a-icon-star a-star-5']/span[1][@class='a-icon-alt']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_24": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[7][@class='a-row a-spacing-none']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_25": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[7][@class='a-row a-spacing-none']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_26": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_9' or @id='result_15' or @id='result_16']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-mini' or @class='a-row a-spacing-small']/span[1]/span[1][@class='a-declarative']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#21822_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div[2][@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[1][@class='a-size-base a-color-price a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#21822_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div[2][@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[1][@class='a-size-base a-color-price a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#21815_linkText": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div[2][@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#14644_linkText": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#14646_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div/a/span[1][@class='a-size-base a-color-price s-price a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#14646_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div/a/span[1][@class='a-size-base a-color-price s-price a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#13499_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/span[3][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#21787_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/a/span",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#14685_linkText": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/table/tbody/tr/td[1][@class='a-text-left a-nowrap']/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#14687_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/table/tbody/tr/td/a/span[1][@class='a-size-small a-color-secondary a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#14687_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/table/tbody/tr/td/a/span[1][@class='a-size-small a-color-secondary a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#21787_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/a/span",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#14728_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[1][@class='a-row a-spacing-small']/span[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#21785_linkText": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#14747_linkText": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[1][@class='a-row a-spacing-small']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#21870_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/span/span/a/i[1][@class='a-icon a-icon-star a-star-4']/span[1][@class='a-icon-alt']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#21870_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/span/span/a/i[1][@class='a-icon a-icon-star a-star-4']/span[1][@class='a-icon-alt']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#15115_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div/span[1][@class='a-size-small a-color-price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#15115_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div/span[1][@class='a-size-small a-color-price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#13499_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/span[3][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#21853_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div[3][@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-mini']/span[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#15169_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/span/em",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18778_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/span/span/a/i[1][@class='a-icon a-icon-star a-star-4-5']/span[1][@class='a-icon-alt']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18778_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/span/span/a/i[1][@class='a-icon a-icon-star a-star-4-5']/span[1][@class='a-icon-alt']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#20872_imageSrc": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/h5/img",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ]
+        }
+    }
+]

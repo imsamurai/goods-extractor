@@ -1,0 +1,664 @@
+[
+    {
+        "priority": "0",
+        "mandatory": 0,
+        "state": 1,
+        "is_filled": 0,
+        "output_format": {
+            "type": "template",
+            "name": "json",
+            "header": "[\n",
+            "items_header": "",
+            "item": "{\"link\":\"%link%\",\"link_xpath\":\"%link_xpath%\",\"link_1\":\"%link_1%\",\"link_1_xpath\":\"%link_1_xpath%\",\"link_2\":\"%link_2%\",\"link_2_xpath\":\"%link_2_xpath%\",\"image\":\"%image%\",\"image_xpath\":\"%image_xpath%\",\"title\":\"%title%\",\"title_xpath\":\"%title_xpath%\",\"title_1\":\"%title_1%\",\"title_1_xpath\":\"%title_1_xpath%\",\"title_2\":\"%title_2%\",\"title_2_xpath\":\"%title_2_xpath%\",\"title_3\":\"%title_3%\",\"title_3_xpath\":\"%title_3_xpath%\",\"title_4\":\"%title_4%\",\"title_4_xpath\":\"%title_4_xpath%\",\"title_5\":\"%title_5%\",\"title_5_xpath\":\"%title_5_xpath%\",\"title_6\":\"%title_6%\",\"title_6_xpath\":\"%title_6_xpath%\",\"title_7\":\"%title_7%\",\"title_7_xpath\":\"%title_7_xpath%\",\"price\":\"%price%\",\"price_xpath\":\"%price_xpath%\",\"title_8\":\"%title_8%\",\"title_8_xpath\":\"%title_8_xpath%\",\"link_3\":\"%link_3%\",\"link_3_xpath\":\"%link_3_xpath%\",\"link_4\":\"%link_4%\",\"link_4_xpath\":\"%link_4_xpath%\",\"link_5\":\"%link_5%\",\"link_5_xpath\":\"%link_5_xpath%\",\"link_6\":\"%link_6%\",\"link_6_xpath\":\"%link_6_xpath%\",\"image_1\":\"%image_1%\",\"image_1_xpath\":\"%image_1_xpath%\",\"title_9\":\"%title_9%\",\"title_9_xpath\":\"%title_9_xpath%\",\"title_10\":\"%title_10%\",\"title_10_xpath\":\"%title_10_xpath%\",\"title_11\":\"%title_11%\",\"title_11_xpath\":\"%title_11_xpath%\",\"image_2\":\"%image_2%\",\"image_2_xpath\":\"%image_2_xpath%\",\"title_12\":\"%title_12%\",\"title_12_xpath\":\"%title_12_xpath%\",\"title_13\":\"%title_13%\",\"title_13_xpath\":\"%title_13_xpath%\",\"link_7\":\"%link_7%\",\"link_7_xpath\":\"%link_7_xpath%\",\"title_14\":\"%title_14%\",\"title_14_xpath\":\"%title_14_xpath%\",\"title_15\":\"%title_15%\",\"title_15_xpath\":\"%title_15_xpath%\",\"title_16\":\"%title_16%\",\"title_16_xpath\":\"%title_16_xpath%\",\"field#24691_text\":\"%field#24691_text%\",\"field#24691_text_xpath\":\"%field#24691_text_xpath%\",\"field#45982_text\":\"%field#45982_text%\",\"field#45982_text_xpath\":\"%field#45982_text_xpath%\",\"field#45877_text\":\"%field#45877_text%\",\"field#45877_text_xpath\":\"%field#45877_text_xpath%\",\"field#45874_text\":\"%field#45874_text%\",\"field#45874_text_xpath\":\"%field#45874_text_xpath%\",\"field#45871_text\":\"%field#45871_text%\",\"field#45871_text_xpath\":\"%field#45871_text_xpath%\",\"field#45868_text\":\"%field#45868_text%\",\"field#45868_text_xpath\":\"%field#45868_text_xpath%\",\"field#45865_text\":\"%field#45865_text%\",\"field#45865_text_xpath\":\"%field#45865_text_xpath%\",\"field#45970_text\":\"%field#45970_text%\",\"field#45970_text_xpath\":\"%field#45970_text_xpath%\",\"field#26698_text\":\"%field#26698_text%\",\"field#26698_text_xpath\":\"%field#26698_text_xpath%\",\"field#26701_text\":\"%field#26701_text%\",\"field#26701_text_xpath\":\"%field#26701_text_xpath%\",\"field#26709_textInner\":\"%field#26709_textInner%\",\"field#26709_textInner_xpath\":\"%field#26709_textInner_xpath%\",\"field#45862_text\":\"%field#45862_text%\",\"field#45862_text_xpath\":\"%field#45862_text_xpath%\",\"field#45848_text\":\"%field#45848_text%\",\"field#45848_text_xpath\":\"%field#45848_text_xpath%\",\"field#45843_text\":\"%field#45843_text%\",\"field#45843_text_xpath\":\"%field#45843_text_xpath%\"}",
+            "items_footer": "",
+            "footer": "]\n"
+        },
+        "tags": {
+            "link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/a[1][@class='ui2-button ui2-button-default ui2-button-primary ui2-button-small csp']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "link",
+                    "format": ""
+                }
+            ],
+            "link_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/h2/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='stitle util-ellipsis']/a[2]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "image": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a/img",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "image",
+                    "format": "URL"
+                }
+            ],
+            "title": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='stitle util-ellipsis']/a[2]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']/b[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']/b[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']/b[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']/b[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']/b[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']/b[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/h2/a/strong",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='price']/b[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_8": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/h2/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[@class='fc video']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[1][@class='ui2-tag ui2-tag-basic ui2-tag-check ui2-tag-small']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[1][@class='ui2-tag ui2-tag-basic ui2-tag-check ui2-tag-small']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[1][@class='ui2-tag ui2-tag-basic ui2-tag-check ui2-tag-small']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "image_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div[@class='m-product-item ']/div[1][@class='item-content']/div[1][@class='item-grid']/div[2][@class='item-sub']/div[1][@class='sub-wrap']/div[1][@class='util-valign img-wrap']/a[1][@class='util-valign-ctn']/img[1][@class='util-valign-inner']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_9": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[@class='ui2-tag ui2-tag-basic ui2-tag-check ui2-tag-small']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_10": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[@class='ui2-tag ui2-tag-basic ui2-tag-check ui2-tag-small']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_11": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[@class='ui2-tag ui2-tag-basic ui2-tag-check ui2-tag-small']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "image_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div[@class='m-product-item ']/div[1][@class='item-content']/div[1][@class='item-grid']/div[2][@class='item-sub']/div[1][@class='sub-wrap']/div[1][@class='util-valign img-wrap']/a[1][@class='util-valign-ctn']/img[1][@class='util-valign-inner']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_12": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a/div",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_13": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a/div",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[1][@class='util-valign-ctn']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_14": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span[1][@class='f-tag']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_15": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span[1][@class='f-tag']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_16": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/ul/li/div[1][@class='lab']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#24691_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/ul/li/div/b",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#45982_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a/div",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#45877_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#45874_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#45871_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#45868_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#45865_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#45970_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/ul/li[1]/div[2][@class='num']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#26698_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div[@class='m-product-item']/div[1][@class='item-content']/div[1][@class='item-grid']/div[1][@class='item-col']/div[1][@class='col-main']/div[1][@class='main-wrap']/div[@class='kv-prop']/div[1][@class='kv']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#26701_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#26709_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span[1][@class='f-tag-wrap']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#45862_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='kv']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#45848_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@class='min-order']/b[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#45843_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ]
+        }
+    }
+]

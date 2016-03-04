@@ -1,0 +1,424 @@
+[
+    {
+        "priority": "0",
+        "mandatory": 0,
+        "state": 1,
+        "is_filled": 0,
+        "output_format": {
+            "type": "template",
+            "name": "json",
+            "header": "[\n",
+            "items_header": "",
+            "item": "{\"link\":\"%link%\",\"link_xpath\":\"%link_xpath%\",\"link_1\":\"%link_1%\",\"link_1_xpath\":\"%link_1_xpath%\",\"image\":\"%image%\",\"image_xpath\":\"%image_xpath%\",\"title\":\"%title%\",\"title_xpath\":\"%title_xpath%\",\"price\":\"%price%\",\"price_xpath\":\"%price_xpath%\",\"title_1\":\"%title_1%\",\"title_1_xpath\":\"%title_1_xpath%\",\"link_2\":\"%link_2%\",\"link_2_xpath\":\"%link_2_xpath%\",\"link_3\":\"%link_3%\",\"link_3_xpath\":\"%link_3_xpath%\",\"price_1\":\"%price_1%\",\"price_1_xpath\":\"%price_1_xpath%\",\"price_2\":\"%price_2%\",\"price_2_xpath\":\"%price_2_xpath%\",\"price_3\":\"%price_3%\",\"price_3_xpath\":\"%price_3_xpath%\",\"price_4\":\"%price_4%\",\"price_4_xpath\":\"%price_4_xpath%\",\"link_4\":\"%link_4%\",\"link_4_xpath\":\"%link_4_xpath%\",\"title_2\":\"%title_2%\",\"title_2_xpath\":\"%title_2_xpath%\",\"link_5\":\"%link_5%\",\"link_5_xpath\":\"%link_5_xpath%\",\"link_6\":\"%link_6%\",\"link_6_xpath\":\"%link_6_xpath%\",\"title_3\":\"%title_3%\",\"title_3_xpath\":\"%title_3_xpath%\",\"title_4\":\"%title_4%\",\"title_4_xpath\":\"%title_4_xpath%\",\"title_5\":\"%title_5%\",\"title_5_xpath\":\"%title_5_xpath%\",\"title_6\":\"%title_6%\",\"title_6_xpath\":\"%title_6_xpath%\",\"price_5\":\"%price_5%\",\"price_5_xpath\":\"%price_5_xpath%\",\"price_6\":\"%price_6%\",\"price_6_xpath\":\"%price_6_xpath%\",\"price_7\":\"%price_7%\",\"price_7_xpath\":\"%price_7_xpath%\",\"price_8\":\"%price_8%\",\"price_8_xpath\":\"%price_8_xpath%\",\"field#9408_text\":\"%field#9408_text%\",\"field#9408_text_xpath\":\"%field#9408_text_xpath%\",\"field#30954_text\":\"%field#30954_text%\",\"field#30954_text_xpath\":\"%field#30954_text_xpath%\",\"field#31020_text\":\"%field#31020_text%\",\"field#31020_text_xpath\":\"%field#31020_text_xpath%\"}",
+            "items_footer": "",
+            "footer": "]\n"
+        },
+        "tags": {
+            "link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/a[1][@class='contact_now_link']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "link",
+                    "format": ""
+                }
+            ],
+            "link_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/a[1][@class='product_title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "image": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/div/table/tbody/tr/td/a/img",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "image",
+                    "format": "URL"
+                }
+            ],
+            "title": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/a[1][@class='product_title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div[5][@class='noUnderLine']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[1]/div[1]/a[1][@class='product_title']/h2[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/a[1][@class='trust_point_link tooltip']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/span/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_24']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1][@class='attribute_table']/tbody[1]/tr/td[1]/span[2][@class='attribute_value']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_24']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1][@class='attribute_table']/tbody[1]/tr/td[1]/span[2][@class='attribute_value']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_24']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1][@class='attribute_table']/tbody[1]/tr/td[1]/span[2][@class='attribute_value']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_24']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1][@class='attribute_table']/tbody[1]/tr/td[1]/span[2][@class='attribute_value']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/a[1][@class='company']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/a[1][@class='company']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_14' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_21' or @id='list_22' or @id='list_24' or @id='list_25']/div[1][@class='image_frame_checkbox']/div[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1][@class='bigimg']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[1]/div[1]/a[1][@class='product_title']/h2[1]/strong",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[1]/div[1]/a[1][@class='product_title']/h2[1]/strong",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[1]/div[1]/a[1][@class='product_title']/h2[1]/strong",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_1' or @id='list_2' or @id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[1]/div[1]/a[1][@class='product_title']/h2[1]/strong",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_21' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1][@class='attribute_table']/tbody[1]/tr[2]/td[1]/span[1][@class='attribute_label']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_21' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1][@class='attribute_table']/tbody[1]/tr[2]/td[1]/span[1][@class='attribute_label']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_21' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1][@class='attribute_table']/tbody[1]/tr[2]/td[1]/span[1][@class='attribute_label']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_8": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_17' or @id='list_18' or @id='list_19' or @id='list_20' or @id='list_21' or @id='list_22' or @id='list_23' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1][@class='attribute_table']/tbody[1]/tr[2]/td[1]/span[1][@class='attribute_label']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#9408_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/strong[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#30954_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr[2]/td[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#31020_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/span/font",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,1159 @@
+[
+    {
+        "priority": "0",
+        "mandatory": 0,
+        "state": 1,
+        "is_filled": 0,
+        "output_format": {
+            "type": "template",
+            "name": "json",
+            "header": "[\n",
+            "items_header": "",
+            "item": "{\"image\":\"%image%\",\"image_xpath\":\"%image_xpath%\",\"title\":\"%title%\",\"title_xpath\":\"%title_xpath%\",\"link\":\"%link%\",\"link_xpath\":\"%link_xpath%\",\"link_1\":\"%link_1%\",\"link_1_xpath\":\"%link_1_xpath%\",\"link_2\":\"%link_2%\",\"link_2_xpath\":\"%link_2_xpath%\",\"link_3\":\"%link_3%\",\"link_3_xpath\":\"%link_3_xpath%\",\"price\":\"%price%\",\"price_xpath\":\"%price_xpath%\",\"price_1\":\"%price_1%\",\"price_1_xpath\":\"%price_1_xpath%\",\"price_2\":\"%price_2%\",\"price_2_xpath\":\"%price_2_xpath%\",\"price_3\":\"%price_3%\",\"price_3_xpath\":\"%price_3_xpath%\",\"title_1\":\"%title_1%\",\"title_1_xpath\":\"%title_1_xpath%\",\"link_4\":\"%link_4%\",\"link_4_xpath\":\"%link_4_xpath%\",\"price_4\":\"%price_4%\",\"price_4_xpath\":\"%price_4_xpath%\",\"price_5\":\"%price_5%\",\"price_5_xpath\":\"%price_5_xpath%\",\"price_6\":\"%price_6%\",\"price_6_xpath\":\"%price_6_xpath%\",\"price_7\":\"%price_7%\",\"price_7_xpath\":\"%price_7_xpath%\",\"link_5\":\"%link_5%\",\"link_5_xpath\":\"%link_5_xpath%\",\"link_6\":\"%link_6%\",\"link_6_xpath\":\"%link_6_xpath%\",\"price_8\":\"%price_8%\",\"price_8_xpath\":\"%price_8_xpath%\",\"title_2\":\"%title_2%\",\"title_2_xpath\":\"%title_2_xpath%\",\"price_9\":\"%price_9%\",\"price_9_xpath\":\"%price_9_xpath%\",\"price_10\":\"%price_10%\",\"price_10_xpath\":\"%price_10_xpath%\",\"link_7\":\"%link_7%\",\"link_7_xpath\":\"%link_7_xpath%\",\"title_3\":\"%title_3%\",\"title_3_xpath\":\"%title_3_xpath%\",\"link_8\":\"%link_8%\",\"link_8_xpath\":\"%link_8_xpath%\",\"link_9\":\"%link_9%\",\"link_9_xpath\":\"%link_9_xpath%\",\"link_10\":\"%link_10%\",\"link_10_xpath\":\"%link_10_xpath%\",\"link_11\":\"%link_11%\",\"link_11_xpath\":\"%link_11_xpath%\",\"price_11\":\"%price_11%\",\"price_11_xpath\":\"%price_11_xpath%\",\"price_12\":\"%price_12%\",\"price_12_xpath\":\"%price_12_xpath%\",\"link_12\":\"%link_12%\",\"link_12_xpath\":\"%link_12_xpath%\",\"price_13\":\"%price_13%\",\"price_13_xpath\":\"%price_13_xpath%\",\"link_13\":\"%link_13%\",\"link_13_xpath\":\"%link_13_xpath%\",\"price_14\":\"%price_14%\",\"price_14_xpath\":\"%price_14_xpath%\",\"price_15\":\"%price_15%\",\"price_15_xpath\":\"%price_15_xpath%\",\"price_16\":\"%price_16%\",\"price_16_xpath\":\"%price_16_xpath%\",\"price_17\":\"%price_17%\",\"price_17_xpath\":\"%price_17_xpath%\",\"price_18\":\"%price_18%\",\"price_18_xpath\":\"%price_18_xpath%\",\"price_19\":\"%price_19%\",\"price_19_xpath\":\"%price_19_xpath%\",\"price_20\":\"%price_20%\",\"price_20_xpath\":\"%price_20_xpath%\",\"price_21\":\"%price_21%\",\"price_21_xpath\":\"%price_21_xpath%\",\"title_4\":\"%title_4%\",\"title_4_xpath\":\"%title_4_xpath%\",\"title_5\":\"%title_5%\",\"title_5_xpath\":\"%title_5_xpath%\",\"price_22\":\"%price_22%\",\"price_22_xpath\":\"%price_22_xpath%\",\"price_23\":\"%price_23%\",\"price_23_xpath\":\"%price_23_xpath%\",\"price_24\":\"%price_24%\",\"price_24_xpath\":\"%price_24_xpath%\",\"price_25\":\"%price_25%\",\"price_25_xpath\":\"%price_25_xpath%\",\"title_6\":\"%title_6%\",\"title_6_xpath\":\"%title_6_xpath%\",\"title_7\":\"%title_7%\",\"title_7_xpath\":\"%title_7_xpath%\",\"title_8\":\"%title_8%\",\"title_8_xpath\":\"%title_8_xpath%\",\"price_26\":\"%price_26%\",\"price_26_xpath\":\"%price_26_xpath%\",\"price_27\":\"%price_27%\",\"price_27_xpath\":\"%price_27_xpath%\",\"price_28\":\"%price_28%\",\"price_28_xpath\":\"%price_28_xpath%\",\"price_29\":\"%price_29%\",\"price_29_xpath\":\"%price_29_xpath%\",\"price_30\":\"%price_30%\",\"price_30_xpath\":\"%price_30_xpath%\",\"title_9\":\"%title_9%\",\"title_9_xpath\":\"%title_9_xpath%\",\"price_31\":\"%price_31%\",\"price_31_xpath\":\"%price_31_xpath%\",\"price_32\":\"%price_32%\",\"price_32_xpath\":\"%price_32_xpath%\",\"image_1\":\"%image_1%\",\"image_1_xpath\":\"%image_1_xpath%\",\"field#15927_text\":\"%field#15927_text%\",\"field#15927_text_xpath\":\"%field#15927_text_xpath%\",\"field#10054_text\":\"%field#10054_text%\",\"field#10054_text_xpath\":\"%field#10054_text_xpath%\",\"field#9940_linkText\":\"%field#9940_linkText%\",\"field#9940_linkText_xpath\":\"%field#9940_linkText_xpath%\",\"field#9950_textInner\":\"%field#9950_textInner%\",\"field#9950_textInner_xpath\":\"%field#9950_textInner_xpath%\",\"field#9931_text\":\"%field#9931_text%\",\"field#9931_text_xpath\":\"%field#9931_text_xpath%\",\"field#10001_textInner\":\"%field#10001_textInner%\",\"field#10001_textInner_xpath\":\"%field#10001_textInner_xpath%\",\"field#15940_textInner\":\"%field#15940_textInner%\",\"field#15940_textInner_xpath\":\"%field#15940_textInner_xpath%\",\"field#15940_text\":\"%field#15940_text%\",\"field#15940_text_xpath\":\"%field#15940_text_xpath%\",\"field#9950_text\":\"%field#9950_text%\",\"field#9950_text_xpath\":\"%field#9950_text_xpath%\",\"field#15923_textInner\":\"%field#15923_textInner%\",\"field#15923_textInner_xpath\":\"%field#15923_textInner_xpath%\",\"field#15923_text\":\"%field#15923_text%\",\"field#15923_text_xpath\":\"%field#15923_text_xpath%\",\"field#15873_textInner\":\"%field#15873_textInner%\",\"field#15873_textInner_xpath\":\"%field#15873_textInner_xpath%\",\"field#15873_text\":\"%field#15873_text%\",\"field#15873_text_xpath\":\"%field#15873_text_xpath%\",\"field#10001_text\":\"%field#10001_text%\",\"field#10001_text_xpath\":\"%field#10001_text_xpath%\",\"field#9982_text\":\"%field#9982_text%\",\"field#9982_text_xpath\":\"%field#9982_text_xpath%\",\"field#13379_linkText\":\"%field#13379_linkText%\",\"field#13379_linkText_xpath\":\"%field#13379_linkText_xpath%\",\"field#9991_linkText\":\"%field#9991_linkText%\",\"field#9991_linkText_xpath\":\"%field#9991_linkText_xpath%\"}",
+            "items_footer": "",
+            "footer": "]\n"
+        },
+        "tags": {
+            "image": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_13' or @id='result_14' or @id='result_15' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[1][@class='a-fixed-left-grid-col a-col-left']/div[1][@class='a-row']/div[1][@class='a-column a-span12 a-text-center']/a[1][@class='a-link-normal a-text-normal']/img[1][@class='s-access-image cfMarker']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "image",
+                    "format": "URL"
+                }
+            ],
+            "title": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_13' or @id='result_14' or @id='result_15' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row a-spacing-small' or @class='a-row a-spacing-none']/a[1][@class='a-link-normal s-access-detail-page  a-text-normal']/h2[1][@class='a-size-medium a-color-null s-inline s-access-title a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_13' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[@class='a-row a-spacing-mini']/div[1][@class='a-row a-spacing-mini']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "link",
+                    "format": ""
+                }
+            ],
+            "link_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_13' or @id='result_14' or @id='result_15' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[1][@class='a-fixed-left-grid-col a-col-left']/div[1][@class='a-row']/div[1][@class='a-column a-span12 a-text-center']/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[2][@class='a-row a-spacing-small']/a[1][@class='a-link-normal s-access-detail-page  a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-none']/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-none']/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_14' or @id='result_15' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-mini' or @class='a-row a-spacing-small']/span[1]/span[1][@class='a-declarative']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-none']/a[1][@class='a-link-normal a-text-normal']/span[1][@class='a-size-base a-color-price s-price a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-none']/a[1][@class='a-link-normal a-text-normal']/span[1][@class='a-size-base a-color-price s-price a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[2][@class='a-row a-spacing-small']/a[1][@class='a-link-normal s-access-detail-page  a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[@class='a-column a-span5 a-span-last' or @class='a-column a-span7']/div[@class='a-row a-spacing-mini']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[1][@class='a-size-base a-color-price a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[1][@class='a-size-base a-color-price a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[1][@class='a-size-base a-color-price a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[1][@class='a-size-base a-color-price a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_8": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-mini']/span[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_13' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[@class='a-row a-spacing-mini']/div[1][@class='a-row a-spacing-mini']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_9": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-none']/span[@class='a-size-small a-color-secondary a-text-strike']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_10": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-none']/span[@class='a-size-small a-color-secondary a-text-strike']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_13' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row a-spacing-none']/a[1][@class='a-link-normal s-access-detail-page  a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_13' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row a-spacing-none']/a[1][@class='a-link-normal s-access-detail-page  a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_8": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-small']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_9": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_13' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[1][@class='a-column a-span7']/div[1][@class='a-row a-spacing-top-small']/div[1][@class='a-row']/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_10": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_9']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[1][@class='a-row a-spacing-none']/a[1][@class='a-link-normal   a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_11": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_9']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[1][@class='a-row a-spacing-none']/a[1][@class='a-link-normal   a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_11": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_13']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[2][@class='a-row']/div[1][@class='a-column a-span7']/table[1][@class='a-normal']/tbody[1]/tr[1][@class='a-spacing-top-mini']/td[1][@class='a-text-left a-nowrap']/a[1][@class='a-link-normal a-text-normal']/span[1][@class='a-size-small a-color-secondary a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_12": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_13']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[2][@class='a-row']/div[1][@class='a-column a-span7']/table[1][@class='a-normal']/tbody[1]/tr[1][@class='a-spacing-top-mini']/td[1][@class='a-text-left a-nowrap']/a[1][@class='a-link-normal a-text-normal']/span[1][@class='a-size-small a-color-secondary a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_12": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_13']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[2][@class='a-row']/div[1][@class='a-column a-span7']/table[1][@class='a-normal']/tbody[1]/tr[1][@class='a-spacing-top-mini']/td[2][@class='a-text-left s-full-width-column']/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_13": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_13']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[2][@class='a-row']/div[1][@class='a-column a-span7']/table[1][@class='a-normal']/tbody[1]/tr[1][@class='a-spacing-top-mini']/td[1][@class='a-text-left a-nowrap']/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_13": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_13']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[2][@class='a-row']/div[1][@class='a-column a-span7']/table[1][@class='a-normal']/tbody[1]/tr[1][@class='a-spacing-top-mini']/td[1][@class='a-text-left a-nowrap']/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_14": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_13' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[1][@class='a-column a-span7']/div[1][@class='a-row a-spacing-top-small']/div[1][@class='a-row']/a[1][@class='a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_15": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_9']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[2][@class='a-row a-spacing-small']/span[3][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_16": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_9']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[2][@class='a-row a-spacing-small']/span[3][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_17": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_13' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[1][@class='a-column a-span7']/div[1][@class='a-row a-spacing-top-small']/div[1][@class='a-row']/a[1][@class='a-link-normal a-text-normal']/span[1][@class='a-size-base a-color-price s-price a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_18": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_13' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[1][@class='a-column a-span7']/div[1][@class='a-row a-spacing-top-small']/div[1][@class='a-row']/a[1][@class='a-link-normal a-text-normal']/span[1][@class='a-size-base a-color-price s-price a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_19": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[1][@class='a-row a-spacing-none']/span[2][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_20": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[1][@class='a-row a-spacing-none']/span[2][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_21": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-small']/span[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[5][@class='a-row a-spacing-none']/a[1][@class='a-link-normal   a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[5][@class='a-row a-spacing-none']/a[1][@class='a-link-normal   a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_22": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_7' or @id='result_10' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-mini']/span[1]/span[1][@class='a-declarative']/a[1][@class='a-popover-trigger a-declarative']/i[1][@class='a-icon a-icon-star a-star-4']/span[1][@class='a-icon-alt']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_23": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_7' or @id='result_10' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-mini']/span[1]/span[1][@class='a-declarative']/a[1][@class='a-popover-trigger a-declarative']/i[1][@class='a-icon a-icon-star a-star-4']/span[1][@class='a-icon-alt']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_24": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[1][@class='a-row a-spacing-none']/span[@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_25": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[1][@class='a-row a-spacing-none']/span[@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_9']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-none']/a[1][@class='a-link-normal   a-text-normal']/h3[1][@class='a-size-small a-color-null s-inline  a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_9']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-none']/a[1][@class='a-link-normal   a-text-normal']/h3[1][@class='a-size-small a-color-null s-inline  a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_8": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div[3][@class='a-row a-spacing-mini']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_26": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/span/span/a/i[1][@class='a-icon a-icon-star a-star-4-5']/span[1][@class='a-icon-alt']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_27": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/span/span/a/i[1][@class='a-icon a-icon-star a-star-4-5']/span[1][@class='a-icon-alt']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_28": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-mini']/span[1]/span[1][@class='a-declarative']/a[1][@class='a-popover-trigger a-declarative']/i[1][@class='a-icon a-icon-star a-star-5']/span[1][@class='a-icon-alt']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_29": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-mini']/span[1]/span[1][@class='a-declarative']/a[1][@class='a-popover-trigger a-declarative']/i[1][@class='a-icon a-icon-star a-star-5']/span[1][@class='a-icon-alt']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_30": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_10' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[2][@class='a-row a-spacing-mini']/div[1][@class='a-row a-spacing-none']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_9": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_9' or @id='result_15' or @id='result_16']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-mini' or @class='a-row a-spacing-small']/span[1]/span[1][@class='a-declarative']/a[1][@class='a-popover-trigger a-declarative']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_31": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_10' or @id='result_14' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[2][@class='a-row a-spacing-mini' or @class='a-row a-spacing-top-mini']/div[1][@class='a-row a-spacing-none' or @class='a-row a-spacing-micro']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_32": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_10' or @id='result_14' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[2][@class='a-row a-spacing-mini' or @class='a-row a-spacing-top-mini']/div[1][@class='a-row a-spacing-none' or @class='a-row a-spacing-micro']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "image_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/h5/img",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#15927_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/span/em",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#10054_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[1][@class='a-row a-spacing-none']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#9940_linkText": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[2][@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#9950_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[2][@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[4][@class='a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#9931_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_13' or @id='result_14' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini' or @class='a-row a-spacing-top-mini']/div[1][@class='a-row a-spacing-none' or @class='a-row a-spacing-micro']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#10001_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[2][@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[4][@class='a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#15940_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_13' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[@class='a-row a-spacing-mini']/div[1][@class='a-row a-spacing-mini']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[1][@class='a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#15940_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_4' or @id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_13' or @id='result_14' or @id='result_15']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[@class='a-row a-spacing-mini']/div[1][@class='a-row a-spacing-mini']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[1][@class='a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#9950_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[2][@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[4][@class='a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#15923_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/span[1][@class='a-size-small a-color-secondary a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#15923_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/span[1][@class='a-size-small a-color-secondary a-text-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#15873_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div/span[1][@class='a-size-small a-color-price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#15873_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li/div/div/div/div/div/div/div/div/span[1][@class='a-size-small a-color-price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#10001_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[2][@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']/span[4][@class='a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#9982_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_6' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_12' or @id='result_13' or @id='result_14' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini' or @class='a-row a-spacing-top-mini']/div[1][@class='a-row a-spacing-none' or @class='a-row a-spacing-micro']/span[1][@class='a-size-small a-color-secondary']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#13379_linkText": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_12' or @id='result_16' or @id='result_17']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[@class='a-row']/div[2][@class='a-column a-span5 a-span-last']/div[1][@class='a-row a-spacing-small']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#9991_linkText": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/ul/li[@id='result_5' or @id='result_7' or @id='result_8' or @id='result_9' or @id='result_10' or @id='result_11' or @id='result_14']/div[1][@class='s-item-container']/div[1][@class='a-fixed-left-grid']/div[1][@class='a-fixed-left-grid-inner']/div[2][@class='a-fixed-left-grid-col a-col-right']/div[3][@class='a-row']/div[1][@class='a-column a-span7']/div[@class='a-row a-spacing-top-mini a-spacing-mini' or @class='a-row a-spacing-mini']/div[2][@class='a-row a-spacing-none']/a[1][@class='a-size-small a-link-normal a-text-normal']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ]
+        }
+    }
+]

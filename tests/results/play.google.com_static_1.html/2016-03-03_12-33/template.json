@@ -1,0 +1,799 @@
+[
+    {
+        "priority": "0",
+        "mandatory": 0,
+        "state": 1,
+        "is_filled": 0,
+        "output_format": {
+            "type": "template",
+            "name": "json",
+            "header": "[\n",
+            "items_header": "",
+            "item": "{\"image\":\"%image%\",\"image_xpath\":\"%image_xpath%\",\"title\":\"%title%\",\"title_xpath\":\"%title_xpath%\",\"title_1\":\"%title_1%\",\"title_1_xpath\":\"%title_1_xpath%\",\"title_2\":\"%title_2%\",\"title_2_xpath\":\"%title_2_xpath%\",\"link\":\"%link%\",\"link_xpath\":\"%link_xpath%\",\"link_1\":\"%link_1%\",\"link_1_xpath\":\"%link_1_xpath%\",\"title_3\":\"%title_3%\",\"title_3_xpath\":\"%title_3_xpath%\",\"title_4\":\"%title_4%\",\"title_4_xpath\":\"%title_4_xpath%\",\"link_2\":\"%link_2%\",\"link_2_xpath\":\"%link_2_xpath%\",\"link_3\":\"%link_3%\",\"link_3_xpath\":\"%link_3_xpath%\",\"price\":\"%price%\",\"price_xpath\":\"%price_xpath%\",\"title_5\":\"%title_5%\",\"title_5_xpath\":\"%title_5_xpath%\",\"price_1\":\"%price_1%\",\"price_1_xpath\":\"%price_1_xpath%\",\"title_6\":\"%title_6%\",\"title_6_xpath\":\"%title_6_xpath%\",\"link_4\":\"%link_4%\",\"link_4_xpath\":\"%link_4_xpath%\",\"title_7\":\"%title_7%\",\"title_7_xpath\":\"%title_7_xpath%\",\"link_5\":\"%link_5%\",\"link_5_xpath\":\"%link_5_xpath%\",\"link_6\":\"%link_6%\",\"link_6_xpath\":\"%link_6_xpath%\",\"link_7\":\"%link_7%\",\"link_7_xpath\":\"%link_7_xpath%\",\"price_2\":\"%price_2%\",\"price_2_xpath\":\"%price_2_xpath%\",\"link_8\":\"%link_8%\",\"link_8_xpath\":\"%link_8_xpath%\",\"link_9\":\"%link_9%\",\"link_9_xpath\":\"%link_9_xpath%\",\"link_10\":\"%link_10%\",\"link_10_xpath\":\"%link_10_xpath%\",\"price_3\":\"%price_3%\",\"price_3_xpath\":\"%price_3_xpath%\",\"link_11\":\"%link_11%\",\"link_11_xpath\":\"%link_11_xpath%\",\"price_4\":\"%price_4%\",\"price_4_xpath\":\"%price_4_xpath%\",\"price_5\":\"%price_5%\",\"price_5_xpath\":\"%price_5_xpath%\",\"price_6\":\"%price_6%\",\"price_6_xpath\":\"%price_6_xpath%\",\"link_12\":\"%link_12%\",\"link_12_xpath\":\"%link_12_xpath%\",\"price_7\":\"%price_7%\",\"price_7_xpath\":\"%price_7_xpath%\",\"link_13\":\"%link_13%\",\"link_13_xpath\":\"%link_13_xpath%\",\"link_14\":\"%link_14%\",\"link_14_xpath\":\"%link_14_xpath%\",\"link_15\":\"%link_15%\",\"link_15_xpath\":\"%link_15_xpath%\",\"link_16\":\"%link_16%\",\"link_16_xpath\":\"%link_16_xpath%\",\"link_17\":\"%link_17%\",\"link_17_xpath\":\"%link_17_xpath%\",\"field#22848_link\":\"%field#22848_link%\",\"field#22848_link_xpath\":\"%field#22848_link_xpath%\",\"field#22896_text\":\"%field#22896_text%\",\"field#22896_text_xpath\":\"%field#22896_text_xpath%\",\"field#16558_textInner\":\"%field#16558_textInner%\",\"field#16558_textInner_xpath\":\"%field#16558_textInner_xpath%\",\"field#18420_text\":\"%field#18420_text%\",\"field#18420_text_xpath\":\"%field#18420_text_xpath%\",\"field#18420_textInner\":\"%field#18420_textInner%\",\"field#18420_textInner_xpath\":\"%field#18420_textInner_xpath%\",\"field#16505_textInner\":\"%field#16505_textInner%\",\"field#16505_textInner_xpath\":\"%field#16505_textInner_xpath%\",\"field#18479_textInner\":\"%field#18479_textInner%\",\"field#18479_textInner_xpath\":\"%field#18479_textInner_xpath%\",\"field#22893_text\":\"%field#22893_text%\",\"field#22893_text_xpath\":\"%field#22893_text_xpath%\",\"field#22889_textInner\":\"%field#22889_textInner%\",\"field#22889_textInner_xpath\":\"%field#22889_textInner_xpath%\",\"field#20586_link\":\"%field#20586_link%\",\"field#20586_link_xpath\":\"%field#20586_link_xpath%\",\"field#22843_textInner\":\"%field#22843_textInner%\",\"field#22843_textInner_xpath\":\"%field#22843_textInner_xpath%\",\"field#22843_text\":\"%field#22843_text%\",\"field#22843_text_xpath\":\"%field#22843_text_xpath%\",\"field#22840_text\":\"%field#22840_text%\",\"field#22840_text_xpath\":\"%field#22840_text_xpath%\",\"field#20650_textInner\":\"%field#20650_textInner%\",\"field#20650_textInner_xpath\":\"%field#20650_textInner_xpath%\",\"field#20700_link\":\"%field#20700_link%\",\"field#20700_link_xpath\":\"%field#20700_link_xpath%\",\"field#22896_textInner\":\"%field#22896_textInner%\",\"field#22896_textInner_xpath\":\"%field#22896_textInner_xpath%\",\"field#18479_text\":\"%field#18479_text%\",\"field#18479_text_xpath\":\"%field#18479_text_xpath%\"}",
+            "items_footer": "",
+            "footer": "]\n"
+        },
+        "tags": {
+            "image": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/img",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "image",
+                    "format": "URL"
+                }
+            ],
+            "title": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/a/span[1][@class='full-title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/a/span[1][@class='full-title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[1][@class='subtitle author has-pub-date non-comic-series']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[2][@class='subtitle pub-date non-comic-series']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "link",
+                    "format": ""
+                }
+            ],
+            "link_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale square-cover music small']/div[1][@class='card-content id-track-click id-track-impression']/div[1][@class='cover']/a[1][@class='card-click-target']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale square-cover music small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/a[2][@class='title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[2][@class='subtitle pub-date non-comic-series']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale square-cover music small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/a[2][@class='title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[1][@class='subtitle author has-pub-date non-comic-series']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[@class='reason-set']/span[@class='stars-container']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[1][@class='subtitle']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale square-cover music small']/div[1][@class='card-content id-track-click id-track-impression']/div[3][@class='reason-set']/span[1][@class='stars-container']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/a[2][@class='title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/a[2][@class='title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/a[2][@class='title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/a[2][@class='title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/span/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[1][@class='cover']/a[1][@class='card-click-target']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/span[1][@class='stars-container']/span[1][@class='price-container']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_8": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[1][@class='cover']/a[1][@class='card-click-target']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_9": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[1][@class='subtitle']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_10": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale square-cover music small']/div[1][@class='card-content id-track-click id-track-impression']/div[3][@class='reason-set']/span[1][@class='stars-container']/a[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale square-cover music small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/div[1][@class='subtitle-container']/span[1][@class='price-container']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_11": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale square-cover music small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/a[1][@class='card-click-target']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/div[2][@class='description']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div[3][@class='cluster-container cards-transition-enabled']/div[1][@class='cluster id-track-impression normal square-cover music']/div[2][@class='card-list two-cards']/div[@class='card no-rationale square-cover music small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/div[2][@class='description']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_6": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[@class='reason-set']/span[@class='stars-container']/span[1][@class='price-container']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_12": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale square-cover music small']/div[1][@class='card-content id-track-click id-track-impression']/a[1][@class='card-click-target']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_7": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span[2][@class='music is-price-tag buy-button-container is_not_aquired_or_preordered']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_13": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[@class='reason-set']/span[@class='stars-container']/a[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_14": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/a[1][@class='card-click-target']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_15": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div[3][@class='cluster-container cards-transition-enabled']/div[1][@class='cluster id-track-impression normal square-cover music']/div[2][@class='card-list two-cards']/div[@class='card no-rationale square-cover music small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/div[2][@class='description']/a[1][@class='card-click-target']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_16": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/div[2][@class='description']/a[1][@class='card-click-target']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_17": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/a[1][@class='card-click-target']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22848_link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale square-cover music small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/div[2][@class='description']/a[1][@class='card-click-target']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22896_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/span/button/span[@class='display-price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#16558_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/span[2][@class='books is-price-tag buy-button-container is_not_aquired_or_preordered']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18420_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/button/span[1][@class='full-price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18420_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/button/span[1][@class='full-price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#16505_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span[2][@class='books is-price-tag buy-button-container is_not_aquired_or_preordered']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18479_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/span/button/span[1][@class='full-price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22893_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/span/div",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22889_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/span[2][@class='music is-price-tag buy-button-container is_not_aquired_or_preordered']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#20586_link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/a[1][@class='card-click-target']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22843_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/button/span[@class='display-price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22843_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/button/span[@class='display-price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22840_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/div",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#20650_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div[@class='card no-rationale tall-cover books small' or @class='card one-rationale tall-cover books small']/div[1][@class='card-content id-track-click id-track-impression']/div[2][@class='details']/div[1][@class='subtitle-container']/span[1][@class='price-container']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#20700_link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/span/a[1][@class='card-click-target']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#22896_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/span/button/span[@class='display-price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18479_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/span/span/span/button/span[1][@class='full-price']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ]
+        }
+    }
+]

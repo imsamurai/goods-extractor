@@ -1,0 +1,409 @@
+[
+    {
+        "priority": "0",
+        "mandatory": 0,
+        "state": 1,
+        "is_filled": 0,
+        "output_format": {
+            "type": "template",
+            "name": "json",
+            "header": "[\n",
+            "items_header": "",
+            "item": "{\"link\":\"%link%\",\"link_xpath\":\"%link_xpath%\",\"link_1\":\"%link_1%\",\"link_1_xpath\":\"%link_1_xpath%\",\"title\":\"%title%\",\"title_xpath\":\"%title_xpath%\",\"price\":\"%price%\",\"price_xpath\":\"%price_xpath%\",\"price_1\":\"%price_1%\",\"price_1_xpath\":\"%price_1_xpath%\",\"price_2\":\"%price_2%\",\"price_2_xpath\":\"%price_2_xpath%\",\"price_3\":\"%price_3%\",\"price_3_xpath\":\"%price_3_xpath%\",\"price_4\":\"%price_4%\",\"price_4_xpath\":\"%price_4_xpath%\",\"price_5\":\"%price_5%\",\"price_5_xpath\":\"%price_5_xpath%\",\"title_1\":\"%title_1%\",\"title_1_xpath\":\"%title_1_xpath%\",\"link_2\":\"%link_2%\",\"link_2_xpath\":\"%link_2_xpath%\",\"link_3\":\"%link_3%\",\"link_3_xpath\":\"%link_3_xpath%\",\"link_4\":\"%link_4%\",\"link_4_xpath\":\"%link_4_xpath%\",\"title_2\":\"%title_2%\",\"title_2_xpath\":\"%title_2_xpath%\",\"field#19061_textInner\":\"%field#19061_textInner%\",\"field#19061_textInner_xpath\":\"%field#19061_textInner_xpath%\",\"field#19061_text\":\"%field#19061_text%\",\"field#19061_text_xpath\":\"%field#19061_text_xpath%\",\"field#19030_text\":\"%field#19030_text%\",\"field#19030_text_xpath\":\"%field#19030_text_xpath%\",\"field#19064_text\":\"%field#19064_text%\",\"field#19064_text_xpath\":\"%field#19064_text_xpath%\",\"field#19064_textInner\":\"%field#19064_textInner%\",\"field#19064_textInner_xpath\":\"%field#19064_textInner_xpath%\",\"field#19067_text\":\"%field#19067_text%\",\"field#19067_text_xpath\":\"%field#19067_text_xpath%\",\"field#19067_textInner\":\"%field#19067_textInner%\",\"field#19067_textInner_xpath\":\"%field#19067_textInner_xpath%\",\"field#18998_text\":\"%field#18998_text%\",\"field#18998_text_xpath\":\"%field#18998_text_xpath%\",\"field#18960_text\":\"%field#18960_text%\",\"field#18960_text_xpath\":\"%field#18960_text_xpath%\",\"field#19058_textInner\":\"%field#19058_textInner%\",\"field#19058_textInner_xpath\":\"%field#19058_textInner_xpath%\",\"field#18960_textInner\":\"%field#18960_textInner%\",\"field#18960_textInner_xpath\":\"%field#18960_textInner_xpath%\",\"field#19058_text\":\"%field#19058_text%\",\"field#19058_text_xpath\":\"%field#19058_text_xpath%\"}",
+            "items_footer": "",
+            "footer": "]\n"
+        },
+        "tags": {
+            "link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='product-unit unit-4 browse-product new-design ']/div[1][@class='pu-visual-section']/a[1][@class='pu-image fk-product-thumb ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "link",
+                    "format": ""
+                }
+            ],
+            "link_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='product-unit unit-4 browse-product new-design ']/div[2][@class='pu-details lastUnit']/div[1][@class='pu-title fk-font-13']/a[1][@class='fk-display-block']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='product-unit unit-4 browse-product new-design ']/div[2][@class='pu-details lastUnit']/div[1][@class='pu-title fk-font-13']/a[1][@class='fk-display-block']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='pu-border-top']/div[@class='more-listing-options fk-smallfont tpadding5 bpadding5' or @class='pu-final']/span[1][@class='fk-bold' or @class='fk-font-17 fk-bold 11']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='pu-border-top']/div[@class='more-listing-options fk-smallfont tpadding5 bpadding5' or @class='pu-final']/span[1][@class='fk-bold' or @class='fk-font-17 fk-bold 11']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span[1][@class='fk-font-17 fk-bold 11']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span[1][@class='fk-font-17 fk-bold 11']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span[1][@class='fk-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price_5": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/span[1][@class='fk-bold']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='product-unit unit-4 browse-product new-design  quickview-required']/div[2][@class='pu-details lastUnit']/div[1][@class='pu-title fk-font-13']/a[1][@class='fk-display-block']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='product-unit unit-4 browse-product new-design  quickview-required']/div[1][@class='pu-visual-section']/a[1][@class='pu-image fk-product-thumb ']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "link_4": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='product-unit unit-4 browse-product new-design  quickview-required']/div[2][@class='pu-details lastUnit']/div[1][@class='pu-title fk-font-13']/a[1][@class='fk-display-block']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#19061_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/ul/li[1]/span[1][@class='text']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#19061_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/ul/li[1]/span[1][@class='text']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#19030_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1][@class='pu-border-top']/div[@class='pu-final' or @class='pu-emi fk-font-12']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#19064_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/ul/li[1]/span[1][@class='text']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#19064_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/ul/li[1]/span[1][@class='text']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#19067_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/ul/li[1]/span[1][@class='text']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#19067_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/ul/li[1]/span[1][@class='text']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18998_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[3][@class='pu-rating']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18960_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[2][@class='shortlist-btn' or @class='quickview-btn']/span[2][@class='text']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#19058_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/ul/li[1]/span[1][@class='text']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#18960_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/a[2][@class='shortlist-btn' or @class='quickview-btn']/span[2][@class='text']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#19058_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/ul/li[1]/span[1][@class='text']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ]
+        }
+    }
+]
