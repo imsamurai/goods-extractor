@@ -77,8 +77,8 @@ function ExtractorComponent() {
     this.extract = function (window) {
         var compareRate = 0.38;
         var compareCutoff = 0.9;
-        var findLikeCompareCutoff = 0.95;
-        var alignIndexCompareCutoff = 0.95;
+        var findLikeCompareCutoff = 0.9;
+        var alignIndexCompareCutoff = 0.9;
         var complexityRateNeighbour = 1;
         var complexityRateDeep = 2;
         var complexityCutoff = 0.51;
