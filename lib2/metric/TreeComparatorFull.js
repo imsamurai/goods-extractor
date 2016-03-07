@@ -2,7 +2,6 @@
  * Created by imsamurai on 13.01.2016.
  */
 function TreeComparatorFull(rate, cutoff) {
-
     var nameRate = 0.51;
     var attributesRate = 0.39;
     var attributeClassRate = 0.8;

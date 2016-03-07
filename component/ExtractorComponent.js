@@ -43,6 +43,8 @@ function ExtractorComponent() {
     extRequire(__dirname + "/../lib2/xpath/XPathNode.js");
     extRequire(__dirname + "/../lib2/xpath/XPathParser.js");
 
+    extRequire(__dirname + "/../lib2/utility/Cache.js");
+
     this.extractFields = function (window, fieldCollections) {
         fieldCollections = fieldCollections ? fieldCollections : this.extract(window);
         var fieldOutputHTML = new FieldOutputHTML();
@@ -88,11 +90,13 @@ function ExtractorComponent() {
         var fieldCutoff = 0.7;
         var fieldMetricsCutoff = 0.7;
 
-        var treeBuilder = new TreeBuilder(window.document.body, new TreeComparatorFullBi(compareRate, alignIndexCompareCutoff), new TreeComparatorFullBi(compareRate, findLikeCompareCutoff));
+        var cacheCompare = new Cache();
+
+        var treeBuilder = new TreeBuilder(window.document.body, new TreeComparatorFullBi(compareRate, alignIndexCompareCutoff, cacheCompare), new TreeComparatorFullBi(compareRate, findLikeCompareCutoff, cacheCompare));
         var tree = treeBuilder.build();
 
-        var metricRate = new RecordsMetrics(new TreeComparatorFullBi(compareRate, compareCutoff), new TreeComplexityBi(complexityRateNeighbour, complexityRateDeep, complexityCutoff), recordRateCutoff);
-        var metricSeedRate = new RecordsMetrics(new TreeComparatorFullBi(compareRate, 0), new TreeComplexityBi(complexityRateNeighbour, complexityRateDeep, 0), recordSeedRateCutoff);
+        var metricRate = new RecordsMetrics(new TreeComparatorFullBi(compareRate, compareCutoff, cacheCompare), new TreeComplexityBi(complexityRateNeighbour, complexityRateDeep, complexityCutoff), recordRateCutoff);
+        var metricSeedRate = new RecordsMetrics(new TreeComparatorFullBi(compareRate, 0, cacheCompare), new TreeComplexityBi(complexityRateNeighbour, complexityRateDeep, 0), recordSeedRateCutoff);
         var recordsExtractor = new RecordsExtractor(metricRate, metricSeedRate);
 
 

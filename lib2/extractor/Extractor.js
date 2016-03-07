@@ -1,7 +1,7 @@
 /**
  * Created by imsamurai on 15.02.2016.
  */
-function Extractor(recordsExtractor, fieldsExtractor, fieldsTagger) {
+function Extractor(recordsExtractor, fieldsExtractor) {
     this.run = function (tree) {
         return recordsExtractor.run(tree).map(fieldsExtractor.run).filter(function (fieldCollection) {
             return fieldCollection.rate > 0;

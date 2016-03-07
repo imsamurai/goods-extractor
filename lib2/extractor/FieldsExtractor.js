@@ -3,12 +3,21 @@
  */
 function FieldsExtractor(fieldValueExtractor, fieldTagger, metricRate, fieldCutoff) {
     this.run = function (recordCollection) {
+        var start = new Date();
         var trees = recordCollection.records.map(function (record) {
             return record.tree.transformInsideOut();
         });
+        console.log('Got trees in '+((new Date() - start) / 1000) + 'sec '+recordCollection.records.length);
+        start = new Date();
         var seedTrees = completeSeeds(recordCollection.tree.transformInsideOut(), trees);
+        console.log('Got seeds in '+((new Date() - start) / 1000) + 'sec '+seedTrees.length);
+        start = new Date();
         var fieldGroups = extract(seedTrees, trees, recordCollection.records, []);
+        console.log('Extract groups in '+((new Date() - start) / 1000) + 'sec ' + fieldGroups.length);
+        start = new Date();
         var fieldCollection = fieldTagger.run(groupFields(new FieldCollection(groupFieldGroups(fieldGroups), recordCollection)));
+        console.log('Tag fields in  '+((new Date() - start) / 1000) + 'sec');
+        start = new Date();
 
         fieldCollection.fieldGroups = filterGroups(fieldCollection.fieldGroups).sort(function (fieldGroup1, fieldGroup2) {
             if (fieldGroup1.rate > fieldGroup2.rate) {
@@ -18,9 +27,12 @@ function FieldsExtractor(fieldValueExtractor, fieldTagger, metricRate, fieldCuto
             }
             return 0;
         }).map(filterFields);
-
+        console.log('Filter groups in '+((new Date() - start) / 1000) + 'sec');
+        start = new Date();
 
         fieldCollection.rate = (metricRate.rateGroups(fieldCollection.getBestGroups()) + recordCollection.rate) / 2;
+        console.log('Rate groups in '+((new Date() - start) / 1000) + 'sec');
+
         //console.log(fieldCollection);
         return fieldCollection;
     };
@@ -32,7 +44,6 @@ function FieldsExtractor(fieldValueExtractor, fieldTagger, metricRate, fieldCuto
             }));
         }, seedTrees);
     }
-
 
     function extract(seedTrees, trees, records) {
         return seedTrees.flatMap(function (seedTree) {

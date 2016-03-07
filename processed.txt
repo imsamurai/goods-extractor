@@ -1,0 +1,2040 @@
+Statistical profiling result from isolate-0x1df2c30-v8.log, (73971 ticks, 82 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   6199    8.4%          /usr/bin/nodejs
+    282    0.4%          /lib/x86_64-linux-gnu/libc-2.19.so
+      7    0.0%          /lib/x86_64-linux-gnu/libpthread-2.19.so
+      2    0.0%          [vdso]
+      1    0.0%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   7407   10.0%   11.0%  LazyCompile: ~compareTreePosition /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:561:28
+   3271    4.4%    4.8%  KeyedLoadIC: A keyed load IC from the snapshot {1}
+   1510    2.0%    2.2%  Stub: LoadICStub
+   1402    1.9%    2.1%  LazyCompile: *parent /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:143:15
+   1274    1.7%    1.9%  Stub: ToBooleanStub(Null,SpecObject)
+    853    1.2%    1.3%  Stub: CEntryStub
+    588    0.8%    0.9%  Stub: LoadConstantStub {1}
+    517    0.7%    0.8%  Stub: CompareICStub {14}
+    365    0.5%    0.5%  Stub: InstanceofStub
+    350    0.5%    0.5%  LazyCompile: *reverseArrayIndex /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:16:27
+    329    0.4%    0.5%  Stub: LoadICStub {1}
+    318    0.4%    0.5%  LazyCompile: *Pa /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:42:471
+    260    0.4%    0.4%  LazyCompile: *Serializer._serializeTextNode /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:151:52
+    252    0.3%    0.4%  Builtin: ArgumentsAdaptorTrampoline
+    236    0.3%    0.3%  Handler: push
+    234    0.3%    0.3%  LazyCompile: *childNodes /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:253:17
+    231    0.3%    0.3%  LazyCompile: *Ja /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:39:352
+    218    0.3%    0.3%  LazyCompile: *Serializer._serializeAttributes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:119:54
+    212    0.3%    0.3%  Handler: parent {1}
+    197    0.3%    0.3%  LazyCompile: *core.Node.compareDocumentPosition /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/node.js:45:58
+    172    0.2%    0.3%  Stub: FastCloneShallowArrayStub
+    170    0.2%    0.3%  Stub: FastNewClosureStub {1}
+    165    0.2%    0.2%  LazyCompile: ~InnerArrayFilter native array.js:909:26
+    165    0.2%    0.2%  Handler: An IC handler from the snapshot {11}
+    164    0.2%    0.2%  Handler: An IC handler from the snapshot {9}
+    161    0.2%    0.2%  KeyedLoadIC: A keyed load IC from the snapshot
+    159    0.2%    0.2%  LazyCompile: *tagName /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:637:14
+    136    0.2%    0.2%  LazyCompile: *index /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:472:14
+    135    0.2%    0.2%  LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+    133    0.2%    0.2%  Handler: An IC handler from the snapshot {21}
+    130    0.2%    0.2%  Stub: CompareICStub
+    129    0.2%    0.2%  LazyCompile: *min native math.js:61:17
+    126    0.2%    0.2%  LazyCompile: *InnerArrayReduce native array.js:1147:26
+    115    0.2%    0.2%  LazyCompile: ~$a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:58:12
+    114    0.2%    0.2%  Stub: StringAddStub_CheckNone_NotTenured
+    114    0.2%    0.2%  LazyCompile: *<anonymous> evalmachine.<anonymous>:93:55
+    110    0.1%    0.2%  Handler: font-size
+     99    0.1%    0.1%  LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+     93    0.1%    0.1%  LazyCompile: IN native runtime.js:277:12
+     92    0.1%    0.1%  RegExp: <\\/?[^>]+> {1}
+     92    0.1%    0.1%  LazyCompile: *nextSibling /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:267:18
+     89    0.1%    0.1%  RegExp: \\s+|[!@#$%^&*()_+\\-=\\[\\]{};':~`\ufffd"\\\\|\,.<>\\/? ]+|\\d+
+     89    0.1%    0.1%  LazyCompile: *<anonymous> evalmachine.<anonymous>:49:43
+     83    0.1%    0.1%  LazyCompile: *compareByName evalmachine.<anonymous>:43:27
+     77    0.1%    0.1%  LazyCompile: ~InnerArrayJoin native array.js:321:24
+     76    0.1%    0.1%  LazyCompile: *replace native string.js:152:23
+     74    0.1%    0.1%  LazyCompile: *La /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:41:12
+     70    0.1%    0.1%  Stub: CallFunctionStub_Args0
+     69    0.1%    0.1%  Builtin: ArrayPush
+     68    0.1%    0.1%  LazyCompile: EQUALS native runtime.js:22:16
+     65    0.1%    0.1%  KeyedLoadIC: A keyed load IC from the snapshot {2}
+     59    0.1%    0.1%  LazyCompile: *keys native v8natives.js:177:20
+     58    0.1%    0.1%  Handler: An IC handler from the snapshot {34}
+     56    0.1%    0.1%  Stub: RegExpExecStub
+     53    0.1%    0.1%  Stub: CompareICStub {6}
+     51    0.1%    0.1%  LazyCompile: *namespaceURI /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:628:19
+     51    0.1%    0.1%  LazyCompile: *getAttributesRates evalmachine.<anonymous>:96:32
+     51    0.1%    0.1%  LazyCompile: *StringSplitOnRegExp native string.js:441:29
+     51    0.1%    0.1%  Handler: id {1}
+     49    0.1%    0.1%  Handler: symbol("ArrayIterator#kind" hash 3f5bc38b)
+     48    0.1%    0.1%  Stub: CompareICStub {16}
+     46    0.1%    0.1%  LazyCompile: *filter native array.js:933:21
+     46    0.1%    0.1%  Handler: An IC handler from the snapshot {20}
+     42    0.1%    0.1%  LazyCompile: *compareByAttributesValue evalmachine.<anonymous>:47:38
+     41    0.1%    0.1%  Stub: GrowArrayElementsStub
+     41    0.1%    0.1%  LazyCompile: *ob.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:56:61
+     41    0.1%    0.1%  LazyCompile: *nodeName /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:221:15
+     41    0.1%    0.1%  Handler: An IC handler from the snapshot {23}
+     40    0.1%    0.1%  Stub: LoadConstantStub {3}
+     40    0.1%    0.1%  Stub: CallConstructStub {1}
+     40    0.1%    0.1%  LazyCompile: *U.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:60:23
+     39    0.1%    0.1%  LazyCompile: ~TreeNode.texts evalmachine.<anonymous>:18:26
+     39    0.1%    0.1%  Handler: nodeName {1}
+     38    0.1%    0.1%  Handler: index
+     37    0.1%    0.1%  Stub: FastNewContextStub {1}
+     36    0.0%    0.1%  LazyCompile: *toUpperCase native string.js:545:29
+     35    0.0%    0.1%  Handler: Math
+     34    0.0%    0.1%  Stub: CompareICStub {13}
+     34    0.0%    0.1%  Handler: nodeType {15}
+     33    0.0%    0.0%  Stub: CallFunctionStub_Args1
+     33    0.0%    0.0%  Handler: nodeName {13}
+     31    0.0%    0.0%  Handler: attributes {13}
+     30    0.0%    0.0%  Stub: CallFunctionStub {2}
+     30    0.0%    0.0%  LazyCompile: *map native array.js:1040:18
+     30    0.0%    0.0%  LazyCompile: *compare evalmachine.<anonymous>:18:21
+     30    0.0%    0.0%  LazyCompile: *I /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:43:266
+     30    0.0%    0.0%  Handler: An IC handler from the snapshot {6}
+     29    0.0%    0.0%  LazyCompile: *get native collection.js:245:16
+     29    0.0%    0.0%  LazyCompile: *compareAttributeValue evalmachine.<anonymous>:67:35
+     29    0.0%    0.0%  LazyCompile: *InnerArrayFilter native array.js:909:26
+     28    0.0%    0.0%  LazyCompile: *toLowerCase native string.js:537:29
+     28    0.0%    0.0%  LazyCompile: *Q /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:47:484
+     28    0.0%    0.0%  Handler: _style {2}
+     27    0.0%    0.0%  LazyCompile: *TreeComparatorFull evalmachine.<anonymous>:4:28
+     26    0.0%    0.0%  Handler: reliableMarginRight
+     25    0.0%    0.0%  RegExp: <\\/?[^>]+>
+     25    0.0%    0.0%  LazyCompile: *join native array.js:337:19
+     25    0.0%    0.0%  Builtin: JSConstructStubGeneric
+     24    0.0%    0.0%  Stub: CompareICStub {7}
+     24    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:84:48
+     24    0.0%    0.0%  Handler: An IC handler from the snapshot {17}
+     23    0.0%    0.0%  Stub: CallConstructStub {2}
+     23    0.0%    0.0%  LazyCompile: ~_getAttributes evalmachine.<anonymous>:37:28
+     23    0.0%    0.0%  LazyCompile: *<anonymous> /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:63:30
+     22    0.0%    0.0%  Stub: SubStringStub
+     22    0.0%    0.0%  Stub: CompareICStub {5}
+     22    0.0%    0.0%  LazyCompile: *trim native string.js:553:22
+     22    0.0%    0.0%  Handler: nextSibling
+     22    0.0%    0.0%  Handler: children {1}
+     21    0.0%    0.0%  Stub: CallFunctionStub_Args2
+     21    0.0%    0.0%  Handler: tagName {14}
+     21    0.0%    0.0%  Handler: An IC handler from the snapshot {22}
+     20    0.0%    0.0%  Stub: FastNewContextStub
+     20    0.0%    0.0%  LazyCompile: *<anonymous> /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/attributes.js:23:57
+     20    0.0%    0.0%  Handler: nodeType {11}
+     19    0.0%    0.0%  Stub: ToBooleanStub {1}
+     19    0.0%    0.0%  Stub: StoreFastElementStub
+     19    0.0%    0.0%  LazyCompile: *<anonymous> /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:63:358
+     19    0.0%    0.0%  Handler: tagName {21}
+     19    0.0%    0.0%  Handler: nodeType {16}
+     19    0.0%    0.0%  Handler: compareDocumentPosition {2}
+     19    0.0%    0.0%  Handler: An IC handler from the snapshot {38}
+     19    0.0%    0.0%  Handler: An IC handler from the snapshot {18}
+     19    0.0%    0.0%  Handler: An IC handler from the snapshot
+     19    0.0%    0.0%  Function: ~<anonymous> /data/www/structure-comparator/node_modules/debug/node.js:1:11
+     18    0.0%    0.0%  Stub: FastNewContextStub {3}
+     18    0.0%    0.0%  LazyCompile: *compareByTextPresent evalmachine.<anonymous>:55:34
+     18    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:50:37
+     18    0.0%    0.0%  Handler: style {1}
+     18    0.0%    0.0%  Handler: list_8
+     18    0.0%    0.0%  Handler: An IC handler from the snapshot {15}
+     17    0.0%    0.0%  Handler: length {7}
+     16    0.0%    0.0%  Stub: ToBooleanStub
+     16    0.0%    0.0%  Stub: RecordWriteStub {1}
+     16    0.0%    0.0%  LazyCompile: *TreeComparatorFull.run evalmachine.<anonymous>:13:25
+     16    0.0%    0.0%  Handler: length {4}
+     15    0.0%    0.0%  Stub: InternalArrayNoArgumentConstructorStub
+     15    0.0%    0.0%  RegExp: ^(\\/?|)([\\s\\S]*?)((?:\\.{1\,2}|[^\\/]+?|)(\\.[^.\\/]*|))(?:[\\/]*)$
+     15    0.0%    0.0%  LazyCompile: *ToBoolean native runtime.js:427:19
+     15    0.0%    0.0%  LazyCompile: *NeuralNetwork.run evalmachine.<anonymous>:233:16
+     15    0.0%    0.0%  Handler: tagName {20}
+     15    0.0%    0.0%  Handler: _localName
+     14    0.0%    0.0%  Stub: BinaryOpICStub {2}
+     14    0.0%    0.0%  LazyCompile: ~_dispatch /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:90:12
+     14    0.0%    0.0%  LazyCompile: Join native array.js:106:14
+     14    0.0%    0.0%  LazyCompile: A /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:36:11
+     14    0.0%    0.0%  LazyCompile: *reduce native array.js:1172:21
+     14    0.0%    0.0%  LazyCompile: *Lb /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:70:12
+     14    0.0%    0.0%  LazyCompile: *DoRegExpExec native regexp.js:57:22
+     14    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:112:98
+     14    0.0%    0.0%  Handler: tagName {8}
+     14    0.0%    0.0%  Handler: namespaceURI {16}
+     13    0.0%    0.0%  Stub: ToBooleanStub(Smi)
+     13    0.0%    0.0%  Stub: CompareICStub {1}
+     13    0.0%    0.0%  Stub: CallFunctionStub
+     13    0.0%    0.0%  Handler: namespaceURI {13}
+     13    0.0%    0.0%  Handler: list_12
+     12    0.0%    0.0%  Stub: InternalArraySingleArgumentConstructorStub
+     12    0.0%    0.0%  Stub: GrowArrayElementsStub {1}
+     12    0.0%    0.0%  Stub: CallFunctionStub {1}
+     12    0.0%    0.0%  Stub: BinaryOpWithAllocationSiteStub {1}
+     12    0.0%    0.0%  LazyCompile: *NamedNodeMap.getNamedItem /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/attributes.js:38:48
+     12    0.0%    0.0%  KeyedStoreIC: A keyed store IC from the snapshot
+     12    0.0%    0.0%  Handler: nodeType {14}
+     12    0.0%    0.0%  Handler: compareDocumentPosition {4}
+     12    0.0%    0.0%  Handler: childNodes {3}
+     12    0.0%    0.0%  Handler: childNodes {15}
+     11    0.0%    0.0%  Stub: RecordWriteStub {6}
+     11    0.0%    0.0%  Stub: InternalArrayConstructorStub
+     11    0.0%    0.0%  Stub: CompareNilICStub
+     11    0.0%    0.0%  Stub: CompareICStub {10}
+     11    0.0%    0.0%  Stub: CallFunctionStub_Args4
+     11    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:105:41
+     11    0.0%    0.0%  Handler: symbol("impl" hash dd04d35)
+     11    0.0%    0.0%  Handler: childNodes {24}
+     10    0.0%    0.0%  LazyCompile: ~TreeNode evalmachine.<anonymous>:10:18
+     10    0.0%    0.0%  LazyCompile: ~TreeComplexity.run evalmachine.<anonymous>:6:25
+     10    0.0%    0.0%  LazyCompile: *indexOf native string.js:80:25
+     10    0.0%    0.0%  LazyCompile: *following /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:219:18
+     10    0.0%    0.0%  Handler: tagName {18}
+     10    0.0%    0.0%  Handler: symbol("location info" hash 2ddb20bd) {1}
+     10    0.0%    0.0%  Handler: rel
+     10    0.0%    0.0%  Handler: nodeName {4}
+     10    0.0%    0.0%  Handler: list_15
+     10    0.0%    0.0%  Handler: childNodes {7}
+     10    0.0%    0.0%  Handler: childNodes {1}
+     10    0.0%    0.0%  Builtin: InterruptCheck
+      9    0.0%    0.0%  LazyCompile: ~Tree.clone evalmachine.<anonymous>:15:26
+      9    0.0%    0.0%  LazyCompile: *z /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:35:381
+      9    0.0%    0.0%  LazyCompile: *construct evalmachine.<anonymous>:27:23
+      9    0.0%    0.0%  LazyCompile: *NeuralNetwork.runInput evalmachine.<anonymous>:246:21
+      9    0.0%    0.0%  LazyCompile: *Kb /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:68:12
+      9    0.0%    0.0%  LazyCompile: *CreateIteratorResultObject native array-iterator.js:38:36
+      9    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:26:36
+      9    0.0%    0.0%  Handler: tagName {2}
+      9    0.0%    0.0%  Handler: nodeType {10}
+      9    0.0%    0.0%  Handler: nodeName {9}
+      9    0.0%    0.0%  Handler: nodeName {6}
+      9    0.0%    0.0%  Handler: firstChild {5}
+      9    0.0%    0.0%  Handler: compareDocumentPosition {1}
+      9    0.0%    0.0%  Handler: childNodes {5}
+      9    0.0%    0.0%  Handler: childNodes {13}
+      8    0.0%    0.0%  Stub: LoadFieldStub {4}
+      8    0.0%    0.0%  Stub: LoadFastElementStub
+      8    0.0%    0.0%  LazyCompile: *parentNode /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:217:17
+      8    0.0%    0.0%  LazyCompile: *innerHTML /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:712:16
+      8    0.0%    0.0%  LazyCompile: *exec native regexp.js:88:22
+      8    0.0%    0.0%  LazyCompile: *O /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:44:11
+      8    0.0%    0.0%  LazyCompile: *H /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:43:165
+      8    0.0%    0.0%  Handler: tagName {17}
+      8    0.0%    0.0%  Handler: tagName {15}
+      8    0.0%    0.0%  Handler: symbol("DOM SymbolTree" hash 17d9cdea)
+      8    0.0%    0.0%  Handler: style {6}
+      8    0.0%    0.0%  Handler: nodeName {14}
+      8    0.0%    0.0%  Handler: nodeName {11}
+      8    0.0%    0.0%  Handler: namespaceURI {2}
+      8    0.0%    0.0%  Handler: namespaceURI {15}
+      8    0.0%    0.0%  Handler: list_11
+      8    0.0%    0.0%  Handler: childNodes {4}
+      8    0.0%    0.0%  Handler: childNodes {19}
+      8    0.0%    0.0%  Handler: _readonly
+      8    0.0%    0.0%  Handler: An IC handler from the snapshot {27}
+      8    0.0%    0.0%  Handler: An IC handler from the snapshot {19}
+      7    0.0%    0.0%  Stub: CompareNilICStub(NullValue)(Generic)
+      7    0.0%    0.0%  Stub: CompareICStub {11}
+      7    0.0%    0.0%  LazyCompile: *length /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/html-collection.js:17:13
+      7    0.0%    0.0%  LazyCompile: *exports.domToHtml /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/browser/domtohtml.js:8:30
+      7    0.0%    0.0%  LazyCompile: *complexity evalmachine.<anonymous>:11:24
+      7    0.0%    0.0%  Handler: tagName {4}
+      7    0.0%    0.0%  Handler: nodeType {9}
+      7    0.0%    0.0%  Handler: nodeName {22}
+      7    0.0%    0.0%  Handler: nodeName {10}
+      7    0.0%    0.0%  Handler: list_14
+      7    0.0%    0.0%  Handler: list_13
+      7    0.0%    0.0%  Handler: firstChild {3}
+      7    0.0%    0.0%  Handler: firstChild
+      7    0.0%    0.0%  Handler: compareDocumentPosition
+      6    0.0%    0.0%  Stub: ToBooleanStub(None)
+      6    0.0%    0.0%  Stub: CompareICStub {17}
+      6    0.0%    0.0%  LazyCompile: INSTANCE_OF native runtime.js:289:21
+      6    0.0%    0.0%  LazyCompile: *split native string.js:424:23
+      6    0.0%    0.0%  LazyCompile: *parseScheme /data/www/structure-comparator/node_modules/whatwg-url-compat/lib/url.js:518:25
+      6    0.0%    0.0%  LazyCompile: *next /data/www/structure-comparator/node_modules/symbol-tree/lib/TreeIterator.js:16:13
+      6    0.0%    0.0%  LazyCompile: *localName /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:634:16
+      6    0.0%    0.0%  LazyCompile: *getAttribute /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/element.js:27:62
+      6    0.0%    0.0%  LazyCompile: *String native string.js:28:27
+      6    0.0%    0.0%  Handler: tagName {9}
+      6    0.0%    0.0%  Handler: outerHTML {6}
+      6    0.0%    0.0%  Handler: localName {1}
+      6    0.0%    0.0%  Handler: childNodes {18}
+      6    0.0%    0.0%  Handler: bread_crumb
+      6    0.0%    0.0%  Handler: border
+      6    0.0%    0.0%  Handler: _version {1}
+      6    0.0%    0.0%  Handler: _style {3}
+      5    0.0%    0.0%  Stub: InstanceofStub_INLINE
+      5    0.0%    0.0%  RegExp: \\$?(?:(?![0-9-\\.])(?:\\*|[\\w-\\.]+):)?(?![0-9-\\.])(?:\\*|[\\w-\\.]+)|\\/\\/|\\.\\.|::|\\d+(?:\\.\\d*)?|\\.\\d+|"[^"]*"|'[^']*'|[!<>]=|\\s+|.
+      5    0.0%    0.0%  LazyCompile: MUL native runtime.js:164:13
+      5    0.0%    0.0%  LazyCompile: *Object.sortByKeys evalmachine.<anonymous>:36:30
+      5    0.0%    0.0%  Handler: tagName {19}
+      5    0.0%    0.0%  Handler: tagName {13}
+      5    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151) {7}
+      5    0.0%    0.0%  Handler: symbol("location info" hash 2ddb20bd)
+      5    0.0%    0.0%  Handler: style {2}
+      5    0.0%    0.0%  Handler: right_column
+      5    0.0%    0.0%  Handler: pixelPosition
+      5    0.0%    0.0%  Handler: nodeType {6}
+      5    0.0%    0.0%  Handler: nodeType {3}
+      5    0.0%    0.0%  Handler: nodeName {19}
+      5    0.0%    0.0%  Handler: namespaceURI {5}
+      5    0.0%    0.0%  Handler: localName {4}
+      5    0.0%    0.0%  Handler: length {3}
+      5    0.0%    0.0%  Handler: firstChild {4}
+      5    0.0%    0.0%  Handler: cssNumber
+      5    0.0%    0.0%  Handler: class
+      5    0.0%    0.0%  Handler: childNodes {2}
+      5    0.0%    0.0%  Handler: childNodes {17}
+      5    0.0%    0.0%  Handler: childNodes {16}
+      5    0.0%    0.0%  Handler: border {1}
+      5    0.0%    0.0%  Handler: attributes {2}
+      5    0.0%    0.0%  Handler: attributes {14}
+      5    0.0%    0.0%  Handler: An IC handler from the snapshot {26}
+      4    0.0%    0.0%  Stub: FastNewClosureStub {2}
+      4    0.0%    0.0%  StoreMegamorphic: args_count: 0 {1}
+      4    0.0%    0.0%  RegExp: ([^=" ]+)="([^"]*)"
+      4    0.0%    0.0%  LazyCompile: ~z /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:35:381
+      4    0.0%    0.0%  LazyCompile: ~compare evalmachine.<anonymous>:18:21
+      4    0.0%    0.0%  LazyCompile: ~EventImpl /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/events/Event-impl.js:6:14
+      4    0.0%    0.0%  LazyCompile: *values native array-iterator.js:73:21
+      4    0.0%    0.0%  LazyCompile: *n.fn.(anonymous function) about:blank:2:26611
+      4    0.0%    0.0%  LazyCompile: *indexOf /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/dom-token-list.js:111:17
+      4    0.0%    0.0%  LazyCompile: *create native v8natives.js:757:22
+      4    0.0%    0.0%  LazyCompile: *create /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/generated/MutationEvent.js:108:9
+      4    0.0%    0.0%  LazyCompile: *attributes /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:654:17
+      4    0.0%    0.0%  LazyCompile: *ToString native runtime.js:453:18
+      4    0.0%    0.0%  LazyCompile: *ToName native runtime.js:466:16
+      4    0.0%    0.0%  LazyCompile: *InnerArrayForEach native array.js:942:27
+      4    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:87:60
+      4    0.0%    0.0%  LazyCompile: *<anonymous> /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:47:240
+      4    0.0%    0.0%  LazyCompile: *<anonymous> /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level2/html.js:61:52
+      4    0.0%    0.0%  Handler: width {1}
+      4    0.0%    0.0%  Handler: tagName {7}
+      4    0.0%    0.0%  Handler: tagName {5}
+      4    0.0%    0.0%  Handler: tagName {12}
+      4    0.0%    0.0%  Handler: symbol("updateSteps" hash 28f8b6f9)
+      4    0.0%    0.0%  Handler: symbol("Symbol.iterator" hash e7f6a34) {1}
+      4    0.0%    0.0%  Handler: parentElement {1}
+      4    0.0%    0.0%  Handler: nodeType {12}
+      4    0.0%    0.0%  Handler: nodeName {3}
+      4    0.0%    0.0%  Handler: nodeName {17}
+      4    0.0%    0.0%  Handler: nextSibling {2}
+      4    0.0%    0.0%  Handler: namespaceURI {9}
+      4    0.0%    0.0%  Handler: namespaceURI {14}
+      4    0.0%    0.0%  Handler: localName {3}
+      4    0.0%    0.0%  Handler: dir
+      4    0.0%    0.0%  Handler: color
+      4    0.0%    0.0%  Handler: children {4}
+      4    0.0%    0.0%  Handler: childNodes {20}
+      4    0.0%    0.0%  Handler: boxSizingReliable
+      4    0.0%    0.0%  Handler: _readonly {1}
+      4    0.0%    0.0%  Handler: _ownerDocument
+      4    0.0%    0.0%  Handler: An IC handler from the snapshot {29}
+      4    0.0%    0.0%  Handler: An IC handler from the snapshot {28}
+      3    0.0%    0.0%  Stub: TypeofStub
+      3    0.0%    0.0%  Stub: ToObjectStub
+      3    0.0%    0.0%  Stub: ToBooleanStub(String)
+      3    0.0%    0.0%  Stub: StoreFieldStub {3}
+      3    0.0%    0.0%  Stub: StoreFastElementStub {2}
+      3    0.0%    0.0%  Stub: StoreFastElementStub {1}
+      3    0.0%    0.0%  Stub: NameDictionaryLookupStub {1}
+      3    0.0%    0.0%  Stub: LoadFieldStub {5}
+      3    0.0%    0.0%  Stub: GrowArrayElementsStub {3}
+      3    0.0%    0.0%  Stub: FastNewContextStub {2}
+      3    0.0%    0.0%  Stub: CompareNilICStub(NullValue)(Undefined,MonomorphicMap)
+      3    0.0%    0.0%  RegExp: <[^>]+>
+      3    0.0%    0.0%  LazyCompile: ~v about:blank:2:23006
+      3    0.0%    0.0%  LazyCompile: ~serializeURL /data/www/structure-comparator/node_modules/whatwg-url-compat/lib/url.js:967:22
+      3    0.0%    0.0%  LazyCompile: ~core.Node._modified /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:357:22
+      3    0.0%    0.0%  LazyCompile: ~TreeNode.clone evalmachine.<anonymous>:33:26
+      3    0.0%    0.0%  LazyCompile: ~DoConstructRegExp native regexp.js:20:27
+      3    0.0%    0.0%  LazyCompile: invokeEventListeners /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:168:30
+      3    0.0%    0.0%  LazyCompile: fa about:blank:2:6100
+      3    0.0%    0.0%  LazyCompile: Object.defineProperties.cssText.set /data/www/structure-comparator/node_modules/cssstyle/lib/CSSStyleDeclaration.js:175:23
+      3    0.0%    0.0%  LazyCompile: APPLY_PREPARE native runtime.js:336:23
+      3    0.0%    0.0%  LazyCompile: *test native regexp.js:135:20
+      3    0.0%    0.0%  LazyCompile: *scriptDataState /data/www/structure-comparator/node_modules/parse5/lib/tokenization/tokenizer.js:635:48
+      3    0.0%    0.0%  LazyCompile: *nodeValue /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:201:16
+      3    0.0%    0.0%  LazyCompile: *g.nodeType.g.documentElement.B about:blank:2:11446
+      3    0.0%    0.0%  LazyCompile: *convert /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/generated/EventInit.js:28:10
+      3    0.0%    0.0%  LazyCompile: *Serializer.serialize /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:55:43
+      3    0.0%    0.0%  LazyCompile: *InnerArrayMap native array.js:1019:23
+      3    0.0%    0.0%  KeyedStoreIC: A keyed store IC from the snapshot {1}
+      3    0.0%    0.0%  Handler: tagName {24}
+      3    0.0%    0.0%  Handler: tagName {23}
+      3    0.0%    0.0%  Handler: tagName {16}
+      3    0.0%    0.0%  Handler: tagName {11}
+      3    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151) {11}
+      3    0.0%    0.0%  Handler: symbol("Symbol.iterator" hash e7f6a34)
+      3    0.0%    0.0%  Handler: symbol("DOM SymbolTree" hash 17d9cdea) {2}
+      3    0.0%    0.0%  Handler: replace {2}
+      3    0.0%    0.0%  Handler: nodeType {13}
+      3    0.0%    0.0%  Handler: nodeName {2}
+      3    0.0%    0.0%  Handler: nodeName {21}
+      3    0.0%    0.0%  Handler: nodeName {20}
+      3    0.0%    0.0%  Handler: nodeName {16}
+      3    0.0%    0.0%  Handler: namespaceURI {4}
+      3    0.0%    0.0%  Handler: match
+      3    0.0%    0.0%  Handler: localName {2}
+      3    0.0%    0.0%  Handler: localName
+      3    0.0%    0.0%  Handler: list_10
+      3    0.0%    0.0%  Handler: cssHooks
+      3    0.0%    0.0%  Handler: compareDocumentPosition {7}
+      3    0.0%    0.0%  Handler: className
+      3    0.0%    0.0%  Handler: childNodes {23}
+      3    0.0%    0.0%  Handler: attributes {19}
+      3    0.0%    0.0%  Handler: _namespaceURI
+      3    0.0%    0.0%  Handler: _attributes
+      3    0.0%    0.0%  Handler: An IC handler from the snapshot {36}
+      3    0.0%    0.0%  Handler: An IC handler from the snapshot {33}
+      3    0.0%    0.0%  Builtin: FunctionCall
+      2    0.0%    0.0%  Stub: ToBooleanStub(Bool,Smi,HeapNumber)
+      2    0.0%    0.0%  Stub: ToBooleanStub(Bool,Null,Smi,SpecObject,HeapNumber)
+      2    0.0%    0.0%  Stub: StoreFastElementStub {3}
+      2    0.0%    0.0%  Stub: RecordWriteStub {9}
+      2    0.0%    0.0%  Stub: RecordWriteStub {5}
+      2    0.0%    0.0%  Stub: LoadFieldStub {1}
+      2    0.0%    0.0%  Stub: JSEntryStub
+      2    0.0%    0.0%  Stub: FastNewClosureStub
+      2    0.0%    0.0%  Stub: FastCloneShallowArrayStub {1}
+      2    0.0%    0.0%  Stub: CompareICStub {9}
+      2    0.0%    0.0%  Stub: CompareICStub {8}
+      2    0.0%    0.0%  Stub: CompareICStub {2}
+      2    0.0%    0.0%  Stub: CompareICStub {18}
+      2    0.0%    0.0%  Stub: CompareICStub {12}
+      2    0.0%    0.0%  Stub: BinaryOpWithAllocationSiteStub
+      2    0.0%    0.0%  RegExp: \\s+
+      2    0.0%    0.0%  LazyCompile: ~trim native string.js:553:22
+      2    0.0%    0.0%  LazyCompile: ~toLowerCase native string.js:537:29
+      2    0.0%    0.0%  LazyCompile: ~toArray evalmachine.<anonymous>:148:17
+      2    0.0%    0.0%  LazyCompile: ~setChild /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/browser/htmltodom.js:187:18
+      2    0.0%    0.0%  LazyCompile: ~n.extend.map about:blank:2:3309
+      2    0.0%    0.0%  LazyCompile: ~getSpecialsPercentage evalmachine.<anonymous>:258:35
+      2    0.0%    0.0%  LazyCompile: ~getRate evalmachine.<anonymous>:37:21
+      2    0.0%    0.0%  LazyCompile: ~getNormalizedTagName evalmachine.<anonymous>:294:34
+      2    0.0%    0.0%  LazyCompile: ~getEditDistance evalmachine.<anonymous>:341:29
+      2    0.0%    0.0%  LazyCompile: ~getAttribute evalmachine.<anonymous>:173:26
+      2    0.0%    0.0%  LazyCompile: ~fa.select about:blank:2:21275
+      2    0.0%    0.0%  LazyCompile: ~f about:blank:2:20562
+      2    0.0%    0.0%  LazyCompile: ~define.proto.dispatchEvent /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level2/html.js:351:30
+      2    0.0%    0.0%  LazyCompile: ~charAt native string.js:49:24
+      2    0.0%    0.0%  LazyCompile: ~_build evalmachine.<anonymous>:15:20
+      2    0.0%    0.0%  LazyCompile: ~QuickSort native array.js:728:26
+      2    0.0%    0.0%  LazyCompile: ~Module._resolveFilename module.js:312:35
+      2    0.0%    0.0%  LazyCompile: ~InsertionSort native array.js:701:30
+      2    0.0%    0.0%  LazyCompile: ~Dict.findCurrencies evalmachine.<anonymous>:248:35
+      2    0.0%    0.0%  LazyCompile: ~<anonymous> evalmachine.<anonymous>:17:43
+      2    0.0%    0.0%  LazyCompile: ~<anonymous> /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:47:265
+      2    0.0%    0.0%  LazyCompile: ~<anonymous> /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/parent-node.js:15:57
+      2    0.0%    0.0%  LazyCompile: xpathEvaluate about:blank:229:27
+      2    0.0%    0.0%  LazyCompile: fa.matchesSelector about:blank:2:11843
+      2    0.0%    0.0%  LazyCompile: *toArray evalmachine.<anonymous>:148:17
+      2    0.0%    0.0%  LazyCompile: *substring native string.js:487:25
+      2    0.0%    0.0%  LazyCompile: *next native array-iterator.js:44:27
+      2    0.0%    0.0%  LazyCompile: *module.exports.implForWrapper /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/generated/utils.js:17:42
+      2    0.0%    0.0%  LazyCompile: *length /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/node-list.js:34:13
+      2    0.0%    0.0%  LazyCompile: *isNaN native v8natives.js:32:21
+      2    0.0%    0.0%  LazyCompile: *dataState /data/www/structure-comparator/node_modules/parse5/lib/tokenization/tokenizer.js:548:35
+      2    0.0%    0.0%  LazyCompile: *convertInherit /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/generated/EventInit.js:8:17
+      2    0.0%    0.0%  LazyCompile: *childrenToArray /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:265:24
+      2    0.0%    0.0%  LazyCompile: *addPropMultVal evalmachine.<anonymous>:135:28
+      2    0.0%    0.0%  LazyCompile: *addPropMult evalmachine.<anonymous>:129:25
+      2    0.0%    0.0%  LazyCompile: *addProp evalmachine.<anonymous>:124:21
+      2    0.0%    0.0%  LazyCompile: *Y /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:73:11
+      2    0.0%    0.0%  LazyCompile: *XPathNode.toString evalmachine.<anonymous>:29:29
+      2    0.0%    0.0%  LazyCompile: *U /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:59:105
+      2    0.0%    0.0%  LazyCompile: *RegExpExecNoTests native regexp.js:62:27
+      2    0.0%    0.0%  LazyCompile: *Object.defineProperty.value /data/www/structure-comparator/node_modules/symbol-tree/lib/TreeIterator.js:55:28
+      2    0.0%    0.0%  LazyCompile: *DefaultNumber native runtime.js:514:23
+      2    0.0%    0.0%  LazyCompile: *ArrayIterator native array-iterator.js:29:23
+      2    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:97:66
+      2    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:97:57
+      2    0.0%    0.0%  KeyedStoreIC:  {985}
+      2    0.0%    0.0%  KeyedStoreIC:  {1111}
+      2    0.0%    0.0%  Handler: vertical-align
+      2    0.0%    0.0%  Handler: type {1}
+      2    0.0%    0.0%  Handler: texts
+      2    0.0%    0.0%  Handler: tagName {6}
+      2    0.0%    0.0%  Handler: symbol(hash df2c2f5)
+      2    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151) {8}
+      2    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151) {4}
+      2    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151)
+      2    0.0%    0.0%  Handler: symbol("Symbol.iterator" hash e7f6a34) {2}
+      2    0.0%    0.0%  Handler: src
+      2    0.0%    0.0%  Handler: serialize
+      2    0.0%    0.0%  Handler: replace {3}
+      2    0.0%    0.0%  Handler: replace {1}
+      2    0.0%    0.0%  Handler: reliableMarginLeft
+      2    0.0%    0.0%  Handler: parentNode {10}
+      2    0.0%    0.0%  Handler: parentElement {2}
+      2    0.0%    0.0%  Handler: outerHTML {2}
+      2    0.0%    0.0%  Handler: nodeType {8}
+      2    0.0%    0.0%  Handler: nodeType {5}
+      2    0.0%    0.0%  Handler: nodeType {19}
+      2    0.0%    0.0%  Handler: nodeName {23}
+      2    0.0%    0.0%  Handler: nodeName {12}
+      2    0.0%    0.0%  Handler: nextSibling {4}
+      2    0.0%    0.0%  Handler: nextSibling {1}
+      2    0.0%    0.0%  Handler: namespaceURI {6}
+      2    0.0%    0.0%  Handler: namespaceURI {3}
+      2    0.0%    0.0%  Handler: namespaceURI {18}
+      2    0.0%    0.0%  Handler: namespaceURI {17}
+      2    0.0%    0.0%  Handler: namespaceURI {12}
+      2    0.0%    0.0%  Handler: localName {6}
+      2    0.0%    0.0%  Handler: list_9
+      2    0.0%    0.0%  Handler: href {1}
+      2    0.0%    0.0%  Handler: firstChild {6}
+      2    0.0%    0.0%  Handler: firstChild {2}
+      2    0.0%    0.0%  Handler: filter {1}
+      2    0.0%    0.0%  Handler: exec
+      2    0.0%    0.0%  Handler: createEvent
+      2    0.0%    0.0%  Handler: content_left
+      2    0.0%    0.0%  Handler: children {7}
+      2    0.0%    0.0%  Handler: children {6}
+      2    0.0%    0.0%  Handler: children {5}
+      2    0.0%    0.0%  Handler: childNodes {9}
+      2    0.0%    0.0%  Handler: childNodes {8}
+      2    0.0%    0.0%  Handler: childNodes {25}
+      2    0.0%    0.0%  Handler: childNodes {22}
+      2    0.0%    0.0%  Handler: childNodes {21}
+      2    0.0%    0.0%  Handler: childNodes {14}
+      2    0.0%    0.0%  Handler: childNodes {11}
+      2    0.0%    0.0%  Handler: attributes {4}
+      2    0.0%    0.0%  Handler: attributes {21}
+      2    0.0%    0.0%  Handler: attributes {20}
+      2    0.0%    0.0%  Handler: attributes {16}
+      2    0.0%    0.0%  Handler: attributes {15}
+      2    0.0%    0.0%  Handler: _version
+      2    0.0%    0.0%  Handler: _memoizedQueries {2}
+      2    0.0%    0.0%  Handler: _memoizedQueries {1}
+      2    0.0%    0.0%  Handler: Object
+      2    0.0%    0.0%  Handler: An IC handler from the snapshot {8}
+      2    0.0%    0.0%  Handler: An IC handler from the snapshot {3}
+      2    0.0%    0.0%  Handler: An IC handler from the snapshot {39}
+      2    0.0%    0.0%  Handler: An IC handler from the snapshot {35}
+      2    0.0%    0.0%  Handler: An IC handler from the snapshot {32}
+      2    0.0%    0.0%  Handler: An IC handler from the snapshot {2}
+      2    0.0%    0.0%  Handler: An IC handler from the snapshot {25}
+      2    0.0%    0.0%  Handler: An IC handler from the snapshot {24}
+      2    0.0%    0.0%  Handler: An IC handler from the snapshot {1}
+      2    0.0%    0.0%  Handler: An IC handler from the snapshot {14}
+      2    0.0%    0.0%  Handler: $toName
+      2    0.0%    0.0%  Builtin: JSConstructEntryTrampoline
+      2    0.0%    0.0%  Builtin: ArrayConcat
+      1    0.0%    0.0%  Stub: StoreTransitionStub {3}
+      1    0.0%    0.0%  Stub: StoreTransitionStub {2}
+      1    0.0%    0.0%  Stub: StoreTransitionStub {1}
+      1    0.0%    0.0%  Stub: StoreTransitionStub
+      1    0.0%    0.0%  Stub: StoreFieldStub {2}
+      1    0.0%    0.0%  Stub: StoreFieldStub {1}
+      1    0.0%    0.0%  Stub: StoreFieldStub
+      1    0.0%    0.0%  Stub: StoreArrayLiteralElementStub
+      1    0.0%    0.0%  Stub: RecordWriteStub {8}
+      1    0.0%    0.0%  Stub: RecordWriteStub {7}
+      1    0.0%    0.0%  Stub: RecordWriteStub {4}
+      1    0.0%    0.0%  Stub: RecordWriteStub {3}
+      1    0.0%    0.0%  Stub: RecordWriteStub {2}
+      1    0.0%    0.0%  Stub: RecordWriteStub {14}
+      1    0.0%    0.0%  Stub: RecordWriteStub {13}
+      1    0.0%    0.0%  Stub: RecordWriteStub {12}
+      1    0.0%    0.0%  Stub: RecordWriteStub {11}
+      1    0.0%    0.0%  Stub: RecordWriteStub {10}
+      1    0.0%    0.0%  Stub: RecordWriteStub
+      1    0.0%    0.0%  Stub: NameDictionaryLookupStub
+      1    0.0%    0.0%  Stub: LoadFieldStub {7}
+      1    0.0%    0.0%  Stub: LoadFieldStub {6}
+      1    0.0%    0.0%  Stub: LoadFieldStub {3}
+      1    0.0%    0.0%  Stub: LoadFieldStub {2}
+      1    0.0%    0.0%  Stub: LoadFieldStub
+      1    0.0%    0.0%  Stub: LoadFastElementStub {1}
+      1    0.0%    0.0%  Stub: LoadConstantStub {2}
+      1    0.0%    0.0%  Stub: LoadConstantStub
+      1    0.0%    0.0%  Stub: GrowArrayElementsStub {2}
+      1    0.0%    0.0%  Stub: CompareICStub {4}
+      1    0.0%    0.0%  Stub: CompareICStub {3}
+      1    0.0%    0.0%  Stub: CompareICStub {19}
+      1    0.0%    0.0%  Stub: CompareICStub {15}
+      1    0.0%    0.0%  Stub: CallICStub(args(8), METHOD, 
+      1    0.0%    0.0%  Stub: CallFunctionStub_Args3
+      1    0.0%    0.0%  Stub: CallConstructStub
+      1    0.0%    0.0%  Stub: CEntryStub {1}
+      1    0.0%    0.0%  Stub: BinaryOpICWithAllocationSiteStub(ADD_CreateAllocationMementos:String*String->String) {1}
+      1    0.0%    0.0%  Stub: BinaryOpICWithAllocationSiteStub(ADD_CreateAllocationMementos:String*String->String)
+      1    0.0%    0.0%  Stub: BinaryOpICStub {4}
+      1    0.0%    0.0%  Stub: BinaryOpICStub {3}
+      1    0.0%    0.0%  Stub: BinaryOpICStub
+      1    0.0%    0.0%  Stub: ArraySingleArgumentConstructorStub
+      1    0.0%    0.0%  Script: ~/data/www/structure-comparator/node_modules/debug/node.js
+      1    0.0%    0.0%  RegExp: ^index\\.\\w+?$
+      1    0.0%    0.0%  RegExp: ^[\\x20\\t\\r\\n\\f]+|((?:^|[^\\\\])(?:\\\\.)*)[\\x20\\t\\r\\n\\f]+$
+      1    0.0%    0.0%  RegExp: \\u0000|\\u0009|\\u000A|\\u000D|\\u0020|#|%|\\/|:|\\?|@|\\[|\\\\|\\]
+      1    0.0%    0.0%  RegExp: \\s+|[!@#$%^&*()_+\\-=\\[\\]{};':~`\ufffd"\\\\|\,.<>\\/? ]+|\\d+ {1}
+      1    0.0%    0.0%  RegExp: \\d+\\.\\d+
+      1    0.0%    0.0%  RegExp: [\\uD800-\\uDBFF][\\uDC00-\\uDFFF]
+      1    0.0%    0.0%  RegExp: <\\/?[^>]+> {2}
+      1    0.0%    0.0%  LazyCompile: ~sort native array.js:903:19
+      1    0.0%    0.0%  LazyCompile: ~slice native string.js:390:21
+      1    0.0%    0.0%  LazyCompile: ~slice buffer.js:633:40
+      1    0.0%    0.0%  LazyCompile: ~simplifyXpath evalmachine.<anonymous>:57:27
+      1    0.0%    0.0%  LazyCompile: ~reverse native array.js:484:22
+      1    0.0%    0.0%  LazyCompile: ~replace native string.js:152:23
+      1    0.0%    0.0%  LazyCompile: ~removeListener events.js:272:28
+      1    0.0%    0.0%  LazyCompile: ~parse /data/www/structure-comparator/node_modules/cssom/lib/parse.js:9:29
+      1    0.0%    0.0%  LazyCompile: ~normalizedEditDistance evalmachine.<anonymous>:328:36
+      1    0.0%    0.0%  LazyCompile: ~n.fn.init about:blank:2:24222
+      1    0.0%    0.0%  LazyCompile: ~m about:blank:2:20078
+      1    0.0%    0.0%  LazyCompile: ~localName /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:634:16
+      1    0.0%    0.0%  LazyCompile: ~keys native v8natives.js:177:20
+      1    0.0%    0.0%  LazyCompile: ~isDigitSuffixTooLong about:blank:1347:34
+      1    0.0%    0.0%  LazyCompile: ~initMutationEvent /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/generated/MutationEvent.js:16:71
+      1    0.0%    0.0%  LazyCompile: ~href /data/www/structure-comparator/node_modules/whatwg-url-compat/lib/url.js:1070:11
+      1    0.0%    0.0%  LazyCompile: ~getUppercasePercent evalmachine.<anonymous>:149:33
+      1    0.0%    0.0%  LazyCompile: ~findRecordsOne evalmachine.<anonymous>:49:28
+      1    0.0%    0.0%  LazyCompile: ~exports.unenroll timers.js:138:45
+      1    0.0%    0.0%  LazyCompile: ~endTagInTableBody /data/www/structure-comparator/node_modules/parse5/lib/tree_construction/parser.js:2409:27
+      1    0.0%    0.0%  LazyCompile: ~dispatchEvent /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:49:61
+      1    0.0%    0.0%  LazyCompile: ~defineProperty native v8natives.js:766:30
+      1    0.0%    0.0%  LazyCompile: ~createFrom /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/utils.js:70:41
+      1    0.0%    0.0%  LazyCompile: ~core.Node.removeChild /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level2/events.js:90:44
+      1    0.0%    0.0%  LazyCompile: ~core.Node._attach /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:510:21
+      1    0.0%    0.0%  LazyCompile: ~core.DOMImplementation._hasFeature /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:138:24
+      1    0.0%    0.0%  LazyCompile: ~construct evalmachine.<anonymous>:27:23
+      1    0.0%    0.0%  LazyCompile: ~characterReferenceInDataState /data/www/structure-comparator/node_modules/parse5/lib/tokenization/tokenizer.js:568:78
+      1    0.0%    0.0%  LazyCompile: ~afterWrite _stream_writable.js:342:20
+      1    0.0%    0.0%  LazyCompile: ~addPropMultVal evalmachine.<anonymous>:135:28
+      1    0.0%    0.0%  LazyCompile: ~Y /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:73:11
+      1    0.0%    0.0%  LazyCompile: ~XPathNode.toString evalmachine.<anonymous>:29:29
+      1    0.0%    0.0%  LazyCompile: ~URLStateMachine /data/www/structure-comparator/node_modules/whatwg-url-compat/lib/url.js:458:25
+      1    0.0%    0.0%  LazyCompile: ~U.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:60:23
+      1    0.0%    0.0%  LazyCompile: ~TreeComparatorFull.run evalmachine.<anonymous>:13:25
+      1    0.0%    0.0%  LazyCompile: ~Tree.findLikeMany evalmachine.<anonymous>:48:33
+      1    0.0%    0.0%  LazyCompile: ~Tokenizer._consumeCharacterReference /data/www/structure-comparator/node_modules/parse5/lib/tokenization/tokenizer.js:507:59
+      1    0.0%    0.0%  LazyCompile: ~Serializer._serializeAttributes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:119:54
+      1    0.0%    0.0%  LazyCompile: ~Parser._shouldProcessTokenInForeignContent /data/www/structure-comparator/node_modules/parse5/lib/tree_construction/parser.js:586:65
+      1    0.0%    0.0%  LazyCompile: ~Pa /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:42:471
+      1    0.0%    0.0%  LazyCompile: ~OpenElementStack.popUntilTagNamePopped /data/www/structure-comparator/node_modules/parse5/lib/tree_construction/open_element_stack.js:157:61
+      1    0.0%    0.0%  LazyCompile: ~O /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:44:11
+      1    0.0%    0.0%  LazyCompile: ~Module.load module.js:335:33
+      1    0.0%    0.0%  LazyCompile: ~Lb /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:70:12
+      1    0.0%    0.0%  LazyCompile: ~Kb /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:68:12
+      1    0.0%    0.0%  LazyCompile: ~InnerArrayForEach native array.js:942:27
+      1    0.0%    0.0%  LazyCompile: ~FromPropertyDescriptor native v8natives.js:201:32
+      1    0.0%    0.0%  LazyCompile: ~Decode native uri.js:160:16
+      1    0.0%    0.0%  LazyCompile: ~Buffer buffer.js:43:16
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> evalmachine.<anonymous>:71:54
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> evalmachine.<anonymous>:6:67
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> evalmachine.<anonymous>:44:54
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> evalmachine.<anonymous>:38:52
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> evalmachine.<anonymous>:264:58
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> evalmachine.<anonymous>:116:74
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> about:blank:2:13874
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:63:30
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/parent-node.js:13:62
+      1    0.0%    0.0%  LazyCompile: ~2../cross-validate evalmachine.<anonymous>:28:33
+      1    0.0%    0.0%  LazyCompile: toString native v8natives.js:88:24
+      1    0.0%    0.0%  LazyCompile: getXPath about:blank:110:22
+      1    0.0%    0.0%  LazyCompile: *validateLabel /data/www/structure-comparator/node_modules/tr46/index.js:96:23
+      1    0.0%    0.0%  LazyCompile: *toASCII punycode.js:472:18
+      1    0.0%    0.0%  LazyCompile: *tableStartTagInBody /data/www/structure-comparator/node_modules/parse5/lib/tree_construction/parser.js:1401:29
+      1    0.0%    0.0%  LazyCompile: *sort native array.js:903:19
+      1    0.0%    0.0%  LazyCompile: *setup /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/generated/MutationEvent.js:113:8
+      1    0.0%    0.0%  LazyCompile: *realpathSync fs.js:1462:40
+      1    0.0%    0.0%  LazyCompile: *posix.resolve path.js:419:25
+      1    0.0%    0.0%  LazyCompile: *parser._processToken /data/www/structure-comparator/node_modules/parse5/lib/tree_construction/location_info_mixin.js:87:37
+      1    0.0%    0.0%  LazyCompile: *parser._insertElement /data/www/structure-comparator/node_modules/parse5/lib/tree_construction/location_info_mixin.js:138:38
+      1    0.0%    0.0%  LazyCompile: *parser._insertCharacters /data/www/structure-comparator/node_modules/parse5/lib/tree_construction/location_info_mixin.js:175:41
+      1    0.0%    0.0%  LazyCompile: *outerHTML /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:675:16
+      1    0.0%    0.0%  LazyCompile: *normalize01 evalmachine.<anonymous>:375:25
+      1    0.0%    0.0%  LazyCompile: *n.extend.merge about:blank:2:3108
+      1    0.0%    0.0%  LazyCompile: *match native string.js:122:23
+      1    0.0%    0.0%  LazyCompile: *isDigitSuffixTooLong about:blank:1347:34
+      1    0.0%    0.0%  LazyCompile: *is /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:64:5
+      1    0.0%    0.0%  LazyCompile: *inheritFrom._createElementWithCorrectElementInterface /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:881:55
+      1    0.0%    0.0%  LazyCompile: *indexOf native array.js:1094:22
+      1    0.0%    0.0%  LazyCompile: *ib /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:55:462
+      1    0.0%    0.0%  LazyCompile: *hasOwnProperty native v8natives.js:111:30
+      1    0.0%    0.0%  LazyCompile: *has native collection.js:144:16
+      1    0.0%    0.0%  LazyCompile: *get /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/generated/Event.js:77:6
+      1    0.0%    0.0%  LazyCompile: *findStatus /data/www/structure-comparator/node_modules/tr46/index.js:11:20
+      1    0.0%    0.0%  LazyCompile: *fa.compile about:blank:2:21108
+      1    0.0%    0.0%  LazyCompile: *define.attributes.normalize /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level2/html.js:415:59
+      1    0.0%    0.0%  LazyCompile: *core.Node.insertBefore /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level2/events.js:61:44
+      1    0.0%    0.0%  LazyCompile: *core.Node.appendChild /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:563:25
+      1    0.0%    0.0%  LazyCompile: *core.Node._attrModified /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:394:26
+      1    0.0%    0.0%  LazyCompile: *core.Document.createTextNode /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/document.js:32:53
+      1    0.0%    0.0%  LazyCompile: *childrenIterator /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:367:25
+      1    0.0%    0.0%  LazyCompile: *attributeNameState /data/www/structure-comparator/node_modules/parse5/lib/tokenization/tokenizer.js:1374:54
+      1    0.0%    0.0%  LazyCompile: *ancestorsIterator /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:427:26
+      1    0.0%    0.0%  LazyCompile: *XPathAttr evalmachine.<anonymous>:4:19
+      1    0.0%    0.0%  LazyCompile: *UseSparseVariant native array.js:93:26
+      1    0.0%    0.0%  LazyCompile: *URLStateMachine /data/www/structure-comparator/node_modules/whatwg-url-compat/lib/url.js:458:25
+      1    0.0%    0.0%  LazyCompile: *TreeComplexity.run evalmachine.<anonymous>:6:25
+      1    0.0%    0.0%  LazyCompile: *Tree evalmachine.<anonymous>:10:14
+      1    0.0%    0.0%  LazyCompile: *Tokenizer._emitCodePoint /data/www/structure-comparator/node_modules/parse5/lib/tokenization/tokenizer.js:406:47
+      1    0.0%    0.0%  LazyCompile: *ToNumber native runtime.js:434:18
+      1    0.0%    0.0%  LazyCompile: *Serializer._serializeCommentNode /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:168:55
+      1    0.0%    0.0%  LazyCompile: *Preprocessor.advanceAndPeekCodePoint /data/www/structure-comparator/node_modules/parse5/lib/tokenization/preprocessor.js:53:59
+      1    0.0%    0.0%  LazyCompile: *Parser._runParsingLoop /data/www/structure-comparator/node_modules/parse5/lib/tree_construction/parser.js:451:45
+      1    0.0%    0.0%  LazyCompile: *NonNumberToNumber native runtime.js:444:27
+      1    0.0%    0.0%  LazyCompile: *Nb /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:72:400
+      1    0.0%    0.0%  LazyCompile: *NamedPropertiesTracker.untrack /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/named-properties-tracker.js:118:53
+      1    0.0%    0.0%  LazyCompile: *N.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:45:128
+      1    0.0%    0.0%  LazyCompile: *IsPrimitive native runtime.js:505:21
+      1    0.0%    0.0%  LazyCompile: *InnerArraySort native array.js:688:24
+      1    0.0%    0.0%  LazyCompile: *InnerArrayIndexOf native array.js:1049:27
+      1    0.0%    0.0%  LazyCompile: *DoConstructRegExp native regexp.js:20:27
+      1    0.0%    0.0%  LazyCompile: *DefineOwnProperty native v8natives.js:633:27
+      1    0.0%    0.0%  LazyCompile: *CSSStyleRule /data/www/structure-comparator/node_modules/cssom/lib/CSSStyleRule.js:14:43
+      1    0.0%    0.0%  LazyCompile: *ArraySlice native array.js:568:20
+      1    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:90:68
+      1    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:38:52
+      1    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:30:116
+      1    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:301:44
+      1    0.0%    0.0%  LazyCompile: *<anonymous> evalmachine.<anonymous>:16:70
+      1    0.0%    0.0%  LazyCompile: *<anonymous> about:blank:2:19078
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:47:442
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:38:205
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/node.js:83:63
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level2/html.js:697:62
+      1    0.0%    0.0%  KeyedStoreIC:  {1023}
+      1    0.0%    0.0%  Handler: width {2}
+      1    0.0%    0.0%  Handler: type {2}
+      1    0.0%    0.0%  Handler: type
+      1    0.0%    0.0%  Handler: trim
+      1    0.0%    0.0%  Handler: toLowerCase {1}
+      1    0.0%    0.0%  Handler: toLowerCase
+      1    0.0%    0.0%  Handler: title
+      1    0.0%    0.0%  Handler: text
+      1    0.0%    0.0%  Handler: target
+      1    0.0%    0.0%  Handler: tagName {26}
+      1    0.0%    0.0%  Handler: tagName {25}
+      1    0.0%    0.0%  Handler: tagName {22}
+      1    0.0%    0.0%  Handler: tagName {1}
+      1    0.0%    0.0%  Handler: tagName {10}
+      1    0.0%    0.0%  Handler: tagName
+      1    0.0%    0.0%  Handler: symbol(hash 1dfed9a3)
+      1    0.0%    0.0%  Handler: symbol(hash 16388cb2)
+      1    0.0%    0.0%  Handler: symbol("url" hash 3b69973a)
+      1    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151) {9}
+      1    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151) {6}
+      1    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151) {5}
+      1    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151) {3}
+      1    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151) {2}
+      1    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151) {1}
+      1    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151) {12}
+      1    0.0%    0.0%  Handler: symbol("nonexistent_symbol" hash 28cd8151) {10}
+      1    0.0%    0.0%  Handler: symbol("location info" hash 2ddb20bd) {2}
+      1    0.0%    0.0%  Handler: symbol("isURL" hash 8c126b3)
+      1    0.0%    0.0%  Handler: symbol("input" hash 296b98cb)
+      1    0.0%    0.0%  Handler: symbol("ArrayIterator#object" hash 3d2716ec)
+      1    0.0%    0.0%  Handler: symbol("ArrayIterator#next" hash 3b9d7e8d)
+      1    0.0%    0.0%  Handler: symbol("ArrayIterator#kind" hash 3f5bc38b) {1}
+      1    0.0%    0.0%  Handler: substr
+      1    0.0%    0.0%  Handler: style {3}
+      1    0.0%    0.0%  Handler: split
+      1    0.0%    0.0%  Handler: size
+      1    0.0%    0.0%  Handler: replace
+      1    0.0%    0.0%  Handler: pixelMarginRight
+      1    0.0%    0.0%  Handler: parentRule
+      1    0.0%    0.0%  Handler: parentNode {9}
+      1    0.0%    0.0%  Handler: parentNode {8}
+      1    0.0%    0.0%  Handler: parentNode {7}
+      1    0.0%    0.0%  Handler: parentNode {6}
+      1    0.0%    0.0%  Handler: parentNode {5}
+      1    0.0%    0.0%  Handler: parentNode {4}
+      1    0.0%    0.0%  Handler: parentNode {3}
+      1    0.0%    0.0%  Handler: parentNode {2}
+      1    0.0%    0.0%  Handler: parentNode {1}
+      1    0.0%    0.0%  Handler: parentNode {12}
+      1    0.0%    0.0%  Handler: parentNode {11}
+      1    0.0%    0.0%  Handler: parentNode
+      1    0.0%    0.0%  Handler: parentElement {3}
+      1    0.0%    0.0%  Handler: parentElement
+      1    0.0%    0.0%  Handler: parent
+      1    0.0%    0.0%  Handler: outerHTML {5}
+      1    0.0%    0.0%  Handler: outerHTML {4}
+      1    0.0%    0.0%  Handler: outerHTML {3}
+      1    0.0%    0.0%  Handler: outerHTML {1}
+      1    0.0%    0.0%  Handler: nodeType {7}
+      1    0.0%    0.0%  Handler: nodeType {4}
+      1    0.0%    0.0%  Handler: nodeType {2}
+      1    0.0%    0.0%  Handler: nodeType {20}
+      1    0.0%    0.0%  Handler: nodeType {1}
+      1    0.0%    0.0%  Handler: nodeType {18}
+      1    0.0%    0.0%  Handler: nodeType {17}
+      1    0.0%    0.0%  Handler: nodeType
+      1    0.0%    0.0%  Handler: nodeName {8}
+      1    0.0%    0.0%  Handler: nodeName {7}
+      1    0.0%    0.0%  Handler: nodeName {5}
+      1    0.0%    0.0%  Handler: nodeName {24}
+      1    0.0%    0.0%  Handler: nodeName {18}
+      1    0.0%    0.0%  Handler: nodeName {15}
+      1    0.0%    0.0%  Handler: nodeName
+      1    0.0%    0.0%  Handler: nextSibling {8}
+      1    0.0%    0.0%  Handler: nextSibling {7}
+      1    0.0%    0.0%  Handler: nextSibling {6}
+      1    0.0%    0.0%  Handler: nextSibling {5}
+      1    0.0%    0.0%  Handler: nextSibling {3}
+      1    0.0%    0.0%  Handler: next {2}
+      1    0.0%    0.0%  Handler: next {1}
+      1    0.0%    0.0%  Handler: next
+      1    0.0%    0.0%  Handler: namespaceURI {8}
+      1    0.0%    0.0%  Handler: namespaceURI {7}
+      1    0.0%    0.0%  Handler: namespaceURI {1}
+      1    0.0%    0.0%  Handler: namespaceURI {19}
+      1    0.0%    0.0%  Handler: namespaceURI {11}
+      1    0.0%    0.0%  Handler: namespaceURI {10}
+      1    0.0%    0.0%  Handler: namespaceURI
+      1    0.0%    0.0%  Handler: map
+      1    0.0%    0.0%  Handler: localName {7}
+      1    0.0%    0.0%  Handler: localName {5}
+      1    0.0%    0.0%  Handler: length {8}
+      1    0.0%    0.0%  Handler: length {6}
+      1    0.0%    0.0%  Handler: length {2}
+      1    0.0%    0.0%  Handler: length {1}
+      1    0.0%    0.0%  Handler: length
+      1    0.0%    0.0%  Handler: isAttached
+      1    0.0%    0.0%  Handler: innerHTML {5}
+      1    0.0%    0.0%  Handler: innerHTML {4}
+      1    0.0%    0.0%  Handler: innerHTML {3}
+      1    0.0%    0.0%  Handler: innerHTML {2}
+      1    0.0%    0.0%  Handler: innerHTML {1}
+      1    0.0%    0.0%  Handler: indexOf
+      1    0.0%    0.0%  Handler: image
+      1    0.0%    0.0%  Handler: id {2}
+      1    0.0%    0.0%  Handler: id
+      1    0.0%    0.0%  Handler: i {2}
+      1    0.0%    0.0%  Handler: i {1}
+      1    0.0%    0.0%  Handler: i
+      1    0.0%    0.0%  Handler: harmony_regexps
+      1    0.0%    0.0%  Handler: handle
+      1    0.0%    0.0%  Handler: getElementsByTagName
+      1    0.0%    0.0%  Handler: getElementsByClassName
+      1    0.0%    0.0%  Handler: getAttribute {2}
+      1    0.0%    0.0%  Handler: getAttribute {1}
+      1    0.0%    0.0%  Handler: g
+      1    0.0%    0.0%  Handler: firstChild {8}
+      1    0.0%    0.0%  Handler: firstChild {7}
+      1    0.0%    0.0%  Handler: firstChild {1}
+      1    0.0%    0.0%  Handler: fields
+      1    0.0%    0.0%  Handler: f
+      1    0.0%    0.0%  Handler: dispatchEvent
+      1    0.0%    0.0%  Handler: createTextNode
+      1    0.0%    0.0%  Handler: context
+      1    0.0%    0.0%  Handler: concat
+      1    0.0%    0.0%  Handler: compareDocumentPosition {8}
+      1    0.0%    0.0%  Handler: compareDocumentPosition {6}
+      1    0.0%    0.0%  Handler: compareDocumentPosition {5}
+      1    0.0%    0.0%  Handler: compareDocumentPosition {3}
+      1    0.0%    0.0%  Handler: childrenToArray
+      1    0.0%    0.0%  Handler: children {8}
+      1    0.0%    0.0%  Handler: children {3}
+      1    0.0%    0.0%  Handler: children {2}
+      1    0.0%    0.0%  Handler: childNodes {6}
+      1    0.0%    0.0%  Handler: childNodes {12}
+      1    0.0%    0.0%  Handler: childNodes {10}
+      1    0.0%    0.0%  Handler: childNodes
+      1    0.0%    0.0%  Handler: cellspacing
+      1    0.0%    0.0%  Handler: cancelable
+      1    0.0%    0.0%  Handler: autocomplete
+      1    0.0%    0.0%  Handler: attributes {9}
+      1    0.0%    0.0%  Handler: attributes {8}
+      1    0.0%    0.0%  Handler: attributes {5}
+      1    0.0%    0.0%  Handler: attributes {3}
+      1    0.0%    0.0%  Handler: attributes {1}
+      1    0.0%    0.0%  Handler: attributes {18}
+      1    0.0%    0.0%  Handler: attributes {17}
+      1    0.0%    0.0%  Handler: attributes {12}
+      1    0.0%    0.0%  Handler: attributes {11}
+      1    0.0%    0.0%  Handler: attributes {10}
+      1    0.0%    0.0%  Handler: attributes
+      1    0.0%    0.0%  Handler: attribs
+      1    0.0%    0.0%  Handler: apply
+      1    0.0%    0.0%  Handler: ancestorsIterator
+      1    0.0%    0.0%  Handler: alt
+      1    0.0%    0.0%  Handler: a {1}
+      1    0.0%    0.0%  Handler: _style
+      1    0.0%    0.0%  Handler: _prefix
+      1    0.0%    0.0%  Handler: _ownerDocument {1}
+      1    0.0%    0.0%  Handler: _getAdjustedCurrentElement
+      1    0.0%    0.0%  Handler: _classList
+      1    0.0%    0.0%  Handler: _childNodesList {1}
+      1    0.0%    0.0%  Handler: _attributes {1}
+      1    0.0%    0.0%  Handler: _attrModified {1}
+      1    0.0%    0.0%  Handler: TreeNode
+      1    0.0%    0.0%  Handler: Object {1}
+      1    0.0%    0.0%  Handler: Field
+      1    0.0%    0.0%  Handler: Date
+      1    0.0%    0.0%  Handler: An IC handler from the snapshot {7}
+      1    0.0%    0.0%  Handler: An IC handler from the snapshot {5}
+      1    0.0%    0.0%  Handler: An IC handler from the snapshot {4}
+      1    0.0%    0.0%  Handler: An IC handler from the snapshot {37}
+      1    0.0%    0.0%  Handler: An IC handler from the snapshot {31}
+      1    0.0%    0.0%  Handler: An IC handler from the snapshot {30}
+      1    0.0%    0.0%  Handler: An IC handler from the snapshot {16}
+      1    0.0%    0.0%  Handler: An IC handler from the snapshot {13}
+      1    0.0%    0.0%  Handler: An IC handler from the snapshot {12}
+      1    0.0%    0.0%  Handler: An IC handler from the snapshot {10}
+      1    0.0%    0.0%  Handler: $nonNumberToNumber
+      1    0.0%    0.0%  Function: ~<anonymous> /data/www/structure-comparator/node_modules/bl/node_modules/readable-stream/lib/_stream_writable.js:1:11
+      1    0.0%    0.0%  Builtin: JSConstructStubForDerived
+
+ [C++]:
+   ticks  total  nonlib   name
+  19519   26.4%   28.9%  v8::internal::Object* v8::internal::VisitWeakList<v8::internal::JSFunction>(v8::internal::Heap*, v8::internal::Object*, v8::internal::WeakObjectRetainer*)
+   3702    5.0%    5.5%  v8::internal::LookupIterator::Next()
+   1821    2.5%    2.7%  v8::internal::LookupIterator::LookupIterator(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Name>, v8::internal::LookupIterator::Configuration)
+   1404    1.9%    2.1%  v8::internal::ScavengeWeakObjectRetainer::RetainAs(v8::internal::Object*)
+    701    0.9%    1.0%  v8::internal::JSArray::HasReadOnlyLength(v8::internal::Handle<v8::internal::JSArray>)
+    577    0.8%    0.9%  v8::internal::FixedArray::set(int, v8::internal::Object*)
+    525    0.7%    0.8%  v8::internal::Runtime_StringTrim(int, v8::internal::Object**, v8::internal::Isolate*)
+    465    0.6%    0.7%  v8::internal::Isolate::native_context()
+    461    0.6%    0.7%  v8::internal::LookupIterator::GetRoot(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, unsigned int)
+    447    0.6%    0.7%  v8::internal::Context::native_context()
+    350    0.5%    0.5%  v8::internal::Heap::AllocateRaw(int, v8::internal::AllocationSpace, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+    323    0.4%    0.5%  v8::internal::JSArray::WouldChangeReadOnlyLength(v8::internal::Handle<v8::internal::JSArray>, unsigned int)
+    315    0.4%    0.5%  v8::internal::Runtime_StringReplaceGlobalRegExpWithString(int, v8::internal::Object**, v8::internal::Isolate*)
+    283    0.4%    0.4%  void v8::internal::String::WriteToFlat<unsigned char>(v8::internal::String*, unsigned char*, int, int)
+    282    0.4%    0.4%  v8::internal::Isolate::IsFastArrayConstructorPrototypeChainIntact()
+    273    0.4%    0.4%  v8::internal::JSObject::GetElementsAccessor()
+    259    0.4%    0.4%  v8::internal::String::Flatten(v8::internal::Handle<v8::internal::String>, v8::internal::PretenureFlag)
+    219    0.3%    0.3%  v8::internal::Context::RemoveOptimizedFunction(v8::internal::JSFunction*)
+    217    0.3%    0.3%  void v8::internal::CopyWords<v8::internal::Object*>(v8::internal::Object**, v8::internal::Object* const*, unsigned long)
+    199    0.3%    0.3%  write
+    193    0.3%    0.3%  v8::internal::Heap::AllocateRawFixedArray(int, v8::internal::PretenureFlag)
+    181    0.2%    0.3%  v8::internal::Deoptimizer::DeoptimizeMarkedCodeForContext(v8::internal::Context*)
+    177    0.2%    0.3%  v8::internal::LookupIterator::IsIntegerIndexedExotic(v8::internal::JSReceiver*)
+    170    0.2%    0.3%  v8::internal::Runtime_StringToUpperCase(int, v8::internal::Object**, v8::internal::Isolate*)
+    170    0.2%    0.3%  memchr
+    139    0.2%    0.2%  node::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+    138    0.2%    0.2%  v8::internal::Runtime_HasElement(int, v8::internal::Object**, v8::internal::Isolate*)
+    128    0.2%    0.2%  v8::internal::String::GetFlatContent()
+    126    0.2%    0.2%  v8::internal::Factory::InitializeFunction(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Handle<v8::internal::Context>)
+    117    0.2%    0.2%  v8::internal::Runtime_StringToLowerCase(int, v8::internal::Object**, v8::internal::Isolate*)
+    112    0.2%    0.2%  v8::internal::Factory::NewUninitializedFixedArray(int)
+    111    0.2%    0.2%  v8::internal::StubCache::Set(v8::internal::Name*, v8::internal::Map*, v8::internal::Code*)
+    102    0.1%    0.2%  v8::internal::StoreBuffer::PrepareForIteration()
+    102    0.1%    0.2%  v8::internal::Factory::NewFunctionFromSharedFunctionInfo(v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Handle<v8::internal::Context>, v8::internal::PretenureFlag)
+    101    0.1%    0.1%  v8::internal::Factory::NewRawOneByteString(int, v8::internal::PretenureFlag)
+     99    0.1%    0.1%  v8::internal::JSObject::GetEnumPropertyKeys(v8::internal::Handle<v8::internal::JSObject>, bool)
+     96    0.1%    0.1%  cfree
+     94    0.1%    0.1%  v8::internal::Heap::AllocateUninitializedFixedArray(int)
+     93    0.1%    0.1%  v8::internal::Zone::DeleteAll()
+     92    0.1%    0.1%  v8::internal::FixedArray::SetValue(unsigned int, v8::internal::Object*)
+     91    0.1%    0.1%  v8::internal::LoadIC::Load(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Name>)
+     90    0.1%    0.1%  v8::internal::JSReceiver::GetKeys(v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::JSReceiver::KeyCollectionType)
+     89    0.1%    0.1%  v8::internal::Runtime_OwnKeys(int, v8::internal::Object**, v8::internal::Isolate*)
+     89    0.1%    0.1%  v8::internal::Runtime_MoveArrayContents(int, v8::internal::Object**, v8::internal::Isolate*)
+     83    0.1%    0.1%  v8::internal::Heap::ScavengeObject(v8::internal::HeapObject**, v8::internal::HeapObject*)
+     74    0.1%    0.1%  v8::internal::JSObject::MigrateFastToFast(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>)
+     72    0.1%    0.1%  v8::internal::Heap::InitializeJSObjectFromMap(v8::internal::JSObject*, v8::internal::FixedArray*, v8::internal::Map*)
+     71    0.1%    0.1%  v8::internal::Runtime_HasFastPackedElements(int, v8::internal::Object**, v8::internal::Isolate*)
+     71    0.1%    0.1%  v8::internal::JSObject::MigrateToMap(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>, int)
+     70    0.1%    0.1%  v8::internal::IncrementalMarking::Step(long, v8::internal::IncrementalMarking::CompletionAction, v8::internal::IncrementalMarking::ForceMarkingAction, v8::internal::IncrementalMarking::ForceCompletionAction)
+     66    0.1%    0.1%  v8::internal::IC::UpdateState(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)
+     61    0.1%    0.1%  v8::internal::CompiledReplacement::Compile(v8::internal::Handle<v8::internal::String>, int, int)
+     57    0.1%    0.1%  v8::internal::IC::IC(v8::internal::IC::FrameDepth, v8::internal::Isolate*, v8::internal::FeedbackNexus*)
+     57    0.1%    0.1%  v8::internal::Heap::AllocateRawOneByteString(int, v8::internal::PretenureFlag)
+     56    0.1%    0.1%  v8::internal::Runtime_KeyedLoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+     53    0.1%    0.1%  v8::internal::Map::TransitionElementsTo(v8::internal::Handle<v8::internal::Map>, v8::internal::ElementsKind)
+     51    0.1%    0.1%  v8::internal::FixedBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::FixedBodyDescriptor<24, 40, 40>, int>::Visit(v8::internal::Map*, v8::internal::HeapObject*)
+     51    0.1%    0.1%  v8::internal::Factory::NewProperSubString(v8::internal::Handle<v8::internal::String>, int, int)
+     50    0.1%    0.1%  v8::internal::JSReceiver::GetPropertyAttributes(v8::internal::LookupIterator*)
+     47    0.1%    0.1%  v8::internal::Runtime_NewClosure(int, v8::internal::Object**, v8::internal::Isolate*)
+     47    0.1%    0.1%  int v8::internal::BinarySearch<(v8::internal::SearchMode)1, v8::internal::DescriptorArray>(v8::internal::DescriptorArray*, v8::internal::Name*, int, int, int, int*)
+     46    0.1%    0.1%  v8::internal::IC::PatchCache(v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Code>)
+     45    0.1%    0.1%  v8::internal::Factory::NewJSObjectFromMap(v8::internal::Handle<v8::internal::Map>, v8::internal::PretenureFlag, v8::internal::Handle<v8::internal::AllocationSite>)
+     44    0.1%    0.1%  void v8::internal::String::WriteToFlat<unsigned short>(v8::internal::String*, unsigned short*, int, int)
+     44    0.1%    0.1%  v8::internal::JSObject::GetElementsTransitionMap(v8::internal::Handle<v8::internal::JSObject>, v8::internal::ElementsKind)
+     43    0.1%    0.1%  __GI___pthread_mutex_lock
+     42    0.1%    0.1%  v8::internal::Zone::New(unsigned long)
+     42    0.1%    0.1%  v8::internal::Heap::AllocateFixedArray(int, v8::internal::PretenureFlag)
+     38    0.1%    0.1%  v8::internal::Context::AddOptimizedFunction(v8::internal::JSFunction*)
+     37    0.1%    0.1%  __libc_malloc
+     36    0.0%    0.1%  v8::internal::JSObject::ResetElements(v8::internal::Handle<v8::internal::JSObject>)
+     36    0.0%    0.1%  v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::FixedArray::BodyDescriptor, int>::Visit(v8::internal::Map*, v8::internal::HeapObject*)
+     34    0.0%    0.1%  v8::internal::SharedFunctionInfo::SearchOptimizedCodeMap(v8::internal::Context*, v8::internal::BailoutId)
+     34    0.0%    0.1%  v8::internal::PrototypeIterator::Advance()
+     34    0.0%    0.1%  v8::internal::JSObject::NumberOfEnumElements()
+     34    0.0%    0.1%  v8::internal::JSObject::HasFastProperties()
+     33    0.0%    0.0%  v8::internal::InnerPointerToCodeCache::GetCacheEntry(unsigned char*)
+     33    0.0%    0.0%  v8::internal::Heap::Allocate(v8::internal::Map*, v8::internal::AllocationSpace, v8::internal::AllocationSite*)
+     31    0.0%    0.0%  v8::internal::IsMoreGeneralElementsKindTransition(v8::internal::ElementsKind, v8::internal::ElementsKind)
+     30    0.0%    0.0%  v8::internal::KeyedLoadICNexus::StateFromFeedback() const
+     29    0.0%    0.0%  madvise
+     28    0.0%    0.0%  v8::internal::StoreBuffer::StoreBufferOverflow(v8::internal::Isolate*)
+     28    0.0%    0.0%  v8::internal::StackFrame::GetCallerState(v8::internal::StackFrame::State*) const
+     27    0.0%    0.0%  v8::internal::Object::GetProperty(v8::internal::LookupIterator*, v8::internal::LanguageMode)
+     26    0.0%    0.0%  memset
+     25    0.0%    0.0%  v8::internal::StringSearch<unsigned char, unsigned char>::LinearSearch(v8::internal::StringSearch<unsigned char, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+     25    0.0%    0.0%  v8::internal::RuntimeProfiler::OptimizeNow()
+     25    0.0%    0.0%  v8::internal::Object::GetRootMap(v8::internal::Isolate*)
+     25    0.0%    0.0%  v8::internal::Map::InstancesNeedRewriting(v8::internal::Map*, int, int, int, int*)
+     24    0.0%    0.0%  v8::internal::StaticNewSpaceVisitor<v8::internal::NewSpaceScavenger>::VisitJSFunction(v8::internal::Map*, v8::internal::HeapObject*)
+     23    0.0%    0.0%  v8::internal::SerializerDeserializer::Iterate(v8::internal::Isolate*, v8::internal::ObjectVisitor*)
+     22    0.0%    0.0%  v8::internal::StackFrameIterator::StackFrameIterator(v8::internal::Isolate*)
+     22    0.0%    0.0%  v8::internal::Heap::DoScavenge(v8::internal::ObjectVisitor*, unsigned char*)
+     21    0.0%    0.0%  v8::internal::StringSearch<unsigned char, unsigned short>::LinearSearch(v8::internal::StringSearch<unsigned char, unsigned short>*, v8::internal::Vector<unsigned short const>, int)
+     21    0.0%    0.0%  v8::internal::StoreBuffer::ProcessOldToNewSlot(unsigned char*, void (*)(v8::internal::HeapObject**, v8::internal::HeapObject*))
+     21    0.0%    0.0%  v8::internal::StackGuard::HandleInterrupts()
+     20    0.0%    0.0%  v8::internal::HeapObject::synchronized_set_map(v8::internal::Map*)
+     20    0.0%    0.0%  v8::internal::Heap::IterateAndMarkPointersToFromSpace(v8::internal::HeapObject*, unsigned char*, unsigned char*, bool, void (*)(v8::internal::HeapObject**, v8::internal::HeapObject*))
+     19    0.0%    0.0%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::EvacuateObject<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectContents)1, (v8::internal::AllocationAlignment)0>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*, int)
+     19    0.0%    0.0%  v8::internal::CodeCache::UpdateDefaultCache(v8::internal::Handle<v8::internal::CodeCache>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Code>)
+     19    0.0%    0.0%  __pthread_mutex_unlock_usercnt
+     18    0.0%    0.0%  v8::internal::TimerEventScope<v8::internal::TimerEventIcMiss>::LogTimerEvent(v8::internal::Logger::StartEnd)
+     18    0.0%    0.0%  v8::internal::Name::Equals(v8::internal::Name*)
+     18    0.0%    0.0%  v8::internal::LChunk::MarkEmptyBlocks()
+     18    0.0%    0.0%  _IO_vfprintf
+     17    0.0%    0.0%  v8::internal::StoreBuffer::Compact()
+     17    0.0%    0.0%  v8::internal::FixedArray::UnionOfKeys(v8::internal::Handle<v8::internal::FixedArray>, v8::internal::Handle<v8::internal::FixedArray>)
+     16    0.0%    0.0%  v8::internal::JSObjectWalkVisitor<v8::internal::AllocationSiteUsageContext>::StructureWalk(v8::internal::Handle<v8::internal::JSObject>)
+     16    0.0%    0.0%  v8::internal::Factory::NewJSArray(v8::internal::ElementsKind, int, int, v8::internal::Strength, v8::internal::ArrayStorageAllocationMode, v8::internal::PretenureFlag)
+     16    0.0%    0.0%  bool v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::SemiSpaceCopyObject<(v8::internal::AllocationAlignment)1>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*, int)
+     15    0.0%    0.0%  v8::internal::Object::ReadAbsentProperty(v8::internal::LookupIterator*, v8::internal::LanguageMode)
+     15    0.0%    0.0%  v8::internal::Isolate::get_initial_js_array_map(v8::internal::ElementsKind, v8::internal::Strength)
+     14    0.0%    0.0%  v8::internal::Runtime_StringIndexOf(int, v8::internal::Object**, v8::internal::Isolate*)
+     14    0.0%    0.0%  v8::internal::MarkCompactWeakObjectRetainer::RetainAs(v8::internal::Object*)
+     14    0.0%    0.0%  v8::internal::Factory::NewJSArrayStorage(v8::internal::Handle<v8::internal::JSArray>, int, int, v8::internal::ArrayStorageAllocationMode)
+     14    0.0%    0.0%  v8::internal::Dictionary<v8::internal::NameDictionary, v8::internal::NameDictionaryShape, v8::internal::Handle<v8::internal::Name> >::CopyEnumKeysTo(v8::internal::FixedArray*)
+     14    0.0%    0.0%  v8::internal::CodeCache::LookupDefaultCache(v8::internal::Name*, unsigned int)
+     13    0.0%    0.0%  v8::internal::NameDictionaryBase<v8::internal::NameDictionary, v8::internal::NameDictionaryShape>::FindEntry(v8::internal::Handle<v8::internal::Name>)
+     13    0.0%    0.0%  v8::internal::Malloced::Delete(void*)
+     13    0.0%    0.0%  v8::internal::LoadIC::UpdateCaches(v8::internal::LookupIterator*)
+     13    0.0%    0.0%  v8::internal::IncrementalMarkingMarkingVisitor::VisitFixedArrayIncremental(v8::internal::Map*, v8::internal::HeapObject*)
+     13    0.0%    0.0%  v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::Object**, v8::internal::Object*)
+     13    0.0%    0.0%  v8::internal::Factory::NewFixedArray(int, v8::internal::PretenureFlag)
+     12    0.0%    0.0%  v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+     12    0.0%    0.0%  v8::internal::RegExpImpl::IrregexpPrepare(v8::internal::Handle<v8::internal::JSRegExp>, v8::internal::Handle<v8::internal::String>)
+     12    0.0%    0.0%  v8::internal::Logger::SuspectReadEvent(v8::internal::Name*, v8::internal::Object*)
+     12    0.0%    0.0%  v8::internal::Factory::NewJSArrayWithElements(v8::internal::Handle<v8::internal::FixedArrayBase>, v8::internal::ElementsKind, int, v8::internal::Strength, v8::internal::PretenureFlag)
+     12    0.0%    0.0%  v8::internal::Dictionary<v8::internal::NameDictionary, v8::internal::NameDictionaryShape, v8::internal::Handle<v8::internal::Name> >::NumberOfElementsFilterAttributes(PropertyAttributes)
+     12    0.0%    0.0%  int v8::internal::BinarySearch<(v8::internal::SearchMode)0, v8::internal::TransitionArray>(v8::internal::TransitionArray*, v8::internal::Name*, int, int, int, int*)
+     10    0.0%    0.0%  void std::__introsort_loop<v8::internal::Smi**, long, __gnu_cxx::__ops::_Iter_comp_iter<v8::internal::EnumIndexComparator<v8::internal::NameDictionary> > >(v8::internal::Smi**, v8::internal::Smi**, long, __gnu_cxx::__ops::_Iter_comp_iter<v8::internal::EnumIndexComparator<v8::internal::NameDictionary> >)
+     10    0.0%    0.0%  v8::internal::StringMatch(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>, int)
+     10    0.0%    0.0%  v8::internal::Runtime_StringEquals(int, v8::internal::Object**, v8::internal::Isolate*)
+     10    0.0%    0.0%  v8::internal::Runtime::GetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::LanguageMode)
+     10    0.0%    0.0%  v8::internal::FixedBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::FixedBodyDescriptor<24, 40, 40>, void>::Visit(v8::internal::Map*, v8::internal::HeapObject*)
+     10    0.0%    0.0%  v8::internal::Builtins::KeyedLoadIC_Megamorphic()
+     10    0.0%    0.0%  node::ContextifyContext::GlobalPropertyGetterCallback(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+     10    0.0%    0.0%  _init
+      9    0.0%    0.0%  v8::internal::TransitionArray::SearchTransition(v8::internal::Map*, v8::internal::PropertyKind, v8::internal::Name*, PropertyAttributes)
+      9    0.0%    0.0%  v8::internal::TransitionArray::GetPrototypeTransition(v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Object>)
+      9    0.0%    0.0%  v8::internal::String::SlowEquals(v8::internal::String*)
+      9    0.0%    0.0%  v8::internal::JSObject::RawFastPropertyAtPut(v8::internal::FieldIndex, v8::internal::Object*)
+      9    0.0%    0.0%  v8::internal::Heap::AllocateJSObjectFromMap(v8::internal::Map*, v8::internal::PretenureFlag, v8::internal::AllocationSite*)
+      9    0.0%    0.0%  v8::base::RecursiveMutex::Lock()
+      9    0.0%    0.0%  sem_post
+      9    0.0%    0.0%  munmap
+      8    0.0%    0.0%  v8::internal::RegExpImpl::IrregexpExecRaw(v8::internal::Handle<v8::internal::JSRegExp>, v8::internal::Handle<v8::internal::String>, int, int*, int)
+      8    0.0%    0.0%  v8::internal::Object** v8::internal::HandleScope::CreateHandle<v8::internal::Object>(v8::internal::Isolate*, v8::internal::Object*)
+      8    0.0%    0.0%  v8::internal::NativeRegExpMacroAssembler::Match(v8::internal::Handle<v8::internal::Code>, v8::internal::Handle<v8::internal::String>, int*, int, int, v8::internal::Isolate*)
+      8    0.0%    0.0%  v8::internal::Malloced::New(unsigned long)
+      8    0.0%    0.0%  v8::internal::LCodeGenBase::GenerateBody()
+      8    0.0%    0.0%  v8::internal::JSObject::ValidateElements(v8::internal::Handle<v8::internal::JSObject>)
+      8    0.0%    0.0%  v8::internal::HashTable<v8::internal::StringTable, v8::internal::StringTableShape, v8::internal::HashTableKey*>::FindEntry(v8::internal::Isolate*, v8::internal::HashTableKey*)
+      8    0.0%    0.0%  v8::internal::HashTable<v8::internal::NameDictionary, v8::internal::NameDictionaryShape, v8::internal::Handle<v8::internal::Name> >::FindEntry(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Name>)
+      8    0.0%    0.0%  v8::internal::FieldIndex::ForDescriptor(v8::internal::Map*, int)
+      8    0.0%    0.0%  v8::internal::CodeStub::GetCode()
+      8    0.0%    0.0%  v8::internal::Accessors::ArrayLengthSetter(v8::Local<v8::Name>, v8::Local<v8::Value>, v8::PropertyCallbackInfo<void> const&)
+      8    0.0%    0.0%  strchrnul
+      8    0.0%    0.0%  bool v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)0, (v8::internal::LoggingAndProfiling)0>::SemiSpaceCopyObject<(v8::internal::AllocationAlignment)1>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*, int)
+      7    0.0%    0.0%  v8::internal::String::SlowFlatten(v8::internal::Handle<v8::internal::ConsString>, v8::internal::PretenureFlag)
+      7    0.0%    0.0%  v8::internal::String::SlowEquals(v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>)
+      7    0.0%    0.0%  v8::internal::StatsCounter::Increment()
+      7    0.0%    0.0%  v8::internal::Runtime_KeyedGetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      7    0.0%    0.0%  v8::internal::Runtime_Interrupt(int, v8::internal::Object**, v8::internal::Isolate*)
+      7    0.0%    0.0%  v8::internal::Runtime::KeyedGetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::LanguageMode)
+      7    0.0%    0.0%  v8::internal::RegExpImpl::SetLastMatchInfo(v8::internal::Handle<v8::internal::JSArray>, v8::internal::Handle<v8::internal::String>, int, int*)
+      7    0.0%    0.0%  v8::internal::RegExpImpl::GlobalCache::GlobalCache(v8::internal::Handle<v8::internal::JSRegExp>, v8::internal::Handle<v8::internal::String>, bool, v8::internal::Isolate*)
+      7    0.0%    0.0%  v8::internal::Heap::OnMoveEvent(v8::internal::HeapObject*, v8::internal::HeapObject*, int)
+      7    0.0%    0.0%  v8::internal::Heap::CopyJSObject(v8::internal::JSObject*, v8::internal::AllocationSite*)
+      7    0.0%    0.0%  v8::internal::Handle<v8::internal::JSFunction> v8::internal::Factory::New<v8::internal::JSFunction>(v8::internal::Handle<v8::internal::Map>, v8::internal::AllocationSpace)
+      7    0.0%    0.0%  __GI___pthread_mutex_unlock
+      6    0.0%    0.0%  v8::internal::StringTable::LookupKey(v8::internal::Isolate*, v8::internal::HashTableKey*)
+      6    0.0%    0.0%  v8::internal::Scanner::ScanIdentifierOrKeyword()
+      6    0.0%    0.0%  v8::internal::Runtime_StringMatch(int, v8::internal::Object**, v8::internal::Isolate*)
+      6    0.0%    0.0%  v8::internal::PagedSpace::AllocateRawUnaligned(int)
+      6    0.0%    0.0%  v8::internal::Map::IsUnboxedDoubleField(v8::internal::FieldIndex)
+      6    0.0%    0.0%  v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::Visit(v8::internal::Map*, v8::internal::HeapObject*)
+      6    0.0%    0.0%  v8::internal::Factory::CopyJSObjectWithAllocationSite(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::AllocationSite>)
+      6    0.0%    0.0%  v8::internal::Execution::New(v8::internal::Handle<v8::internal::JSFunction>, int, v8::internal::Handle<v8::internal::Object>*)
+      6    0.0%    0.0%  v8::internal::ConsString::ConsStringGet(int)
+      6    0.0%    0.0%  v8::internal::CodeStub::FindCodeInCache(v8::internal::Code**)
+      6    0.0%    0.0%  v8::internal::Builtins::KeyedLoadIC_Slow()
+      6    0.0%    0.0%  node::Buffer::Utf8Slice(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.0%    0.0%  mmap
+      5    0.0%    0.0%  void v8::internal::StringHasher::AddCharacters<unsigned char>(unsigned char const*, int)
+      5    0.0%    0.0%  void v8::internal::Code::CodeIterateBody<v8::internal::IncrementalMarkingMarkingVisitor>(v8::internal::Heap*)
+      5    0.0%    0.0%  v8::internal::TransitionArray::SearchDetails(int, v8::internal::PropertyKind, PropertyAttributes, int*)
+      5    0.0%    0.0%  v8::internal::StubCache::CollectMatchingMaps(v8::internal::SmallMapList*, v8::internal::Handle<v8::internal::Name>, unsigned int, v8::internal::Handle<v8::internal::Context>, v8::internal::Zone*)
+      5    0.0%    0.0%  v8::internal::SemiSpace::Swap(v8::internal::SemiSpace*, v8::internal::SemiSpace*)
+      5    0.0%    0.0%  v8::internal::Runtime_IsSpecObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      5    0.0%    0.0%  v8::internal::Runtime_HasProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      5    0.0%    0.0%  v8::internal::Runtime_ForInFilter(int, v8::internal::Object**, v8::internal::Isolate*)
+      5    0.0%    0.0%  v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::LanguageMode)
+      5    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseAssignmentExpression(bool, v8::internal::ExpressionClassifier*, bool*)
+      5    0.0%    0.0%  v8::internal::JavaScriptFrameIterator::Advance()
+      5    0.0%    0.0%  v8::internal::JSObject::AddDataElement(v8::internal::Handle<v8::internal::JSObject>, unsigned int, v8::internal::Handle<v8::internal::Object>, PropertyAttributes)
+      5    0.0%    0.0%  v8::internal::IncrementalMarking::RecordWrites(v8::internal::HeapObject*)
+      5    0.0%    0.0%  v8::internal::IC::ComputeHandler(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>)
+      5    0.0%    0.0%  v8::internal::Heap::DeoptMarkedAllocationSites()
+      5    0.0%    0.0%  v8::internal::Factory::NewAllocationSite()
+      5    0.0%    0.0%  v8::internal::ExitFrame::ComputeCallerState(v8::internal::StackFrame::State*) const
+      5    0.0%    0.0%  v8::internal::CodeCache::Lookup(v8::internal::Name*, unsigned int)
+      5    0.0%    0.0%  v8::internal::AstValueFactory::GetOneByteStringInternal(v8::internal::Vector<unsigned char const>)
+      4    0.0%    0.0%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)0, (v8::internal::LoggingAndProfiling)0>::EvacuateObject<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)0, (v8::internal::LoggingAndProfiling)0>::ObjectContents)1, (v8::internal::AllocationAlignment)0>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*, int)
+      4    0.0%    0.0%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::VisitJSFunctionStrongCode(v8::internal::Heap*, v8::internal::HeapObject*)
+      4    0.0%    0.0%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::MarkMapContents(v8::internal::Heap*, v8::internal::Map*)
+      4    0.0%    0.0%  v8::internal::Runtime_RegExpExec(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.0%    0.0%  v8::internal::Runtime_PushIfAbsent(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.0%    0.0%  v8::internal::RelocIterator::next()
+      4    0.0%    0.0%  v8::internal::RegExpStackScope::RegExpStackScope(v8::internal::Isolate*)
+      4    0.0%    0.0%  v8::internal::PromotionQueue::insert(v8::internal::HeapObject*, int)
+      4    0.0%    0.0%  v8::internal::PointersUpdatingVisitor::VisitPointers(v8::internal::Object**, v8::internal::Object**)
+      4    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseExpression(bool, v8::internal::ExpressionClassifier*, bool*)
+      4    0.0%    0.0%  v8::internal::Object::AddDataProperty(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::LanguageMode, v8::internal::Object::StoreFromKeyed)
+      4    0.0%    0.0%  v8::internal::MarkCompactCollector::SweepInParallel(v8::internal::PagedSpace*, int)
+      4    0.0%    0.0%  v8::internal::LoadIC::slow_stub() const
+      4    0.0%    0.0%  v8::internal::LParallelMove::IsRedundant() const
+      4    0.0%    0.0%  v8::internal::LGap::IsRedundant() const
+      4    0.0%    0.0%  v8::internal::LCodeGen::DoInstructionGap(v8::internal::LInstructionGap*)
+      4    0.0%    0.0%  v8::internal::JSObjectWalkVisitor<v8::internal::AllocationSiteCreationContext>::StructureWalk(v8::internal::Handle<v8::internal::JSObject>)
+      4    0.0%    0.0%  v8::internal::InternalizedStringKey::IsMatch(v8::internal::Object*)
+      4    0.0%    0.0%  v8::internal::HeapObject::SizeFromMap(v8::internal::Map*)
+      4    0.0%    0.0%  v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::JSObject::BodyDescriptor, int>::Visit(v8::internal::Map*, v8::internal::HeapObject*)
+      4    0.0%    0.0%  v8::internal::ConsString* v8::internal::String::VisitFlat<v8::internal::IteratingStringHasher>(v8::internal::IteratingStringHasher*, v8::internal::String*, int)
+      3    0.0%    0.0%  void v8::internal::StringHasher::AddCharacters<unsigned short>(unsigned short const*, int)
+      3    0.0%    0.0%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectEvacuationStrategy<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectContents)1>::VisitSpecialized<72>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
+      3    0.0%    0.0%  void v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::VisitSpecialized<56>(v8::internal::Map*, v8::internal::HeapObject*)
+      3    0.0%    0.0%  void node::StreamBase::JSMethod<node::StreamWrap, &(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  v8::internal::VariableProxy::Accept(v8::internal::AstVisitor*)
+      3    0.0%    0.0%  v8::internal::VSNPrintF(v8::internal::Vector<char>, char const*, __va_list_tag*)
+      3    0.0%    0.0%  v8::internal::TemplateHashMapImpl<v8::internal::ZoneAllocationPolicy>::LookupOrInsert(void*, unsigned int, v8::internal::ZoneAllocationPolicy)
+      3    0.0%    0.0%  v8::internal::StringTable::LookupTwoCharsStringIfExists(v8::internal::Isolate*, unsigned short, unsigned short)
+      3    0.0%    0.0%  v8::internal::StringSearch<unsigned char, unsigned char>::InitialSearch(v8::internal::StringSearch<unsigned char, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+      3    0.0%    0.0%  v8::internal::String::SlowAsArrayIndex(unsigned int*)
+      3    0.0%    0.0%  v8::internal::String::IsOneByteEqualTo(v8::internal::Vector<unsigned char const>)
+      3    0.0%    0.0%  v8::internal::ScavengeVisitor::VisitPointers(v8::internal::Object**, v8::internal::Object**)
+      3    0.0%    0.0%  v8::internal::Scanner::AddLiteralCharAdvance()
+      3    0.0%    0.0%  v8::internal::SaveContext::SaveContext(v8::internal::Isolate*)
+      3    0.0%    0.0%  v8::internal::Runtime_LoadPropertyWithInterceptor(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.0%    0.0%  v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.0%    0.0%  v8::internal::RelocInfoWriter::Write(v8::internal::RelocInfo const*)
+      3    0.0%    0.0%  v8::internal::PropertyHandlerCompiler::CheckPrototypes(v8::internal::Register, v8::internal::Register, v8::internal::Register, v8::internal::Register, v8::internal::Handle<v8::internal::Name>, v8::internal::Label*, v8::internal::PrototypeCheckType, v8::internal::ReturnHolder)
+      3    0.0%    0.0%  v8::internal::PositionsRecorder::RecordPosition(int)
+      3    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseLeftHandSideExpression(v8::internal::ExpressionClassifier*, bool*)
+      3    0.0%    0.0%  v8::internal::Operand::Operand(v8::internal::Register, int)
+      3    0.0%    0.0%  v8::internal::MarkCompactCollector::MigrateObject(v8::internal::HeapObject*, v8::internal::HeapObject*, int, v8::internal::AllocationSpace)
+      3    0.0%    0.0%  v8::internal::MarkCompactCollector::DiscoverAndEvacuateBlackObjectsOnPage(v8::internal::NewSpace*, v8::internal::NewSpacePage*)
+      3    0.0%    0.0%  v8::internal::Map::RawCopy(v8::internal::Handle<v8::internal::Map>, int)
+      3    0.0%    0.0%  v8::internal::Map::FindInCodeCache(v8::internal::Name*, unsigned int)
+      3    0.0%    0.0%  v8::internal::LookupIterator::WriteDataValue(v8::internal::Handle<v8::internal::Object>)
+      3    0.0%    0.0%  v8::internal::LookupIterator::PrepareTransitionToDataProperty(v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::Object::StoreFromKeyed)
+      3    0.0%    0.0%  v8::internal::LookupIterator::ApplyTransitionToDataProperty()
+      3    0.0%    0.0%  v8::internal::LoadICNexus::StateFromFeedback() const
+      3    0.0%    0.0%  v8::internal::LGapResolver::BuildInitialMoveList(v8::internal::LParallelMove*)
+      3    0.0%    0.0%  v8::internal::JavaScriptFrame::GetFunctions(v8::internal::List<v8::internal::JSFunction*, v8::internal::FreeStoreAllocationPolicy>*)
+      3    0.0%    0.0%  v8::internal::JSObject::GetNamedInterceptor()
+      3    0.0%    0.0%  v8::internal::JSObject::FastPropertyAt(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Representation, v8::internal::FieldIndex)
+      3    0.0%    0.0%  v8::internal::IncrementalMarking::UpdateMarkingDequeAfterScavenge()
+      3    0.0%    0.0%  v8::internal::Heap::SetStackLimits()
+      3    0.0%    0.0%  v8::internal::Heap::AllocateMap(v8::internal::InstanceType, int, v8::internal::ElementsKind)
+      3    0.0%    0.0%  v8::internal::Factory::ObjectLiteralMapFromCache(v8::internal::Handle<v8::internal::Context>, int, bool, bool*)
+      3    0.0%    0.0%  v8::internal::Dictionary<v8::internal::NameDictionary, v8::internal::NameDictionaryShape, v8::internal::Handle<v8::internal::Name> >::BuildIterationIndicesArray(v8::internal::Handle<v8::internal::NameDictionary>)
+      3    0.0%    0.0%  v8::internal::DescriptorArray::CopyFrom(int, v8::internal::DescriptorArray*, v8::internal::DescriptorArray::WhitenessWitness const&)
+      3    0.0%    0.0%  v8::internal::DescriptorArray::Append(v8::internal::Descriptor*)
+      3    0.0%    0.0%  v8::internal::CompilationCacheTable::LookupRegExp(v8::internal::Handle<v8::internal::String>, v8::internal::JSRegExp::Flags)
+      3    0.0%    0.0%  v8::internal::CompilationCacheRegExp::Lookup(v8::internal::Handle<v8::internal::String>, v8::internal::JSRegExp::Flags)
+      3    0.0%    0.0%  v8::internal::AstNodeFactory::NewNumberLiteral(double, int, bool)
+      3    0.0%    0.0%  v8::internal::Assembler::emit_operand(int, v8::internal::Operand const&)
+      3    0.0%    0.0%  v8::internal::Assembler::bind(v8::internal::Label*)
+      3    0.0%    0.0%  v8::internal::AllocationSiteUsageContext::ShouldCreateMemento(v8::internal::Handle<v8::internal::JSObject>)
+      3    0.0%    0.0%  operator new(unsigned long)
+      3    0.0%    0.0%  __xstat
+      3    0.0%    0.0%  __pthread_mutex_trylock
+      3    0.0%    0.0%  _IO_default_xsputn
+      2    0.0%    0.0%  vsnprintf
+      2    0.0%    0.0%  void v8::internal::TypeFeedbackOracle::CollectReceiverTypes<v8::internal::LoadICNexus>(v8::internal::LoadICNexus*, v8::internal::SmallMapList*)
+      2    0.0%    0.0%  void v8::internal::Scanner::Advance<false, true>()
+      2    0.0%    0.0%  v8::platform::DefaultPlatform::MonotonicallyIncreasingTime()
+      2    0.0%    0.0%  v8::internal::compiler::CodeGenerator::BuildTranslationForFrameStateDescriptor(v8::internal::compiler::FrameStateDescriptor*, v8::internal::compiler::Instruction*, v8::internal::Translation*, unsigned long, v8::internal::compiler::OutputFrameStateCombine)
+      2    0.0%    0.0%  v8::internal::VariableProxy::node_type() const
+      2    0.0%    0.0%  v8::internal::TranslationBuffer::Add(int, v8::internal::Zone*)
+      2    0.0%    0.0%  v8::internal::Translation::BeginJSFrame(v8::internal::BailoutId, int, unsigned int)
+      2    0.0%    0.0%  v8::internal::String::CalculateLineEnds(v8::internal::Handle<v8::internal::String>, bool)
+      2    0.0%    0.0%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::VisitJSFunction(v8::internal::Map*, v8::internal::HeapObject*)
+      2    0.0%    0.0%  v8::internal::SlicedString::SlicedStringGet(int)
+      2    0.0%    0.0%  v8::internal::Script::GetLineNumber(v8::internal::Handle<v8::internal::Script>, int)
+      2    0.0%    0.0%  v8::internal::Scope::DeserializeScopeChain(v8::internal::Isolate*, v8::internal::Zone*, v8::internal::Context*, v8::internal::Scope*)
+      2    0.0%    0.0%  v8::internal::ScavengeVisitor::VisitPointer(v8::internal::Object**)
+      2    0.0%    0.0%  v8::internal::Scanner::ScanNumber(bool)
+      2    0.0%    0.0%  v8::internal::Runtime_RegExpInitializeAndCompile(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::Runtime_GetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::Runtime::GetPrototype(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>)
+      2    0.0%    0.0%  v8::internal::Runtime::CreateArrayLiteralBoilerplate(v8::internal::Isolate*, v8::internal::Handle<v8::internal::FixedArray>, v8::internal::Handle<v8::internal::FixedArray>, bool)
+      2    0.0%    0.0%  v8::internal::RelocIterator::RelocIterator(v8::internal::Code*, int)
+      2    0.0%    0.0%  v8::internal::RegExpKey::IsMatch(v8::internal::Object*)
+      2    0.0%    0.0%  v8::internal::RegExpKey::Hash()
+      2    0.0%    0.0%  v8::internal::RegExpImpl::Exec(v8::internal::Handle<v8::internal::JSRegExp>, v8::internal::Handle<v8::internal::String>, int, v8::internal::Handle<v8::internal::JSArray>)
+      2    0.0%    0.0%  v8::internal::ParserTraits::ExpressionFromLiteral(v8::internal::Token::Value, int, v8::internal::Scanner*, v8::internal::AstNodeFactory*)
+      2    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseObjectLiteral(v8::internal::ExpressionClassifier*, bool*)
+      2    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseBinaryExpression(int, bool, v8::internal::ExpressionClassifier*, bool*)
+      2    0.0%    0.0%  v8::internal::Object::NewStorageFor(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Representation)
+      2    0.0%    0.0%  v8::internal::NewSpace::AddFreshPage()
+      2    0.0%    0.0%  v8::internal::LookupIterator::GetFieldIndex() const
+      2    0.0%    0.0%  v8::internal::LookupIterator::GetDataValue() const
+      2    0.0%    0.0%  v8::internal::LayoutDescriptorHelper::IsTagged(int, int, int*)
+      2    0.0%    0.0%  v8::internal::LargeObjectIterator::Next()
+      2    0.0%    0.0%  v8::internal::LGapResolver::PerformMove(int)
+      2    0.0%    0.0%  v8::internal::LCodeGen::RegisterEnvironmentForDeoptimization(v8::internal::LEnvironment*, v8::internal::Safepoint::DeoptMode)
+      2    0.0%    0.0%  v8::internal::JSObject::UpdateAllocationSite(v8::internal::Handle<v8::internal::JSObject>, v8::internal::ElementsKind)
+      2    0.0%    0.0%  v8::internal::JSObject::GetPropertyWithInterceptor(v8::internal::LookupIterator*, bool*)
+      2    0.0%    0.0%  v8::internal::Isolate::IsInternallyUsedPropertyName(v8::internal::Handle<v8::internal::Object>)
+      2    0.0%    0.0%  v8::internal::Heap::CopyFixedArrayAndGrow(v8::internal::FixedArray*, int, v8::internal::PretenureFlag)
+      2    0.0%    0.0%  v8::internal::Heap::AllocateCode(int, bool)
+      2    0.0%    0.0%  v8::internal::HandleScope::~HandleScope()
+      2    0.0%    0.0%  v8::internal::Handle<v8::internal::String> v8::internal::JsonParser<true>::ScanJsonString<true>()
+      2    0.0%    0.0%  v8::internal::Handle<v8::internal::SlicedString> v8::internal::Factory::New<v8::internal::SlicedString>(v8::internal::Handle<v8::internal::Map>, v8::internal::AllocationSpace)
+      2    0.0%    0.0%  v8::internal::HInstruction::position() const
+      2    0.0%    0.0%  v8::internal::HInstruction::InsertAfter(v8::internal::HInstruction*)
+      2    0.0%    0.0%  v8::internal::HEnvironment::Initialize(v8::internal::HEnvironment const*)
+      2    0.0%    0.0%  v8::internal::HConstant::HConstant(v8::internal::Handle<v8::internal::Object>, v8::internal::Representation)
+      2    0.0%    0.0%  v8::internal::HBasicBlock::CreateSimulate(v8::internal::BailoutId, v8::internal::RemovableSimulate)
+      2    0.0%    0.0%  v8::internal::FuncNameInferrer::PushVariableName(v8::internal::AstRawString const*)
+      2    0.0%    0.0%  v8::internal::FreeList::FindNodeFor(int, int*)
+      2    0.0%    0.0%  v8::internal::FreeList::Allocate(int)
+      2    0.0%    0.0%  v8::internal::FixedArray::set(int, v8::internal::Object*, v8::internal::WriteBarrierMode)
+      2    0.0%    0.0%  v8::internal::FastCloneShallowArrayStub::InitializeDescriptor(v8::internal::CodeStubDescriptor*)
+      2    0.0%    0.0%  v8::internal::Factory::ToBoolean(bool)
+      2    0.0%    0.0%  v8::internal::EvacuationWeakObjectRetainer::RetainAs(v8::internal::Object*)
+      2    0.0%    0.0%  v8::internal::DescriptorArray::CanHoldValue(int, v8::internal::Object*)
+      2    0.0%    0.0%  v8::internal::CompilationInfo::CompilationInfo(v8::internal::ParseInfo*, v8::internal::CodeStub*, v8::internal::CompilationInfo::Mode, v8::internal::Isolate*, v8::internal::Zone*)
+      2    0.0%    0.0%  v8::internal::Code::CopyFrom(v8::internal::CodeDesc const&)
+      2    0.0%    0.0%  v8::internal::BinaryOperation::Accept(v8::internal::AstVisitor*)
+      2    0.0%    0.0%  v8::internal::AstValueFactory::NewString(v8::internal::AstRawString const*)
+      2    0.0%    0.0%  v8::internal::AstValueFactory::Internalize(v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::AstValueFactory::GetString(unsigned int, bool, v8::internal::Vector<unsigned char const>)
+      2    0.0%    0.0%  v8::internal::Assembler::popq(v8::internal::Register)
+      2    0.0%    0.0%  v8::internal::AllocationSiteCreationContext::ExitScope(v8::internal::Handle<v8::internal::AllocationSite>, v8::internal::Handle<v8::internal::JSObject>)
+      2    0.0%    0.0%  syscall
+      2    0.0%    0.0%  operator new[](unsigned long)
+      2    0.0%    0.0%  fwrite
+      2    0.0%    0.0%  __printf_fp
+      2    0.0%    0.0%  __lxstat
+      2    0.0%    0.0%  __lll_unlock_wake
+      2    0.0%    0.0%  __clock_gettime
+      2    0.0%    0.0%  _IO_file_xsputn
+      1    0.0%    0.0%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectEvacuationStrategy<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectContents)1>::VisitSpecialized<40>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
+      1    0.0%    0.0%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectEvacuationStrategy<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectContents)1>::VisitSpecialized<32>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
+      1    0.0%    0.0%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::EvacuateObject<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectContents)0, (v8::internal::AllocationAlignment)1>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*, int)
+      1    0.0%    0.0%  void v8::internal::FlexibleBodyVisitor<v8::internal::MarkCompactMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::VisitSpecialized<56>(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  void v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::VisitSpecialized<48>(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  void v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::VisitSpecialized<40>(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  void v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::VisitSpecialized<32>(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::compiler::StateValuesAccess::iterator::operator++()
+      1    0.0%    0.0%  v8::internal::compiler::InstructionSelector::VisitBlock(v8::internal::compiler::BasicBlock*)
+      1    0.0%    0.0%  v8::internal::Variable::Variable(v8::internal::Scope*, v8::internal::AstRawString const*, v8::internal::VariableMode, v8::internal::Variable::Kind, v8::internal::InitializationFlag, v8::internal::MaybeAssignedFlag)
+      1    0.0%    0.0%  v8::internal::VarAndOrder::Compare(v8::internal::VarAndOrder const*, v8::internal::VarAndOrder const*)
+      1    0.0%    0.0%  v8::internal::VMState<(v8::StateTag)4>::VMState(v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::TypeImpl<v8::internal::ZoneTypeConfig>::BitsetType::Lub(v8::internal::Map*)
+      1    0.0%    0.0%  v8::internal::TypeImpl<v8::internal::HeapTypeConfig>::NumClasses()
+      1    0.0%    0.0%  v8::internal::TypeFeedbackVector::GetKind(v8::internal::VectorSlot<1>) const
+      1    0.0%    0.0%  v8::internal::TypeFeedbackOracle::LoadInlineCacheState(v8::internal::VectorSlot<1>)
+      1    0.0%    0.0%  v8::internal::TypeFeedbackOracle::GetRelocInfos(v8::internal::Handle<v8::internal::Code>, v8::internal::ZoneList<v8::internal::RelocInfo>*)
+      1    0.0%    0.0%  v8::internal::TypeFeedbackOracle::GetInfo(v8::internal::TypeFeedbackId)
+      1    0.0%    0.0%  v8::internal::TypeFeedbackOracle::BinaryType(v8::internal::TypeFeedbackId, v8::internal::TypeImpl<v8::internal::ZoneTypeConfig>**, v8::internal::TypeImpl<v8::internal::ZoneTypeConfig>**, v8::internal::TypeImpl<v8::internal::ZoneTypeConfig>**, v8::Maybe<int>*, v8::internal::Handle<v8::internal::AllocationSite>*, v8::internal::Token::Value)
+      1    0.0%    0.0%  v8::internal::TwoCharHashTableKey::IsMatch(v8::internal::Object*)
+      1    0.0%    0.0%  v8::internal::TransitionArray::Insert(v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Map>, v8::internal::SimpleTransitionFlag)
+      1    0.0%    0.0%  v8::internal::TransitionArray::GetPrototypeTransitions(v8::internal::Map*)
+      1    0.0%    0.0%  v8::internal::StubCache::Clear()
+      1    0.0%    0.0%  v8::internal::StringTable::LookupString(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>)
+      1    0.0%    0.0%  v8::internal::StringSearch<unsigned short, unsigned short>::SingleCharSearch(v8::internal::StringSearch<unsigned short, unsigned short>*, v8::internal::Vector<unsigned short const>, int)
+      1    0.0%    0.0%  v8::internal::StringSearch<unsigned char, unsigned short>::SingleCharSearch(v8::internal::StringSearch<unsigned char, unsigned short>*, v8::internal::Vector<unsigned short const>, int)
+      1    0.0%    0.0%  v8::internal::StringHasher::GetHashField()
+      1    0.0%    0.0%  v8::internal::String::ToCString(v8::internal::AllowNullsFlag, v8::internal::RobustnessFlag, int*)
+      1    0.0%    0.0%  v8::internal::String::IsUtf8EqualTo(v8::internal::Vector<char const>, bool)
+      1    0.0%    0.0%  v8::internal::StaticNewSpaceVisitor<v8::internal::NewSpaceScavenger>::VisitSeqOneByteString(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::StaticMarkingVisitor<v8::internal::MarkCompactMarkingVisitor>::VisitSharedFunctionInfoStrongCode(v8::internal::Heap*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::VisitMap(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::DataObjectVisitor::Visit(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::StandardFrame::IterateCompiledFrame(v8::internal::ObjectVisitor*) const
+      1    0.0%    0.0%  v8::internal::StandardFrame::ComputeCallerState(v8::internal::StackFrame::State*) const
+      1    0.0%    0.0%  v8::internal::StackFrameIterator::Advance()
+      1    0.0%    0.0%  v8::internal::Space::SizeOfObjects()
+      1    0.0%    0.0%  v8::internal::SharedFunctionInfo::ClearTypeFeedbackInfoAtGCTime()
+      1    0.0%    0.0%  v8::internal::SemiSpace::set_age_mark(unsigned char*)
+      1    0.0%    0.0%  v8::internal::ScriptContextTable::Lookup(v8::internal::Handle<v8::internal::ScriptContextTable>, v8::internal::Handle<v8::internal::String>, v8::internal::ScriptContextTable::LookupResult*)
+      1    0.0%    0.0%  v8::internal::Script::InitLineEnds(v8::internal::Handle<v8::internal::Script>)
+      1    0.0%    0.0%  v8::internal::ScopeInfo::ReceiverContextSlotIndex()
+      1    0.0%    0.0%  v8::internal::Scope::Scope(v8::internal::Zone*, v8::internal::Scope*, v8::internal::ScopeType, v8::internal::AstValueFactory*, v8::internal::FunctionKind)
+      1    0.0%    0.0%  v8::internal::Scope::Initialize()
+      1    0.0%    0.0%  v8::internal::Scope::AllowsLazyCompilation() const
+      1    0.0%    0.0%  v8::internal::Scope::AllocateNonParameterLocal(v8::internal::Isolate*, v8::internal::Variable*)
+      1    0.0%    0.0%  v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::EvacuateShortcutCandidate(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::EvacuateSeqOneByteString(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::EvacuateFixedArray(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::Scanner::ScanString()
+      1    0.0%    0.0%  v8::internal::Scanner::Next()
+      1    0.0%    0.0%  v8::internal::Scanner::Initialize(v8::internal::Utf16CharacterStream*)
+      1    0.0%    0.0%  v8::internal::Runtime_StringSplit(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_StringCharCodeAtRT(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_StringBuilderConcat(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_StoreCallbackProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_SetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_NewObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_MaterializeRegExpLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_InternalSetPrototype(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_HasOwnProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_GetPrototype(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_GenericHash(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_FixedArraySet(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_CreateArrayLiteralStubBailout(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_CompileOptimized(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_ArrayConcat(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime::ToName(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>)
+      1    0.0%    0.0%  v8::internal::RegExpStackScope::~RegExpStackScope()
+      1    0.0%    0.0%  v8::internal::RegExpImpl::CreateRegExpLiteral(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>)
+      1    0.0%    0.0%  v8::internal::RegExpImpl::Compile(v8::internal::Handle<v8::internal::JSRegExp>, v8::internal::Handle<v8::internal::String>, v8::internal::JSRegExp::Flags)
+      1    0.0%    0.0%  v8::internal::PropertyHandlerCompiler::Find(v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Map>, v8::internal::Code::Kind, v8::internal::CacheHolderFlag, v8::internal::Code::StubType)
+      1    0.0%    0.0%  v8::internal::PropertyCallbackArguments::Call(void (*)(v8::Local<v8::Name>, v8::Local<v8::Value>, v8::PropertyCallbackInfo<void> const&), v8::Local<v8::Name>, v8::Local<v8::Value>)
+      1    0.0%    0.0%  v8::internal::PropertyAccessCompiler::TailCallBuiltin(v8::internal::MacroAssembler*, v8::internal::Builtins::Name)
+      1    0.0%    0.0%  v8::internal::Property::node_type() const
+      1    0.0%    0.0%  v8::internal::ProfileEntryHookStub::MaybeCallEntryHook(v8::internal::MacroAssembler*)
+      1    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseRegExpLiteral(bool, v8::internal::ExpressionClassifier*, bool*)
+      1    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParsePropertyDefinition(v8::internal::ParserBase<v8::internal::ParserTraits>::ObjectLiteralCheckerBase*, bool, bool, bool, bool*, bool*, v8::internal::ExpressionClassifier*, bool*)
+      1    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParsePrimaryExpression(v8::internal::ExpressionClassifier*, bool*)
+      1    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParsePostfixExpression(v8::internal::ExpressionClassifier*, bool*)
+      1    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseMemberWithNewPrefixesExpression(v8::internal::ExpressionClassifier*, bool*)
+      1    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseConditionalExpression(bool, v8::internal::ExpressionClassifier*, bool*)
+      1    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::ParseArguments(v8::internal::Scanner::Location*, v8::internal::ExpressionClassifier*, bool*)
+      1    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::Expect(v8::internal::Token::Value, bool*)
+      1    0.0%    0.0%  v8::internal::ParserBase<v8::internal::ParserTraits>::BindingPatternUnexpectedToken(v8::internal::ExpressionClassifier*)
+      1    0.0%    0.0%  v8::internal::Parser::PatternRewriter::DeclareAndInitializeVariables(v8::internal::Block*, v8::internal::Parser::DeclarationDescriptor const*, v8::internal::Parser::DeclarationParsingResult::Declaration const*, v8::internal::ZoneList<v8::internal::AstRawString const*>*, bool*)
+      1    0.0%    0.0%  v8::internal::Parser::ParseSubStatement(v8::internal::ZoneList<v8::internal::AstRawString const*>*, bool*)
+      1    0.0%    0.0%  v8::internal::Parser::ParseStatementList(v8::internal::ZoneList<v8::internal::Statement*>*, int, bool*)
+      1    0.0%    0.0%  v8::internal::Parser::ParseLazy(v8::internal::Isolate*, v8::internal::ParseInfo*, v8::internal::Utf16CharacterStream*)
+      1    0.0%    0.0%  v8::internal::Parser::ParseIfStatement(v8::internal::ZoneList<v8::internal::AstRawString const*>*, bool*)
+      1    0.0%    0.0%  v8::internal::Parser::ParseBlock(v8::internal::ZoneList<v8::internal::AstRawString const*>*, bool*)
+      1    0.0%    0.0%  v8::internal::Parser::Parse(v8::internal::ParseInfo*)
+      1    0.0%    0.0%  v8::internal::PagedSpace::SizeOfObjects()
+      1    0.0%    0.0%  v8::internal::OptimizingCompileDispatcher::IsQueuedForOSR(v8::internal::JSFunction*)
+      1    0.0%    0.0%  v8::internal::OptimizingCompileDispatcher::AddToOsrBuffer(v8::internal::OptimizedCompileJob*)
+      1    0.0%    0.0%  v8::internal::OptimizedFrame::GetFunctions(v8::internal::List<v8::internal::JSFunction*, v8::internal::FreeStoreAllocationPolicy>*)
+      1    0.0%    0.0%  v8::internal::Operand::Operand(v8::internal::Operand const&, int)
+      1    0.0%    0.0%  v8::internal::OldSpaces::next()
+      1    0.0%    0.0%  v8::internal::ObjectLiteralProperty::ObjectLiteralProperty(v8::internal::Expression*, v8::internal::Expression*, v8::internal::ObjectLiteralProperty::Kind, bool, bool)
+      1    0.0%    0.0%  v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>, v8::internal::LanguageMode, v8::internal::Object::StoreFromKeyed, bool*)
+      1    0.0%    0.0%  v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>, v8::internal::LanguageMode, v8::internal::Object::StoreFromKeyed)
+      1    0.0%    0.0%  v8::internal::Object::OptimalType(v8::internal::Isolate*, v8::internal::Representation)
+      1    0.0%    0.0%  v8::internal::NormalizedMapCache::Get(v8::internal::Handle<v8::internal::Map>, v8::internal::PropertyNormalizationMode)
+      1    0.0%    0.0%  v8::internal::NewSpace::EnsureAllocation(int, v8::internal::AllocationAlignment)
+      1    0.0%    0.0%  v8::internal::NamedStoreHandlerCompiler::GenerateFieldTypeChecks(v8::internal::TypeImpl<v8::internal::HeapTypeConfig>*, v8::internal::Register, v8::internal::Label*)
+      1    0.0%    0.0%  v8::internal::NameDictionaryBase<v8::internal::GlobalDictionary, v8::internal::GlobalDictionaryShape>::FindEntry(v8::internal::Handle<v8::internal::Name>)
+      1    0.0%    0.0%  v8::internal::MarkCompactCollector::ProcessAndClearWeakCells()
+      1    0.0%    0.0%  v8::internal::MarkCompactCollector::EnableCodeFlushing(bool)
+      1    0.0%    0.0%  v8::internal::Map::Update(v8::internal::Handle<v8::internal::Map>)
+      1    0.0%    0.0%  v8::internal::Map::NumberOfDescribedProperties(v8::internal::DescriptorFlag, PropertyAttributes)
+      1    0.0%    0.0%  v8::internal::Map::InitializeDescriptors(v8::internal::DescriptorArray*, v8::internal::LayoutDescriptor*)
+      1    0.0%    0.0%  v8::internal::Map::GetOrCreatePrototypeChainValidityCell(v8::internal::Handle<v8::internal::Map>, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Map::CopyWithField(v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::TypeImpl<v8::internal::HeapTypeConfig> >, PropertyAttributes, v8::internal::Representation, v8::internal::TransitionFlag)
+      1    0.0%    0.0%  v8::internal::Map::AddDependentCode(v8::internal::Handle<v8::internal::Map>, v8::internal::DependentCode::DependencyGroup, v8::internal::Handle<v8::internal::Code>)
+      1    0.0%    0.0%  v8::internal::MacroAssembler::Set(v8::internal::Register, long)
+      1    0.0%    0.0%  v8::internal::MacroAssembler::Push(v8::internal::Handle<v8::internal::Object>)
+      1    0.0%    0.0%  v8::internal::MacroAssembler::Prologue(bool)
+      1    0.0%    0.0%  v8::internal::MacroAssembler::EnterFrame(v8::internal::StackFrame::Type)
+      1    0.0%    0.0%  v8::internal::LookupIterator::PrepareForDataProperty(v8::internal::Handle<v8::internal::Object>)
+      1    0.0%    0.0%  v8::internal::LookupIterator::GetStoreTarget() const
+      1    0.0%    0.0%  v8::internal::Logger::RegExpCompileEvent(v8::internal::Handle<v8::internal::JSRegExp>, bool)
+      1    0.0%    0.0%  v8::internal::Logger::NewEvent(char const*, void*, unsigned long)
+      1    0.0%    0.0%  v8::internal::Logger::ApiObjectAccess(char const*, v8::internal::JSObject*)
+      1    0.0%    0.0%  v8::internal::Logger::ApiNamedPropertyAccess(char const*, v8::internal::JSObject*, v8::internal::Object*)
+      1    0.0%    0.0%  v8::internal::Log::MessageBuilder::AppendDoubleQuotedString(char const*)
+      1    0.0%    0.0%  v8::internal::Log::MessageBuilder::Append(char const*, ...)
+      1    0.0%    0.0%  v8::internal::List<v8::internal::HValue*, v8::internal::ZoneAllocationPolicy>::Add(v8::internal::HValue* const&, v8::internal::ZoneAllocationPolicy)
+      1    0.0%    0.0%  v8::internal::LargeObjectSpace::FindPage(unsigned char*)
+      1    0.0%    0.0%  v8::internal::LTemplateResultInstruction<1>::HasResult() const
+      1    0.0%    0.0%  v8::internal::LStackCheck::CompileToNative(v8::internal::LCodeGen*)
+      1    0.0%    0.0%  v8::internal::LParameter::CompileToNative(v8::internal::LCodeGen*)
+      1    0.0%    0.0%  v8::internal::LLoadRoot::CompileToNative(v8::internal::LCodeGen*)
+      1    0.0%    0.0%  v8::internal::LLoadContextSlot::opcode() const
+      1    0.0%    0.0%  v8::internal::LInstruction::IsGap() const
+      1    0.0%    0.0%  v8::internal::LGoto::opcode() const
+      1    0.0%    0.0%  v8::internal::LGapResolver::Resolve(v8::internal::LParallelMove*)
+      1    0.0%    0.0%  v8::internal::LGapResolver::EmitMove(int)
+      1    0.0%    0.0%  v8::internal::LContext::CompileToNative(v8::internal::LCodeGen*)
+      1    0.0%    0.0%  v8::internal::LCodeGenBase::WriteTranslationFrame(v8::internal::LEnvironment*, v8::internal::Translation*)
+      1    0.0%    0.0%  v8::internal::LCodeGen::ToRegister(v8::internal::LOperand*) const
+      1    0.0%    0.0%  v8::internal::LCodeGen::PopulateDeoptimizationData(v8::internal::Handle<v8::internal::Code>)
+      1    0.0%    0.0%  v8::internal::LCodeGen::GeneratePrologue()
+      1    0.0%    0.0%  v8::internal::LCodeGen::GenerateBodyInstructionPre(v8::internal::LInstruction*)
+      1    0.0%    0.0%  v8::internal::LCodeGen::DoStackCheck(v8::internal::LStackCheck*)
+      1    0.0%    0.0%  v8::internal::LCodeGen::DoLoadContextSlot(v8::internal::LLoadContextSlot*)
+      1    0.0%    0.0%  v8::internal::LCodeGen::DoDeoptimize(v8::internal::LDeoptimize*)
+      1    0.0%    0.0%  v8::internal::LCodeGen::DoCompareNumericAndBranch(v8::internal::LCompareNumericAndBranch*)
+      1    0.0%    0.0%  v8::internal::LCodeGen::DoCheckNonSmi(v8::internal::LCheckNonSmi*)
+      1    0.0%    0.0%  v8::internal::LCodeGen::DoCheckMaps(v8::internal::LCheckMaps*)
+      1    0.0%    0.0%  v8::internal::LCodeGen::DoCheckInstanceType(v8::internal::LCheckInstanceType*)
+      1    0.0%    0.0%  v8::internal::LCodeGen::DoBranch(v8::internal::LBranch*)
+      1    0.0%    0.0%  v8::internal::LCodeGen::DeoptimizeIf(v8::internal::Condition, v8::internal::LInstruction*, v8::internal::Deoptimizer::DeoptReason, v8::internal::Deoptimizer::BailoutType)
+      1    0.0%    0.0%  v8::internal::LCmpT::CompileToNative(v8::internal::LCodeGen*)
+      1    0.0%    0.0%  v8::internal::LCmpObjectEqAndBranch::CompileToNative(v8::internal::LCodeGen*)
+      1    0.0%    0.0%  v8::internal::LChunk::LookupDestination(int) const
+      1    0.0%    0.0%  v8::internal::LChunk::Codegen()
+      1    0.0%    0.0%  v8::internal::LCheckMaps::CompileToNative(v8::internal::LCodeGen*)
+      1    0.0%    0.0%  v8::internal::LAllocator::TraceAlloc(char const*, ...)
+      1    0.0%    0.0%  v8::internal::LAllocator::MeetConstraintsBetween(v8::internal::LInstruction*, v8::internal::LInstruction*, int)
+      1    0.0%    0.0%  v8::internal::KeyedStoreIC::Store(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)
+      1    0.0%    0.0%  v8::internal::JsonParser<true>::ParseJsonValue()
+      1    0.0%    0.0%  v8::internal::JavaScriptFrame::type() const
+      1    0.0%    0.0%  v8::internal::JSObject::TransitionElementsKind(v8::internal::Handle<v8::internal::JSObject>, v8::internal::ElementsKind)
+      1    0.0%    0.0%  v8::internal::JSObject::SetPrototype(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Object>, bool)
+      1    0.0%    0.0%  v8::internal::JSObject::MigrateSlowToFast(v8::internal::Handle<v8::internal::JSObject>, int, char const*)
+      1    0.0%    0.0%  v8::internal::JSObject::MigrateFastToSlow(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>, int)
+      1    0.0%    0.0%  v8::internal::JSObject::DeepWalk(v8::internal::Handle<v8::internal::JSObject>, v8::internal::AllocationSiteCreationContext*)
+      1    0.0%    0.0%  v8::internal::JSObject::DeepCopy(v8::internal::Handle<v8::internal::JSObject>, v8::internal::AllocationSiteUsageContext*, v8::internal::JSObject::DeepCopyHints)
+      1    0.0%    0.0%  v8::internal::JSFunction::EnsureHasInitialMap(v8::internal::Handle<v8::internal::JSFunction>)
+      1    0.0%    0.0%  v8::internal::JSFunction::AttemptConcurrentOptimization()
+      1    0.0%    0.0%  v8::internal::IteratingStringHasher::VisitConsString(v8::internal::ConsString*)
+      1    0.0%    0.0%  v8::internal::Isolate::RegisterTryCatchHandler(v8::TryCatch*)
+      1    0.0%    0.0%  v8::internal::InternalizedStringKey::Hash()
+      1    0.0%    0.0%  v8::internal::InstanceofStub::MajorKey() const
+      1    0.0%    0.0%  v8::internal::IC::TraceIC(char const*, v8::internal::Handle<v8::internal::Object>)
+      1    0.0%    0.0%  v8::internal::IC::ConfigureVectorState(v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Code>)
+      1    0.0%    0.0%  v8::internal::Heap::SelectScavengingVisitorsTable()
+      1    0.0%    0.0%  v8::internal::Heap::Scavenge()
+      1    0.0%    0.0%  v8::internal::Heap::RecentIdleNotificationHappened()
+      1    0.0%    0.0%  v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags)
+      1    0.0%    0.0%  v8::internal::Heap::MoveElements(v8::internal::FixedArray*, int, int, int)
+      1    0.0%    0.0%  v8::internal::Heap::GetFillToAlign(unsigned char*, v8::internal::AllocationAlignment)
+      1    0.0%    0.0%  v8::internal::Heap::GarbageCollectionPrologue()
+      1    0.0%    0.0%  v8::internal::Heap::CreateFillerObjectAt(unsigned char*, int)
+      1    0.0%    0.0%  v8::internal::Heap::CopyFixedArrayWithMap(v8::internal::FixedArray*, v8::internal::Map*)
+      1    0.0%    0.0%  v8::internal::Heap::CanMoveObjectStart(v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::Heap::AllocateFixedArrayWithFiller(int, v8::internal::PretenureFlag, v8::internal::Object*)
+      1    0.0%    0.0%  v8::internal::Heap::AllocateFillerObject(int, bool, v8::internal::AllocationSpace)
+      1    0.0%    0.0%  v8::internal::Heap::AdjustLiveBytes(v8::internal::HeapObject*, int, v8::internal::Heap::InvocationMode)
+      1    0.0%    0.0%  v8::internal::HashTableBase::IsKey(v8::internal::Object*)
+      1    0.0%    0.0%  v8::internal::HashTable<v8::internal::SeededNumberDictionary, v8::internal::SeededNumberDictionaryShape, unsigned int>::FindInsertionEntry(unsigned int)
+      1    0.0%    0.0%  v8::internal::HashTable<v8::internal::NameDictionary, v8::internal::NameDictionaryShape, v8::internal::Handle<v8::internal::Name> >::Rehash(v8::internal::Handle<v8::internal::NameDictionary>, v8::internal::Handle<v8::internal::Name>)
+      1    0.0%    0.0%  v8::internal::HandleScopeImplementer::BeginDeferredScope()
+      1    0.0%    0.0%  v8::internal::HValue::SetBlock(v8::internal::HBasicBlock*)
+      1    0.0%    0.0%  v8::internal::HValue::IsDeletable() const
+      1    0.0%    0.0%  v8::internal::HValue::HasMonomorphicJSObjectType()
+      1    0.0%    0.0%  v8::internal::HType::FromValue(v8::internal::Handle<v8::internal::Object>)
+      1    0.0%    0.0%  v8::internal::HTemplateInstruction<1>::InternalSetOperandAt(int, v8::internal::HValue*)
+      1    0.0%    0.0%  v8::internal::HTemplateControlInstruction<2, 1>::SuccessorAt(int) const
+      1    0.0%    0.0%  v8::internal::HStoreNamedField::CompileToLithium(v8::internal::LChunkBuilder*)
+      1    0.0%    0.0%  v8::internal::HReturn* v8::internal::HGraphBuilder::Add<v8::internal::HReturn, v8::internal::HValue*>(v8::internal::HValue*)
+      1    0.0%    0.0%  v8::internal::HPhi::AddInput(v8::internal::HValue*)
+      1    0.0%    0.0%  v8::internal::HOptimizedGraphBuilder::VisitStatements(v8::internal::ZoneList<v8::internal::Statement*>*)
+      1    0.0%    0.0%  v8::internal::HOptimizedGraphBuilder::VisitCall(v8::internal::Call*)
+      1    0.0%    0.0%  v8::internal::HOptimizedGraphBuilder::PropertyAccessInfo::LookupInPrototypes()
+      1    0.0%    0.0%  v8::internal::HOptimizedGraphBuilder::PropertyAccessInfo::LookupDescriptor(v8::internal::Map*, v8::internal::Name*)
+      1    0.0%    0.0%  v8::internal::HOptimizedGraphBuilder::PropertyAccessInfo::LookupDescriptor()
+      1    0.0%    0.0%  v8::internal::HOptimizedGraphBuilder::LookupAndMakeLive(v8::internal::Variable*)
+      1    0.0%    0.0%  v8::internal::HOptimizedGraphBuilder::BuildNamedAccess(v8::internal::PropertyAccessType, v8::internal::BailoutId, v8::internal::BailoutId, v8::internal::Expression*, v8::internal::VectorSlot<1>, v8::internal::HValue*, v8::internal::Handle<v8::internal::String>, v8::internal::HValue*, bool)
+      1    0.0%    0.0%  v8::internal::HOptimizedGraphBuilder::BuildFastLiteral(v8::internal::Handle<v8::internal::JSObject>, v8::internal::AllocationSiteUsageContext*)
+      1    0.0%    0.0%  v8::internal::HInferRepresentationPhase::Run()
+      1    0.0%    0.0%  v8::internal::HGraphBuilder::TruncateToNumber(v8::internal::HValue*, v8::internal::TypeImpl<v8::internal::ZoneTypeConfig>**)
+      1    0.0%    0.0%  v8::internal::HGraphBuilder::CreateGraph()
+      1    0.0%    0.0%  v8::internal::HGraph::Optimize(v8::internal::BailoutReason*)
+      1    0.0%    0.0%  v8::internal::HGraph::HGraph(v8::internal::CompilationInfo*)
+      1    0.0%    0.0%  v8::internal::HGlobalValueNumberingPhase::ComputeBlockSideEffects()
+      1    0.0%    0.0%  v8::internal::HDeadCodeEliminationPhase::RemoveDeadInstructions()
+      1    0.0%    0.0%  v8::internal::HDeadCodeEliminationPhase::MarkLive(v8::internal::HValue*, v8::internal::ZoneList<v8::internal::HValue*>*)
+      1    0.0%    0.0%  v8::internal::HConstant::FinalizeUniqueness()
+      1    0.0%    0.0%  v8::internal::HCheckInstanceType::GetCheckMaskAndTag(unsigned char*, unsigned char*)
+      1    0.0%    0.0%  v8::internal::HCallFunction* v8::internal::HGraphBuilder::New<v8::internal::HCallFunction, v8::internal::HInstruction*, int, v8::internal::CallFunctionFlags>(v8::internal::HInstruction*, int, v8::internal::CallFunctionFlags)
+      1    0.0%    0.0%  v8::internal::HBasicBlock::RegisterPredecessor(v8::internal::HBasicBlock*)
+      1    0.0%    0.0%  v8::internal::HBasicBlock::Goto(v8::internal::HBasicBlock*, v8::internal::SourcePosition, v8::internal::FunctionState*, bool)
+      1    0.0%    0.0%  v8::internal::GlobalHandles::Create(v8::internal::Object*)
+      1    0.0%    0.0%  v8::internal::GCTracer::Start(v8::internal::GarbageCollector, char const*, char const*)
+      1    0.0%    0.0%  v8::internal::FunctionLiteral::language_mode() const
+      1    0.0%    0.0%  v8::internal::FunctionLiteral::NeedsHomeObject(v8::internal::Expression*)
+      1    0.0%    0.0%  v8::internal::FullCodeGenerator::VisitLiteral(v8::internal::Literal*)
+      1    0.0%    0.0%  v8::internal::FullCodeGenerator::SetCallPosition(v8::internal::Expression*, int)
+      1    0.0%    0.0%  v8::internal::FullCodeGenerator::MustCreateArrayLiteralWithRuntime(v8::internal::ArrayLiteral*) const
+      1    0.0%    0.0%  v8::internal::FullCodeGenerator::Generate()
+      1    0.0%    0.0%  v8::internal::FullCodeGenerator::EmitVariableLoad(v8::internal::VariableProxy*, v8::internal::TypeofMode)
+      1    0.0%    0.0%  v8::internal::FullCodeGenerator::EmitReturnSequence()
+      1    0.0%    0.0%  v8::internal::FindTwoByteStringIndices(v8::internal::Vector<unsigned short const>, unsigned short, v8::internal::ZoneList<int>*, unsigned int, v8::internal::Zone*)
+      1    0.0%    0.0%  v8::internal::FeedbackNexus::ConfigurePremonomorphic()
+      1    0.0%    0.0%  v8::internal::Factory::NewTypeFeedbackInfo()
+      1    0.0%    0.0%  v8::internal::Factory::NewStringFromOneByte(v8::internal::Vector<unsigned char const>, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  v8::internal::Factory::NewRawConsString(v8::internal::Handle<v8::internal::Map>, int, v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>)
+      1    0.0%    0.0%  v8::internal::Factory::NewNumberFromUint(unsigned int, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  v8::internal::Factory::NewNumber(double, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  v8::internal::Factory::NewJSObject(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  v8::internal::Factory::NewHeapNumber(double, v8::internal::MutableMode, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  v8::internal::Factory::NewCodeCache()
+      1    0.0%    0.0%  v8::internal::ExpressionClassifier::Accumulate(v8::internal::ExpressionClassifier const&, unsigned int)
+      1    0.0%    0.0%  v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*, bool)
+      1    0.0%    0.0%  v8::internal::Dictionary<v8::internal::NameDictionary, v8::internal::NameDictionaryShape, v8::internal::Handle<v8::internal::Name> >::EnsureCapacity(v8::internal::Handle<v8::internal::NameDictionary>, int, v8::internal::Handle<v8::internal::Name>)
+      1    0.0%    0.0%  v8::internal::Dictionary<v8::internal::NameDictionary, v8::internal::NameDictionaryShape, v8::internal::Handle<v8::internal::Name> >::CopyKeysTo(v8::internal::FixedArray*, int, PropertyAttributes, v8::internal::Dictionary<v8::internal::NameDictionary, v8::internal::NameDictionaryShape, v8::internal::Handle<v8::internal::Name> >::SortMode)
+      1    0.0%    0.0%  v8::internal::Dictionary<v8::internal::NameDictionary, v8::internal::NameDictionaryShape, v8::internal::Handle<v8::internal::Name> >::AddEntry(v8::internal::Handle<v8::internal::NameDictionary>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyDetails, unsigned int)
+      1    0.0%    0.0%  v8::internal::Dictionary<v8::internal::NameDictionary, v8::internal::NameDictionaryShape, v8::internal::Handle<v8::internal::Name> >::Add(v8::internal::Handle<v8::internal::NameDictionary>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyDetails)
+      1    0.0%    0.0%  v8::internal::DescriptorArray::Sort()
+      1    0.0%    0.0%  v8::internal::DescriptorArray::Allocate(v8::internal::Isolate*, int, int)
+      1    0.0%    0.0%  v8::internal::Deoptimizer::GetDeoptimizationEntry(v8::internal::Isolate*, int, v8::internal::Deoptimizer::BailoutType, v8::internal::Deoptimizer::GetEntryMode)
+      1    0.0%    0.0%  v8::internal::Deoptimizer::DoComputeOutputFrames()
+      1    0.0%    0.0%  v8::internal::CpuFeatures::FlushICache(void*, unsigned long)
+      1    0.0%    0.0%  v8::internal::Context::global_proxy()
+      1    0.0%    0.0%  v8::internal::Compiler::GetLazyCode(v8::internal::Handle<v8::internal::JSFunction>)
+      1    0.0%    0.0%  v8::internal::Compiler::EnsureCompiled(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ClearExceptionFlag)
+      1    0.0%    0.0%  v8::internal::CompileTimeValue::GetElements(v8::internal::Handle<v8::internal::FixedArray>)
+      1    0.0%    0.0%  v8::internal::CodeStub::UseSpecialCache()
+      1    0.0%    0.0%  v8::internal::CodeGenerator::MakeCodeEpilogue(v8::internal::MacroAssembler*, unsigned int, v8::internal::CompilationInfo*)
+      1    0.0%    0.0%  v8::internal::Code::WeakCellFor(v8::internal::Handle<v8::internal::Code>)
+      1    0.0%    0.0%  v8::internal::Code::IsOld()
+      1    0.0%    0.0%  v8::internal::CallOptimization::CallOptimization(v8::internal::Handle<v8::internal::JSFunction>)
+      1    0.0%    0.0%  v8::internal::CallNew::node_type() const
+      1    0.0%    0.0%  v8::internal::BoyerMooreLookahead::BoyerMooreLookahead(int, v8::internal::RegExpCompiler*, v8::internal::Zone*)
+      1    0.0%    0.0%  v8::internal::BodyVisitorBase<v8::internal::NewSpaceScavenger>::IterateBodyUsingLayoutDescriptor(v8::internal::Heap*, v8::internal::HeapObject*, int, int)
+      1    0.0%    0.0%  v8::internal::Block::Accept(v8::internal::AstVisitor*)
+      1    0.0%    0.0%  v8::internal::BasicJsonStringifier::SerializeString(v8::internal::Handle<v8::internal::String>)
+      1    0.0%    0.0%  v8::internal::BasicJsonStringifier::SerializeDeferredKey(bool, v8::internal::Handle<v8::internal::Object>)
+      1    0.0%    0.0%  v8::internal::AstValueFactory::NewNumber(double, bool)
+      1    0.0%    0.0%  v8::internal::AstValueFactory::AstRawStringCompare(void*, void*)
+      1    0.0%    0.0%  v8::internal::AstValue::IsPropertyName() const
+      1    0.0%    0.0%  v8::internal::AstNumberingVisitor::VisitReference(v8::internal::Expression*)
+      1    0.0%    0.0%  v8::internal::AstNumberingVisitor::VisitObjectLiteral(v8::internal::ObjectLiteral*)
+      1    0.0%    0.0%  v8::internal::AstNumberingVisitor::VisitLiteral(v8::internal::Literal*)
+      1    0.0%    0.0%  v8::internal::Assembler::xorps(v8::internal::XMMRegister, v8::internal::XMMRegister)
+      1    0.0%    0.0%  v8::internal::Assembler::testb(v8::internal::Register, v8::internal::Immediate)
+      1    0.0%    0.0%  v8::internal::Assembler::pushq(v8::internal::Operand const&)
+      1    0.0%    0.0%  v8::internal::Assembler::immediate_arithmetic_op(unsigned char, v8::internal::Register, v8::internal::Immediate, int)
+      1    0.0%    0.0%  v8::internal::Assembler::emit_mov(v8::internal::Register, v8::internal::Operand const&, int)
+      1    0.0%    0.0%  v8::internal::Assembler::call(v8::internal::Handle<v8::internal::Code>, v8::internal::RelocInfo::Mode, v8::internal::TypeFeedbackId)
+      1    0.0%    0.0%  v8::internal::Assembler::call(unsigned char*, v8::internal::RelocInfo::Mode)
+      1    0.0%    0.0%  v8::internal::Assembler::arithmetic_op(unsigned char, v8::internal::Register, v8::internal::Register, int)
+      1    0.0%    0.0%  v8::internal::Assembler::arithmetic_op(unsigned char, v8::internal::Register, v8::internal::Operand const&, int)
+      1    0.0%    0.0%  v8::internal::AllocationSiteCreationContext::EnterNewScope()
+      1    0.0%    0.0%  v8::internal::Accessors::FunctionPrototypeGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  v8::base::Time::ToJsTime() const
+      1    0.0%    0.0%  v8::base::OS::VSNPrintF(char*, int, char const*, __va_list_tag*)
+      1    0.0%    0.0%  v8::base::OS::TimeCurrentMillis()
+      1    0.0%    0.0%  v8::base::Mutex::Lock()
+      1    0.0%    0.0%  v8::String::WriteUtf8(char*, int, int*, int) const
+      1    0.0%    0.0%  v8::Isolate::GetCurrentContext()
+      1    0.0%    0.0%  strlen
+      1    0.0%    0.0%  std::_Rb_tree_iterator<std::pair<void* const, unsigned long> > std::_Rb_tree<void*, std::pair<void* const, unsigned long>, std::_Select1st<std::pair<void* const, unsigned long> >, std::less<void*>, std::allocator<std::pair<void* const, unsigned long> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<void* const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<void* const, unsigned long> >, std::piecewise_construct_t const&, std::tuple<void* const&>&&, std::tuple<>&&)
+      1    0.0%    0.0%  operator delete[](void*)
+      1    0.0%    0.0%  operator delete(void*)
+      1    0.0%    0.0%  node::TimerWrap::Now(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::ContextifyScript::RunInThisContext(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::ContextifyScript::RunInContext(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::Buffer::Utf8Write(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  int v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::JSObject::BodyDescriptor, int>::VisitSpecialized<72>(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  int v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::JSObject::BodyDescriptor, int>::VisitSpecialized<64>(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  int v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::JSObject::BodyDescriptor, int>::VisitSpecialized<56>(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  int v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::JSObject::BodyDescriptor, int>::VisitSpecialized<48>(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  icu_56::Normalizer2WithImpl::normalize(icu_56::UnicodeString const&, icu_56::UnicodeString&, UErrorCode&) const
+      1    0.0%    0.0%  fflush
+      1    0.0%    0.0%  brk
+      1    0.0%    0.0%  _IO_do_write
+
+ [Summary]:
+   ticks  total  nonlib   name
+  28313   38.3%   42.0%  JavaScript
+  39085   52.8%   57.9%  C++
+  21809   29.5%   32.3%  GC
+   6491    8.8%          Shared libraries
+     82    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   3307   18.4%    4.5%  v8::internal::LookupIterator::Next()
+   1744    9.7%    2.4%  v8::internal::LookupIterator::LookupIterator(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Name>, v8::internal::LookupIterator::Configuration)
+   1138    6.3%    1.5%  v8::internal::Runtime_KeyedLoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+   1094    6.1%    1.5%  v8::internal::Runtime_StringReplaceGlobalRegExpWithString(int, v8::internal::Object**, v8::internal::Isolate*)
+    701    3.9%    0.9%  v8::internal::JSArray::HasReadOnlyLength(v8::internal::Handle<v8::internal::JSArray>)
+    614    3.4%    0.8%  v8::internal::Runtime_OwnKeys(int, v8::internal::Object**, v8::internal::Isolate*)
+    574    3.2%    0.8%  v8::internal::Runtime_StringTrim(int, v8::internal::Object**, v8::internal::Isolate*)
+    560    3.1%    0.8%  v8::internal::FixedArray::set(int, v8::internal::Object*)
+    498    2.8%    0.7%  v8::internal::Runtime_MoveArrayContents(int, v8::internal::Object**, v8::internal::Isolate*)
+    458    2.6%    0.6%  v8::internal::Isolate::native_context()
+    414    2.3%    0.6%  v8::internal::LookupIterator::GetRoot(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, unsigned int)
+    412    2.3%    0.6%  v8::internal::Runtime_NewClosure(int, v8::internal::Object**, v8::internal::Isolate*)
+    377    2.1%    0.5%  v8::internal::Runtime_HasElement(int, v8::internal::Object**, v8::internal::Isolate*)
+    370    2.1%    0.5%  v8::internal::Context::native_context()
+    369    2.1%    0.5%  v8::internal::Runtime_StringToUpperCase(int, v8::internal::Object**, v8::internal::Isolate*)
+    323    1.8%    0.4%  v8::internal::JSArray::WouldChangeReadOnlyLength(v8::internal::Handle<v8::internal::JSArray>, unsigned int)
+    282    1.6%    0.4%  v8::internal::Isolate::IsFastArrayConstructorPrototypeChainIntact()
+    275    1.5%    0.4%  v8::internal::Runtime_StringToLowerCase(int, v8::internal::Object**, v8::internal::Isolate*)
+    268    1.5%    0.4%  v8::internal::Runtime_NotifyDeoptimized(int, v8::internal::Object**, v8::internal::Isolate*)
+    268    1.5%    0.4%  v8::internal::Runtime_Interrupt(int, v8::internal::Object**, v8::internal::Isolate*)
+    259    1.4%    0.4%  v8::internal::JSObject::GetElementsAccessor()
+    245    1.4%    0.3%  v8::internal::String::Flatten(v8::internal::Handle<v8::internal::String>, v8::internal::PretenureFlag)
+    235    1.3%    0.3%  v8::internal::Heap::AllocateRaw(int, v8::internal::AllocationSpace, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+    199    1.1%    0.3%  v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
+    186    1.0%    0.3%  v8::internal::Runtime_StringIndexOf(int, v8::internal::Object**, v8::internal::Isolate*)
+    185    1.0%    0.3%  v8::internal::Heap::AllocateRawFixedArray(int, v8::internal::PretenureFlag)
+    155    0.9%    0.2%  v8::internal::LookupIterator::IsIntegerIndexedExotic(v8::internal::JSReceiver*)
+    153    0.9%    0.2%  v8::internal::Runtime_SetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+    141    0.8%    0.2%  v8::internal::Runtime_KeyedGetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+    139    0.8%    0.2%  v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+    139    0.8%    0.2%  node::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+    137    0.8%    0.2%  v8::internal::Runtime_DateCurrentTime(int, v8::internal::Object**, v8::internal::Isolate*)
+    134    0.7%    0.2%  v8::internal::Runtime_CompileOptimized(int, v8::internal::Object**, v8::internal::Isolate*)
+    112    0.6%    0.2%  v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+    111    0.6%    0.2%  v8::internal::Factory::NewUninitializedFixedArray(int)
+    109    0.6%    0.1%  v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+     94    0.5%    0.1%  v8::internal::Heap::AllocateUninitializedFixedArray(int)
+     93    0.5%    0.1%  v8::internal::Runtime_AllocateInTargetSpace(int, v8::internal::Object**, v8::internal::Isolate*)
+     91    0.5%    0.1%  v8::internal::FixedArray::SetValue(unsigned int, v8::internal::Object*)
+     89    0.5%    0.1%  v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+     71    0.4%    0.1%  v8::internal::Runtime_HasFastPackedElements(int, v8::internal::Object**, v8::internal::Isolate*)
+     50    0.3%    0.1%  v8::internal::Runtime_RegExpExec(int, v8::internal::Object**, v8::internal::Isolate*)
+     46    0.3%    0.1%  v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+     45    0.3%    0.1%  v8::internal::Runtime_StringEquals(int, v8::internal::Object**, v8::internal::Isolate*)
+     41    0.2%    0.1%  v8::internal::Runtime_GetPropertyNamesFast(int, v8::internal::Object**, v8::internal::Isolate*)
+     31    0.2%    0.0%  v8::internal::Runtime_StringMatch(int, v8::internal::Object**, v8::internal::Isolate*)
+     29    0.2%    0.0%  v8::internal::Runtime_StringBuilderJoin(int, v8::internal::Object**, v8::internal::Isolate*)
+     28    0.2%    0.0%  v8::internal::StoreBuffer::StoreBufferOverflow(v8::internal::Isolate*)
+     28    0.2%    0.0%  v8::internal::IsMoreGeneralElementsKindTransition(v8::internal::ElementsKind, v8::internal::ElementsKind)
+     22    0.1%    0.0%  v8::internal::Heap::InitializeJSObjectFromMap(v8::internal::JSObject*, v8::internal::FixedArray*, v8::internal::Map*)
+     21    0.1%    0.0%  v8::internal::Runtime_TryInstallOptimizedCode(int, v8::internal::Object**, v8::internal::Isolate*)
+     19    0.1%    0.0%  v8::internal::Runtime_PushIfAbsent(int, v8::internal::Object**, v8::internal::Isolate*)
+     18    0.1%    0.0%  v8::internal::Runtime_NewObject(int, v8::internal::Object**, v8::internal::Isolate*)
+     18    0.1%    0.0%  v8::internal::Runtime_InternalSetPrototype(int, v8::internal::Object**, v8::internal::Isolate*)
+     18    0.1%    0.0%  v8::internal::Context::AddOptimizedFunction(v8::internal::JSFunction*)
+     17    0.1%    0.0%  v8::internal::Runtime_RegExpInitializeAndCompile(int, v8::internal::Object**, v8::internal::Isolate*)
+     17    0.1%    0.0%  v8::internal::Runtime_LoadPropertyWithInterceptor(int, v8::internal::Object**, v8::internal::Isolate*)
+     17    0.1%    0.0%  v8::internal::Runtime_DeleteProperty_Strict(int, v8::internal::Object**, v8::internal::Isolate*)
+     16    0.1%    0.0%  v8::internal::Runtime_StoreArrayLiteralElement(int, v8::internal::Object**, v8::internal::Isolate*)
+     16    0.1%    0.0%  v8::internal::Runtime_DefineAccessorPropertyUnchecked(int, v8::internal::Object**, v8::internal::Isolate*)
+     16    0.1%    0.0%  v8::internal::Object::GetRootMap(v8::internal::Isolate*)
+     16    0.1%    0.0%  v8::internal::Factory::NewJSArray(v8::internal::ElementsKind, int, int, v8::internal::Strength, v8::internal::ArrayStorageAllocationMode, v8::internal::PretenureFlag)
+     14    0.1%    0.0%  v8::internal::Runtime_HasProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+     14    0.1%    0.0%  v8::internal::Factory::NewJSArrayStorage(v8::internal::Handle<v8::internal::JSArray>, int, int, v8::internal::ArrayStorageAllocationMode)
+     13    0.1%    0.0%  v8::internal::Runtime_StoreCallbackProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+     13    0.1%    0.0%  v8::internal::Runtime_ForInFilter(int, v8::internal::Object**, v8::internal::Isolate*)
+     12    0.1%    0.0%  v8::internal::Runtime_NewArguments(int, v8::internal::Object**, v8::internal::Isolate*)
+     12    0.1%    0.0%  v8::internal::Runtime_MaterializeRegExpLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+     10    0.1%    0.0%  v8::internal::Factory::NewJSObjectFromMap(v8::internal::Handle<v8::internal::Map>, v8::internal::PretenureFlag, v8::internal::Handle<v8::internal::AllocationSite>)
+      9    0.1%    0.0%  v8::internal::Runtime_StringBuilderConcat(int, v8::internal::Object**, v8::internal::Isolate*)
+      9    0.1%    0.0%  v8::internal::Isolate::get_initial_js_array_map(v8::internal::ElementsKind, v8::internal::Strength)
+      8    0.0%    0.0%  void v8::internal::String::WriteToFlat<unsigned char>(v8::internal::String*, unsigned char*, int, int)
+      8    0.0%    0.0%  v8::internal::Runtime_StringSplit(int, v8::internal::Object**, v8::internal::Isolate*)
+      8    0.0%    0.0%  v8::internal::Runtime_ParseJson(int, v8::internal::Object**, v8::internal::Isolate*)
+      7    0.0%    0.0%  v8::internal::Name::Equals(v8::internal::Name*)
+      6    0.0%    0.0%  v8::internal::Runtime_CreateArrayLiteralStubBailout(int, v8::internal::Object**, v8::internal::Isolate*)
+      6    0.0%    0.0%  v8::internal::Heap::Allocate(v8::internal::Map*, v8::internal::AllocationSpace, v8::internal::AllocationSite*)
+      6    0.0%    0.0%  node::Buffer::Utf8Slice(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.0%    0.0%  v8::internal::Runtime_IsSpecObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      5    0.0%    0.0%  v8::internal::Runtime_CompileForOnStackReplacement(int, v8::internal::Object**, v8::internal::Isolate*)
+      5    0.0%    0.0%  v8::internal::Runtime_BasicJSONStringify(int, v8::internal::Object**, v8::internal::Isolate*)
+      5    0.0%    0.0%  v8::internal::IncrementalMarking::RecordWrites(v8::internal::HeapObject*)
+      5    0.0%    0.0%  _init
+      4    0.0%    0.0%  v8::internal::Runtime_StringNormalize(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.0%    0.0%  v8::internal::Runtime_StringCharCodeAtRT(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.0%    0.0%  v8::internal::Runtime_GenericHash(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.0%    0.0%  v8::internal::Runtime_BinaryOpIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.0%    0.0%  void node::StreamBase::JSMethod<node::StreamWrap, &(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  v8::internal::SharedFunctionInfo::SearchOptimizedCodeMap(v8::internal::Context*, v8::internal::BailoutId)
+      3    0.0%    0.0%  v8::internal::Runtime_SubString(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.0%    0.0%  v8::internal::Runtime_HasOwnProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.0%    0.0%  v8::internal::Runtime_GetPrototype(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.0%    0.0%  v8::internal::Runtime_ArrayConcat(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.0%    0.0%  v8::internal::Runtime_AllocateHeapNumber(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.0%    0.0%  v8::internal::IncrementalMarkingMarkingVisitor::VisitFixedArrayIncremental(v8::internal::Map*, v8::internal::HeapObject*)
+      3    0.0%    0.0%  v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::Object**, v8::internal::Object*)
+      3    0.0%    0.0%  __xstat
+      2    0.0%    0.0%  v8::internal::Runtime_NotifyStubFailure(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::Runtime_GetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::Runtime_DateSetValue(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::Runtime_CreateArrayLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::Runtime_CompareIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::IncrementalMarking::Step(long, v8::internal::IncrementalMarking::CompletionAction, v8::internal::IncrementalMarking::ForceMarkingAction, v8::internal::IncrementalMarking::ForceCompletionAction)
+      2    0.0%    0.0%  v8::internal::Heap::AllocateJSObjectFromMap(v8::internal::Map*, v8::internal::PretenureFlag, v8::internal::AllocationSite*)
+      2    0.0%    0.0%  __lxstat
+      2    0.0%    0.0%  __libc_malloc
+      1    0.0%    0.0%  write
+      1    0.0%    0.0%  vsnprintf
+      1    0.0%    0.0%  void v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::VisitSpecialized<56>(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::StringTable::LookupKey(v8::internal::Isolate*, v8::internal::HashTableKey*)
+      1    0.0%    0.0%  v8::internal::String::IsUtf8EqualTo(v8::internal::Vector<char const>, bool)
+      1    0.0%    0.0%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::VisitJSFunctionStrongCode(v8::internal::Heap*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::SaveContext::SaveContext(v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_ResolvePossiblyDirectEval(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_NumberToRadixString(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_NumberShr(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_NumberMul(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_GetOwnPropertyNames(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_GetOwnProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_FixedArraySet(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_DefineClass(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_ArrayBufferInitialize(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_AddElement(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::RuntimeProfiler::OptimizeNow()
+      1    0.0%    0.0%  v8::internal::Runtime::GetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::LanguageMode)
+      1    0.0%    0.0%  v8::internal::NameDictionaryBase<v8::internal::GlobalDictionary, v8::internal::GlobalDictionaryShape>::FindEntry(v8::internal::Handle<v8::internal::Name>)
+      1    0.0%    0.0%  v8::internal::Map::AddDependentCode(v8::internal::Handle<v8::internal::Map>, v8::internal::DependentCode::DependencyGroup, v8::internal::Handle<v8::internal::Code>)
+      1    0.0%    0.0%  v8::internal::Logger::ApiObjectAccess(char const*, v8::internal::JSObject*)
+      1    0.0%    0.0%  v8::internal::JSObject::UpdateAllocationSite(v8::internal::Handle<v8::internal::JSObject>, v8::internal::ElementsKind)
+      1    0.0%    0.0%  v8::internal::JSObject::TransitionElementsKind(v8::internal::Handle<v8::internal::JSObject>, v8::internal::ElementsKind)
+      1    0.0%    0.0%  v8::internal::InnerPointerToCodeCache::GetCacheEntry(unsigned char*)
+      1    0.0%    0.0%  v8::internal::HeapObject::SizeFromMap(v8::internal::Map*)
+      1    0.0%    0.0%  v8::internal::Heap::MoveElements(v8::internal::FixedArray*, int, int, int)
+      1    0.0%    0.0%  v8::internal::Heap::GetFillToAlign(unsigned char*, v8::internal::AllocationAlignment)
+      1    0.0%    0.0%  v8::internal::Heap::CanMoveObjectStart(v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::FixedBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::FixedBodyDescriptor<24, 40, 40>, void>::Visit(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::Factory::NewRawOneByteString(int, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  v8::internal::Factory::NewFunctionFromSharedFunctionInfo(v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Handle<v8::internal::Context>, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  v8::internal::Factory::InitializeFunction(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Handle<v8::internal::Context>)
+      1    0.0%    0.0%  v8::internal::ConsString* v8::internal::String::VisitFlat<v8::internal::IteratingStringHasher>(v8::internal::IteratingStringHasher*, v8::internal::String*, int)
+      1    0.0%    0.0%  v8::internal::AstNumberingVisitor::VisitReference(v8::internal::Expression*)
+      1    0.0%    0.0%  v8::String::WriteUtf8(char*, int, int*, int) const
+      1    0.0%    0.0%  operator new(unsigned long)
+      1    0.0%    0.0%  node::TimerWrap::Now(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::ContextifyScript::RunInThisContext(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::Buffer::Utf8Write(v8::FunctionCallbackInfo<v8::Value> const&)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 2.0% are not shown.
+
+   ticks parent  name
+  19519   26.4%  v8::internal::Object* v8::internal::VisitWeakList<v8::internal::JSFunction>(v8::internal::Heap*, v8::internal::Object*, v8::internal::WeakObjectRetainer*)
+
+   7407   10.0%  LazyCompile: ~compareTreePosition /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:561:28
+   7402   99.9%    LazyCompile: *core.Node.compareDocumentPosition /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/node.js:45:58
+   7387   99.8%      LazyCompile: *La /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:41:12
+   7378   99.9%        LazyCompile: *Pa /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:42:471
+   7378  100.0%          LazyCompile: *ob.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:56:61
+   7378  100.0%            LazyCompile: ~Nb.evaluate /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:72:684
+
+   6199    8.4%  /usr/bin/nodejs
+   4198   67.7%    /usr/bin/nodejs
+   3749   89.3%      LazyCompile: ~compareTreePosition /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:561:28
+   3749  100.0%        LazyCompile: *core.Node.compareDocumentPosition /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/node.js:45:58
+   3740   99.8%          LazyCompile: *La /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:41:12
+   3738   99.9%            LazyCompile: *Pa /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:42:471
+    214    5.1%      Handler: font-size
+    126   58.9%        LazyCompile: *compareByTextPresent evalmachine.<anonymous>:55:34
+    123   97.6%          Handler: _localName
+    122   99.2%            Handler: children {1}
+      3    2.4%          LazyCompile: ~getRate evalmachine.<anonymous>:37:21
+      3  100.0%            LazyCompile: ~compare evalmachine.<anonymous>:18:21
+     50   23.4%        Handler: _version
+     50  100.0%          Handler: right_column
+     48   96.0%            LazyCompile: *compare evalmachine.<anonymous>:18:21
+      2    4.0%            Handler: symbol("updateSteps" hash 28f8b6f9)
+     38   17.8%        Handler: _memoizedQueries {1}
+     38  100.0%          Handler: right_column
+     38  100.0%            LazyCompile: *compare evalmachine.<anonymous>:18:21
+    181    4.3%      LazyCompile: *getAttributesRates evalmachine.<anonymous>:96:32
+     97   53.6%        Handler: reliableMarginRight
+     97  100.0%          Handler: _memoizedQueries {2}
+     96   99.0%            Handler: children {1}
+     84   46.4%        LazyCompile: *compareByAttributesValue evalmachine.<anonymous>:47:38
+     81   96.4%          Handler: content_left
+     73   90.1%            LazyCompile: *compare evalmachine.<anonymous>:18:21
+      7    8.6%            Handler: symbol("updateSteps" hash 28f8b6f9)
+      3    3.6%          LazyCompile: ~getRate evalmachine.<anonymous>:37:21
+      3  100.0%            LazyCompile: ~compare evalmachine.<anonymous>:18:21
+   1492   24.1%    LazyCompile: *nextSibling /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:267:18
+   1492  100.0%      /usr/bin/nodejs
+   1492  100.0%        LazyCompile: ~compareTreePosition /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:561:28
+   1492  100.0%          LazyCompile: *core.Node.compareDocumentPosition /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/node.js:45:58
+   1492  100.0%            LazyCompile: *La /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:41:12
+    144    2.3%    v8::internal::Runtime_StringReplaceGlobalRegExpWithString(int, v8::internal::Object**, v8::internal::Isolate*)
+    144  100.0%      LazyCompile: *replace native string.js:152:23
+     78   54.2%        LazyCompile: *Serializer._serializeTextNode /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:151:52
+     78  100.0%          LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+     71   91.0%            LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+      7    9.0%            LazyCompile: *Serializer.serialize /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:55:43
+     65   45.1%        LazyCompile: *Serializer._serializeAttributes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:119:54
+     65  100.0%          LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+     65  100.0%            LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+
+   3702    5.0%  v8::internal::LookupIterator::Next()
+   3305   89.3%    /usr/bin/nodejs
+   3243   98.1%      LazyCompile: ~compareTreePosition /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:561:28
+   3243  100.0%        LazyCompile: *core.Node.compareDocumentPosition /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/node.js:45:58
+   3240   99.9%          LazyCompile: *La /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:41:12
+   3239  100.0%            LazyCompile: *Pa /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:42:471
+    229    6.2%    v8::internal::Runtime_KeyedLoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+    213   93.0%      LazyCompile: *<anonymous> evalmachine.<anonymous>:49:43
+    213  100.0%        LazyCompile: *InnerArrayReduce native array.js:1147:26
+    213  100.0%          LazyCompile: *reduce native array.js:1172:21
+    114   53.5%            Handler: cssHooks
+     99   46.5%            LazyCompile: *compareByAttributesValue evalmachine.<anonymous>:47:38
+     75    2.0%    v8::internal::Runtime_HasElement(int, v8::internal::Object**, v8::internal::Isolate*)
+     75  100.0%      LazyCompile: IN native runtime.js:277:12
+     32   42.7%        LazyCompile: *InnerArrayReduce native array.js:1147:26
+     32  100.0%          LazyCompile: *reduce native array.js:1172:21
+     13   40.6%            LazyCompile: *compareByAttributesValue evalmachine.<anonymous>:47:38
+      9   28.1%            LazyCompile: *compareAttributeValue evalmachine.<anonymous>:67:35
+      9   28.1%            Handler: cssHooks
+      1    3.1%            LazyCompile: *Object.sortByKeys evalmachine.<anonymous>:36:30
+     16   21.3%        Handler: attributes {13}
+     16  100.0%          LazyCompile: *filter native array.js:933:21
+      7   43.8%            Handler: width {2}
+      6   37.5%            Handler: autocomplete
+      2   12.5%            LazyCompile: *getAttributesRates evalmachine.<anonymous>:96:32
+      1    6.3%            Handler: _childrenList {1}
+     14   18.7%        Handler: list_13
+     14  100.0%          LazyCompile: *map native array.js:1040:18
+     14  100.0%            LazyCompile: *getAttributesRates evalmachine.<anonymous>:96:32
+      8   10.7%        LazyCompile: ~InnerArrayFilter native array.js:909:26
+      8  100.0%          LazyCompile: *filter native array.js:933:21
+      4   50.0%            Handler: target
+      3   37.5%            Handler: width {2}
+      1   12.5%            LazyCompile: ~Tree.findLikeMany evalmachine.<anonymous>:48:33
+      4    5.3%        LazyCompile: *InnerArrayFilter native array.js:909:26
+      4  100.0%          LazyCompile: *filter native array.js:933:21
+      2   50.0%            LazyCompile: *getAttributesRates evalmachine.<anonymous>:96:32
+      1   25.0%            Handler: target
+      1   25.0%            Handler: autocomplete
+
+   3271    4.4%  KeyedLoadIC: A keyed load IC from the snapshot {1}
+   2662   81.4%    LazyCompile: *parent /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:143:15
+   2660   99.9%      LazyCompile: ~compareTreePosition /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:561:28
+   2660  100.0%        LazyCompile: *core.Node.compareDocumentPosition /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/node.js:45:58
+   2658   99.9%          LazyCompile: *La /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:41:12
+   2651   99.7%            LazyCompile: *Pa /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:42:471
+    194    5.9%    LazyCompile: *<anonymous> evalmachine.<anonymous>:49:43
+    194  100.0%      LazyCompile: *InnerArrayReduce native array.js:1147:26
+    194  100.0%        LazyCompile: *reduce native array.js:1172:21
+    121   62.4%          Handler: cssHooks
+    121  100.0%            Handler: _memoizedQueries {2}
+     73   37.6%          LazyCompile: *compareByAttributesValue evalmachine.<anonymous>:47:38
+     71   97.3%            Handler: content_left
+      2    2.7%            LazyCompile: ~getRate evalmachine.<anonymous>:37:21
+    154    4.7%    LazyCompile: *index /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:472:14
+    154  100.0%      LazyCompile: ~compareTreePosition /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:561:28
+    154  100.0%        LazyCompile: *core.Node.compareDocumentPosition /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/node.js:45:58
+    154  100.0%          LazyCompile: *La /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:41:12
+    154  100.0%            LazyCompile: *Pa /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:42:471
+
+   1821    2.5%  v8::internal::LookupIterator::LookupIterator(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Name>, v8::internal::LookupIterator::Configuration)
+   1744   95.8%    /usr/bin/nodejs
+   1707   97.9%      LazyCompile: ~compareTreePosition /data/www/structure-comparator/node_modules/symbol-tree/lib/SymbolTree.js:561:28
+   1707  100.0%        LazyCompile: *core.Node.compareDocumentPosition /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/node.js:45:58
+   1706   99.9%          LazyCompile: *La /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:41:12
+   1706  100.0%            LazyCompile: *Pa /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:42:471
+     77    4.2%    v8::internal::Runtime_KeyedLoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+     74   96.1%      LazyCompile: *<anonymous> evalmachine.<anonymous>:49:43
+     74  100.0%        LazyCompile: *InnerArrayReduce native array.js:1147:26
+     74  100.0%          LazyCompile: *reduce native array.js:1172:21
+     42   56.8%            Handler: cssHooks
+     32   43.2%            LazyCompile: *compareByAttributesValue evalmachine.<anonymous>:47:38
+      2    2.6%      LazyCompile: ~_dispatch /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:90:12
+      2  100.0%        Handler: _classList
+      2  100.0%          LazyCompile: *dispatchEvent /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:49:61
+      2  100.0%            LazyCompile: ~define.proto.dispatchEvent /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level2/html.js:351:30
+
+   1510    2.0%  Stub: LoadICStub
+    304   20.1%    LazyCompile: *tagName /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:637:14
+    155   51.0%      LazyCompile: *nodeName /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:221:15
+    146   94.2%        Handler: style {1}
+     92   63.0%          LazyCompile: *compareByTextPresent evalmachine.<anonymous>:55:34
+     90   97.8%            Handler: _localName
+      2    2.2%            LazyCompile: ~getRate evalmachine.<anonymous>:37:21
+     35   24.0%          Handler: _version
+     35  100.0%            Handler: right_column
+     18   12.3%          Handler: _memoizedQueries {1}
+     18  100.0%            Handler: right_column
+      6    3.9%        LazyCompile: ~TreeNode.texts evalmachine.<anonymous>:18:26
+      6  100.0%          Handler: _version
+      4   66.7%            Handler: right_column
+      2   33.3%            LazyCompile: ~getRate evalmachine.<anonymous>:37:21
+     88   28.9%      LazyCompile: *Serializer._serializeTextNode /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:151:52
+     88  100.0%        LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+     83   94.3%          LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+     83  100.0%            LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+      5    5.7%          LazyCompile: *Serializer.serialize /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:55:43
+      5  100.0%            LazyCompile: *exports.domToHtml /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/browser/domtohtml.js:8:30
+     36   11.8%      LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+     33   91.7%        LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+     33  100.0%          LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+     26   78.8%            LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+      7   21.2%            LazyCompile: *Serializer.serialize /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:55:43
+      3    8.3%        LazyCompile: *Serializer.serialize /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:55:43
+      3  100.0%          LazyCompile: *exports.domToHtml /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/browser/domtohtml.js:8:30
+      2   66.7%            LazyCompile: *innerHTML /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:712:16
+      1   33.3%            LazyCompile: *outerHTML /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:675:16
+     18    5.9%      LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+     18  100.0%        LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+     17   94.4%          LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+     17  100.0%            LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+      1    5.6%          LazyCompile: *Serializer.serialize /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:55:43
+      1  100.0%            LazyCompile: *exports.domToHtml /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/browser/domtohtml.js:8:30
+    212   14.0%    LazyCompile: *core.Node.compareDocumentPosition /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/living/node.js:45:58
+    211   99.5%      LazyCompile: *La /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:41:12
+    211  100.0%        LazyCompile: *Pa /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:42:471
+    211  100.0%          LazyCompile: *ob.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:56:61
+    211  100.0%            LazyCompile: ~Nb.evaluate /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:72:684
+    173   11.5%    LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+    164   94.8%      LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+    164  100.0%        LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+    148   90.2%          LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+    148  100.0%            LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+     16    9.8%          LazyCompile: *Serializer.serialize /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:55:43
+     16  100.0%            LazyCompile: *exports.domToHtml /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/browser/domtohtml.js:8:30
+      9    5.2%      LazyCompile: *Serializer.serialize /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:55:43
+      9  100.0%        LazyCompile: *exports.domToHtml /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/browser/domtohtml.js:8:30
+      6   66.7%          LazyCompile: *innerHTML /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:712:16
+      3   50.0%            LazyCompile: ~TreeNode evalmachine.<anonymous>:10:18
+      1   16.7%            LazyCompile: ~getAttribute evalmachine.<anonymous>:173:26
+      1   16.7%            LazyCompile: *parseScheme /data/www/structure-comparator/node_modules/whatwg-url-compat/lib/url.js:518:25
+      1   16.7%            LazyCompile: *isAttributeNonEmpty evalmachine.<anonymous>:180:33
+      3   33.3%          LazyCompile: *outerHTML /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:675:16
+      2   66.7%            LazyCompile: ~_getAttributes evalmachine.<anonymous>:37:28
+      1   33.3%            LazyCompile: *parseScheme /data/www/structure-comparator/node_modules/whatwg-url-compat/lib/url.js:518:25
+    119    7.9%    LazyCompile: *Ja /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:39:352
+    119  100.0%      LazyCompile: *<anonymous> /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:63:358
+    104   87.4%        LazyCompile: *U.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:60:23
+    104  100.0%          LazyCompile: *ob.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:56:61
+    104  100.0%            LazyCompile: ~Nb.evaluate /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:72:684
+     15   12.6%        LazyCompile: *ob.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:56:61
+     15  100.0%          LazyCompile: ~Nb.evaluate /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:72:684
+     15  100.0%            LazyCompile: ~Pb.d.evaluate /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:76:95
+    116    7.7%    LazyCompile: *childNodes /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:253:17
+     88   75.9%      Handler: symbol("ArrayIterator#kind" hash 3f5bc38b)
+     57   64.8%        LazyCompile: *compareByTextPresent evalmachine.<anonymous>:55:34
+     55   96.5%          Handler: _localName
+     55  100.0%            Handler: children {1}
+      2    3.5%          LazyCompile: ~getRate evalmachine.<anonymous>:37:21
+      2  100.0%            LazyCompile: ~compare evalmachine.<anonymous>:18:21
+     26   29.5%        Handler: _version
+     26  100.0%          Handler: right_column
+     25   96.2%            LazyCompile: *compare evalmachine.<anonymous>:18:21
+      1    3.8%            LazyCompile: ~compare evalmachine.<anonymous>:18:21
+      5    5.7%        Handler: _memoizedQueries {1}
+      5  100.0%          Handler: right_column
+      5  100.0%            LazyCompile: *compare evalmachine.<anonymous>:18:21
+     24   20.7%      LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+     24  100.0%        LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+     24  100.0%          LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+     21   87.5%            LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+      3   12.5%            LazyCompile: *Serializer.serialize /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:55:43
+      4    3.4%      LazyCompile: ~TreeNode.texts evalmachine.<anonymous>:18:26
+      2   50.0%        Handler: _version
+      2  100.0%          Handler: right_column
+      2  100.0%            Handler: symbol("updateSteps" hash 28f8b6f9)
+      2   50.0%        Handler: _memoizedQueries {1}
+      2  100.0%          Handler: right_column
+      2  100.0%            Handler: symbol("updateSteps" hash 28f8b6f9)
+    102    6.8%    LazyCompile: *Serializer._serializeAttributes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:119:54
+    102  100.0%      LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+    102  100.0%        LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+     93   91.2%          LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+     93  100.0%            LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+      9    8.8%          LazyCompile: *Serializer.serialize /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:55:43
+      9  100.0%            LazyCompile: *exports.domToHtml /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/browser/domtohtml.js:8:30
+     96    6.4%    LazyCompile: *La /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:41:12
+     96  100.0%      LazyCompile: *Pa /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:42:471
+     96  100.0%        LazyCompile: *ob.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:56:61
+     96  100.0%          LazyCompile: ~Nb.evaluate /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:72:684
+     96  100.0%            LazyCompile: ~Pb.d.evaluate /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:76:95
+     85    5.6%    LazyCompile: *nodeName /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:221:15
+     72   84.7%      Handler: style {1}
+     38   52.8%        LazyCompile: *compareByTextPresent evalmachine.<anonymous>:55:34
+     38  100.0%          Handler: _localName
+     38  100.0%            Handler: children {1}
+     22   30.6%        Handler: _version
+     22  100.0%          Handler: right_column
+     22  100.0%            LazyCompile: *compare evalmachine.<anonymous>:18:21
+     12   16.7%        Handler: _memoizedQueries {1}
+     12  100.0%          Handler: right_column
+     12  100.0%            LazyCompile: *compare evalmachine.<anonymous>:18:21
+      6    7.1%      LazyCompile: ~TreeNode.texts evalmachine.<anonymous>:18:26
+      4   66.7%        Handler: _version
+      4  100.0%          Handler: right_column
+      4  100.0%            Handler: symbol("updateSteps" hash 28f8b6f9)
+      2   33.3%        Handler: _memoizedQueries {1}
+      1   50.0%          LazyCompile: ~getRate evalmachine.<anonymous>:37:21
+      1  100.0%            LazyCompile: ~compare evalmachine.<anonymous>:18:21
+      1   50.0%          Handler: right_column
+      1  100.0%            Handler: symbol("updateSteps" hash 28f8b6f9)
+      3    3.5%      LazyCompile: *parseScheme /data/www/structure-comparator/node_modules/whatwg-url-compat/lib/url.js:518:25
+      3  100.0%        LazyCompile: ~TreeNode.clone evalmachine.<anonymous>:33:26
+      3  100.0%          LazyCompile: ~Tree.clone evalmachine.<anonymous>:15:26
+      2   66.7%            LazyCompile: *<anonymous> evalmachine.<anonymous>:16:70
+      1   33.3%            LazyCompile: ~<anonymous> evalmachine.<anonymous>:16:70
+      2    2.4%      LazyCompile: getXPath about:blank:110:22
+      2  100.0%        LazyCompile: *XPathRefine.TagItem about:blank:1493:31
+      2  100.0%          LazyCompile: *<anonymous> evalmachine.<anonymous>:31:51
+      2  100.0%            LazyCompile: *InnerArrayMap native array.js:1019:23
+     68    4.5%    LazyCompile: *namespaceURI /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:628:19
+     46   67.6%      LazyCompile: *tagName /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:637:14
+     23   50.0%        LazyCompile: *nodeName /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/level1/core.js:221:15
+     21   91.3%          Handler: style {1}
+     12   57.1%            LazyCompile: *compareByTextPresent evalmachine.<anonymous>:55:34
+      5   23.8%            Handler: _version
+      4   19.0%            Handler: _memoizedQueries {1}
+      1    4.3%          LazyCompile: ~<anonymous> about:blank:2:13874
+      1  100.0%            LazyCompile: ~<anonymous> about:blank:2:19078
+      1    4.3%          LazyCompile: getXPath about:blank:110:22
+      1  100.0%            LazyCompile: *XPathRefine.TagItem about:blank:1493:31
+     15   32.6%        LazyCompile: *Serializer._serializeTextNode /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:151:52
+     15  100.0%          LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+     15  100.0%            LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+      5   10.9%        LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+      4   80.0%          LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+      4  100.0%            LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+      1   20.0%          LazyCompile: *Serializer.serialize /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:55:43
+      1  100.0%            LazyCompile: *exports.domToHtml /data/www/structure-comparator/node_modules/jsdom/lib/jsdom/browser/domtohtml.js:8:30
+      3    6.5%        LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+      3  100.0%          LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+      2   66.7%            LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+      1   33.3%            LazyCompile: *Serializer.serialize /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:55:43
+     18   26.5%      LazyCompile: *Ja /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:39:352
+     18  100.0%        LazyCompile: *<anonymous> /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:63:358
+     15   83.3%          LazyCompile: *U.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:60:23
+     15  100.0%            LazyCompile: *ob.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:56:61
+      3   16.7%          LazyCompile: *ob.a /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:56:61
+      3  100.0%            LazyCompile: ~Nb.evaluate /data/www/structure-comparator/node_modules/wgxpath/wgxpath.install.js:72:684
+      4    5.9%      LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+      4  100.0%        LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+      4  100.0%          LazyCompile: *Serializer._serializeElement /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:86:51
+      4  100.0%            LazyCompile: *Serializer._serializeChildNodes /data/www/structure-comparator/node_modules/parse5/lib/serialization/serializer.js:64:54
+     45    3.0%    LazyCompile: *filter native array.js:933:21
+     20   44.4%      Handler: autocomplete
+      9   45.0%        LazyCompile: *compareByTextPresent evalmachine.<anonymous>:55:34
+      9  100.0%          Handler: _localName
+      9  100.0%            Handler: children {1}
+      7   35.0%        Handler: _version
+      7  100.0%          Handler: right_column
+      7  100.0%            LazyCompile: *compare evalmachine.<anonymous>:18:21
+      4   20.0%        Handler: _memoizedQueries {1}
+      4  100.0%          Handler: right_column
+      4  100.0%            LazyCompile: *compare evalmachine.<anonymous>:18:21
+     17   37.8%      LazyCompile: *getAttributesRates evalmachine.<anonymous>:96:32
+     11   64.7%        LazyCompile: *compareByAttributesValue evalmachine.<anonymous>:47:38
+     11  100.0%          Handler: content_left
+     10   90.9%            LazyCompile: *compare evalmachine.<anonymous>:18:21
+      1    9.1%            Handler: symbol("updateSteps" hash 28f8b6f9)
+      6   35.3%        Handler: reliableMarginRight
+      6  100.0%          Handler: _memoizedQueries {2}
+      6  100.0%            Handler: children {1}
+      6   13.3%      Handler: width {2}
+      6  100.0%        LazyCompile: *compareAttributeValue evalmachine.<anonymous>:67:35
+      6  100.0%          LazyCompile: *<anonymous> evalmachine.<anonymous>:49:43
+      6  100.0%            LazyCompile: *InnerArrayReduce native array.js:1147:26
+      1    2.2%      LazyCompile: ~TreeNode.texts evalmachine.<anonymous>:18:26
+      1  100.0%        Handler: _version
+      1  100.0%          Handler: right_column
+      1  100.0%            Handler: symbol("updateSteps" hash 28f8b6f9)
+      1    2.2%      LazyCompile: *construct evalmachine.<anonymous>:27:23
+      1  100.0%        LazyCompile: *<anonymous> evalmachine.<anonymous>:93:55
+      1  100.0%          LazyCompile: *InnerArrayForEach native array.js:942:27
+      1  100.0%            LazyCompile: *forEach native array.js:961:22
+     34    2.3%    LazyCompile: *compareByTextPresent evalmachine.<anonymous>:55:34
+     32   94.1%      Handler: _localName
+     32  100.0%        Handler: children {1}
+     18   56.3%          LazyCompile: *TreeComparatorFull.run evalmachine.<anonymous>:13:25
+     18  100.0%            Handler: rel
+     14   43.8%          Handler: _ownerDocument
+     11   78.6%            Handler: _ownerDocument
+      3   21.4%            LazyCompile: *TreeComparatorFull.run evalmachine.<anonymous>:13:25
+      2    5.9%      LazyCompile: ~getRate evalmachine.<anonymous>:37:21
+      2  100.0%        LazyCompile: ~compare evalmachine.<anonymous>:18:21
+      2  100.0%          LazyCompile: ~compare evalmachine.<anonymous>:18:21
+      2  100.0%            LazyCompile: ~compare evalmachine.<anonymous>:18:21
+
