@@ -1,0 +1,334 @@
+[
+    {
+        "priority": "0",
+        "mandatory": 0,
+        "state": 1,
+        "is_filled": 0,
+        "output_format": {
+            "type": "template",
+            "name": "json",
+            "header": "[\n",
+            "items_header": "",
+            "item": "{\"link\":\"%link%\",\"link_xpath\":\"%link_xpath%\",\"image\":\"%image%\",\"image_xpath\":\"%image_xpath%\",\"title\":\"%title%\",\"title_xpath\":\"%title_xpath%\",\"title_1\":\"%title_1%\",\"title_1_xpath\":\"%title_1_xpath%\",\"title_2\":\"%title_2%\",\"title_2_xpath\":\"%title_2_xpath%\",\"title_3\":\"%title_3%\",\"title_3_xpath\":\"%title_3_xpath%\",\"price\":\"%price%\",\"price_xpath\":\"%price_xpath%\",\"field#32171_textInner\":\"%field#32171_textInner%\",\"field#32171_textInner_xpath\":\"%field#32171_textInner_xpath%\",\"field#32170_text\":\"%field#32170_text%\",\"field#32170_text_xpath\":\"%field#32170_text_xpath%\",\"field#32171_text\":\"%field#32171_text%\",\"field#32171_text_xpath\":\"%field#32171_text_xpath%\",\"field#31638_link_href\":\"%field#31638_link_href%\",\"field#31638_link_href_xpath\":\"%field#31638_link_href_xpath%\",\"field#31638_link_rel\":\"%field#31638_link_rel%\",\"field#31638_link_rel_xpath\":\"%field#31638_link_rel_xpath%\",\"field#32290_link_href\":\"%field#32290_link_href%\",\"field#32290_link_href_xpath\":\"%field#32290_link_href_xpath%\",\"field#32128_text\":\"%field#32128_text%\",\"field#32128_text_xpath\":\"%field#32128_text_xpath%\",\"field#32357_textInner\":\"%field#32357_textInner%\",\"field#32357_textInner_xpath\":\"%field#32357_textInner_xpath%\",\"field#32359_text\":\"%field#32359_text%\",\"field#32359_text_xpath\":\"%field#32359_text_xpath%\",\"field#32368_link_href\":\"%field#32368_link_href%\",\"field#32368_link_href_xpath\":\"%field#32368_link_href_xpath%\",\"field#32424_link_href\":\"%field#32424_link_href%\",\"field#32424_link_href_xpath\":\"%field#32424_link_href_xpath%\",\"field#10747_text\":\"%field#10747_text%\",\"field#10747_text_xpath\":\"%field#10747_text_xpath%\",\"field#12846_link_href\":\"%field#12846_link_href%\",\"field#12846_link_href_xpath\":\"%field#12846_link_href_xpath%\",\"field#13378_link_href\":\"%field#13378_link_href%\",\"field#13378_link_href_xpath\":\"%field#13378_link_href_xpath%\"}",
+            "items_footer": "",
+            "footer": "]\n"
+        },
+        "tags": {
+            "link": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/a[1][@class='product_title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "link",
+                    "format": ""
+                }
+            ],
+            "image": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/div/table/tbody/tr/td/a/img",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "image",
+                    "format": "URL"
+                }
+            ],
+            "title": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/a/h2",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_1": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/a/h2",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_2": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/a[1][@class='product_title']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "title_3": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/a[1][@class='company']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "price": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li[@id='list_3' or @id='list_4' or @id='list_5' or @id='list_6' or @id='list_7' or @id='list_8' or @id='list_9' or @id='list_10' or @id='list_11' or @id='list_12' or @id='list_13' or @id='list_14' or @id='list_15' or @id='list_16' or @id='list_20' or @id='list_24' or @id='list_25']/div[2][@class='description_block']/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[5][@class='noUnderLine']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32171_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/span[1][@class='attribute_label']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32170_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/span[1][@class='attribute_label']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32171_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/span[1][@class='attribute_label']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#31638_link_href": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/div/table/tbody/tr/td/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#31638_link_rel": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/div/table/tbody/tr/td/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32290_link_href": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/a[1][@class='company']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32128_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/a/h2/strong[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32357_textInner": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/span[1][@class='c_flag f_cn pl23 country' or @class='c_flag f_sg pl23 country']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32359_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/span/font",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32368_link_href": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/a[1][@class='trust_point_link tooltip']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#32424_link_href": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/a[1][@class='contact_now_link']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#10747_text": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/strong[1]",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#12846_link_href": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ],
+            "field#13378_link_href": [
+                {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//html/body/div/div/div/form/div/div/ul/li/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/span/a",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": " ",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                }
+            ]
+        }
+    }
+]

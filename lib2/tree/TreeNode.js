@@ -11,7 +11,7 @@ function TreeNode(DOMNode, builder) {
     this.name = DOMNode.nodeName;
     this.src = DOMNode.src;
     this.href = DOMNode.href;
-    this.text = DOMNode.innerHTML.replace(/<\/?[^>]+>/gi, '').trim();
+    this.text = getInnerText(DOMNode);
     this.outerHTML = DOMNode.outerHTML;
     this.id = builder.generateNodeID();
     this.DOMNode = DOMNode;
@@ -28,24 +28,10 @@ function TreeNode(DOMNode, builder) {
         });
     }
 
-    this.attributes = _getAttributes();
+    this.attributes = getAttributes(DOMNode);
     this.class = this.attributes.class ? this.attributes.class : "";
     this.clone = function() {
         return new TreeNode(DOMNode, builder);
-    }
-
-    function _getAttributes() {
-        var attrRegexp = /([^=" ]+)="([^"]*)"/g;
-        var attributes = {};
-        var tag = DOMNode.outerHTML.match(/<[^>]+>/);
-        if (!tag) {
-            return attributes;
-        }
-        var match;
-        while(match = attrRegexp.exec(tag[0])) {
-            attributes[match[1].toLowerCase()] = match[2].trim();
-        }
-        return Object.sortByKeys(attributes);
     }
 }
 

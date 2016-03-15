@@ -23,6 +23,14 @@ Array.prototype.deepUnique = function () {
     return Object.values(a);
 }
 
+Array.prototype.max = function () {
+    return Math.max.apply(Math, this);
+}
+
+Array.prototype.min = function () {
+    return Math.min.apply(Math, this);
+}
+
 Object.values = function (obj) {
     var vals = [];
     for( var key in obj ) {
@@ -39,4 +47,26 @@ Object.sortByKeys = function (obj) {
         result[key] = that[key];
         return result;
     }, {});
+}
+
+Object.clone = function(obj) {
+    return JSON.parse(JSON.stringify(obj));
+}
+
+function getInnerText(elem) {
+    return elem.innerText;
+}
+
+function getAttributes(element) {
+    var attrRegexp = /([^=" ]+)="([^"]*)"/g;
+    var attributes = {};
+    var tag = element.outerHTML.match(/<[^>]+>/);
+    if (!tag) {
+        return attributes;
+    }
+    var match;
+    while(match = attrRegexp.exec(tag[0])) {
+        attributes[match[1].toLowerCase()] = match[2].replace(/\s{2,}/gi, ' ').trim();
+    }
+    return Object.sortByKeys(attributes);
 }

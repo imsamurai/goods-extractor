@@ -23,6 +23,8 @@
     "convnetjs": "^0.3.0",
     "dateformat": "^1.0.12",
     "express": "^4.13.3",
+    "fast-csv": "^1.0.0",
+    "html-entities": "^1.2.0",
     "jsdom": "^7.2.2",
     "kerberos": "0.0.17",
     "method-override": "^2.3.5",

@@ -65,6 +65,13 @@ app.post('/learn', function (request, response) {
     controller.learn();
 });
 
+app.post('/makeDict', function (request, response) {
+    console.log('Controller main makeDict');
+    var constructor = require('./controllers/main2');
+    var controller = new constructor.MainController(request, response);
+    controller.makeDict();
+});
+
 var server = app.listen(8080, function(){
     console.log('Express server listening on port 8080');
 });

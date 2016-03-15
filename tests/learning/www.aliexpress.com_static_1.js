@@ -4,5 +4,5 @@ module.exports = [
         ['img.picCore', 'image-src', {image: 1}],
         ['h3 > a.product', 'href', {link: 1}],
         ['span.price.price-m span.value', 'innerText', {price: 1}],
-        ['.score-icon', 'src', {}]
+        //['.score-icon', 'src', {}]
     ];

@@ -207,6 +207,7 @@ exports.MainController = function (request, response) {
     };
 
     this.learn = function () {
+        var csv = require('fast-csv');
         var moment = require('moment');
         var fs = require("fs");
         var modelName = request.body.modelName;
@@ -218,6 +219,7 @@ exports.MainController = function (request, response) {
         var requestsPath = __dirname + '/../tests/requests/';
         var learningPath = __dirname + '/../tests/learning/';
         var modelDataPath = __dirname + '/../lib2/data/neural/';
+        var trainDataPath = __dirname + '/../tests/neural_train_data/';
         var requests = fs.readdirSync(learningPath).filter(function(r) {
             return !filter || filter.indexOf(r) !== -1;
         });
@@ -264,6 +266,23 @@ exports.MainController = function (request, response) {
                     console.log(logPrefix + 'Done in ' + oneRequestEnd + ' sec');
                     window.close();
                     if (requestIndex == requests.length - 1) {
+                        console.log('Export to csv');
+                        var dataCollected = data.flatMap(function(d){ return d; });
+                        csv
+                            .write(dataCollected.map(function(one) {
+                                var d = Object.clone(one.input);
+                                if (Object.keys(one.output).length !== 1) {
+                                    var type = "skip";
+                                } else {
+                                    var type = Object.keys(one.output)[0];
+                                }
+                                for (var p in d) {
+                                    d[p] = d[p].toFixed(10);
+                                }
+                                d['LABEL'] = type;
+                                return d;
+                            }), {headers: true, delimiter: ';'})
+                            .pipe(fs.createWriteStream(trainDataPath+timestamp+'.csv'));
                         start = moment(new Date());
                         console.log('Start train');
 
@@ -288,6 +307,87 @@ exports.MainController = function (request, response) {
 
         });
     };
+
+    this.makeDict = function () {
+        var moment = require('moment');
+        var fs = require("fs");
+        var filter = request.body.filter;
+
+        var requestsPath = __dirname + '/../tests/requests/';
+        var learningPath = __dirname + '/../tests/learning/';
+        var requests = fs.readdirSync(learningPath).filter(function(r) {
+            return !filter || filter.indexOf(r) !== -1;
+        });
+        var data = [];
+
+        var totalStart = moment(new Date());
+        requests.forEach(function (request, requestIndex) {
+            var oneRequestStart = moment(new Date());
+            var logPrefix = request + ' -> ';
+            console.log(logPrefix + 'Start process ');
+            console.log(logPrefix + 'Load data');
+            var start = moment(new Date());
+            var requestData = fs.readFileSync(requestsPath + request.replace('.js', '.html'));
+            var end = moment(new Date()).diff(start, 'seconds');
+            console.log(logPrefix + 'Data loaded in ' + end + ' sec');
+
+            makeAndProcessDOM({
+                html: requestData,
+                //features: {
+                //    FetchExternalResources: ["script"],
+                //    ProcessExternalResources: ["script"],
+                //    SkipExternalResources: false
+                //},
+                src: [
+                    fs.readFileSync(__dirname + '/../lib/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
+                    fs.readFileSync(__dirname + '/../lib/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
+                ],
+                done: function (e, window) {
+                    window.document.evaluate = null;
+                    wgxpath.install(window);
+
+
+                    var start = moment(new Date());
+                    console.log(logPrefix + 'Extract');
+                    var classData = (require(learningPath + request)).flatMap(function(d) {
+                        if (Object.keys(d[2]).length !== 1) {
+                            var type = "skip";
+                        } else {
+                            var type = Object.keys(d[2])[0];
+                        }
+                        return [{
+                            type: type,
+                            classNames: extractorComponent.extractClassesNorm(window, d[0])
+                        }];
+                    });
+                    data.push(classData);
+                    var end = moment(new Date()).diff(start, 'seconds');
+                    console.log(logPrefix + 'Extracted in ' + end + ' sec');
+
+                    var oneRequestEnd = moment(new Date()).diff(oneRequestStart, 'seconds');
+                    console.log(logPrefix + 'Done in ' + oneRequestEnd + ' sec');
+                    window.close();
+                    if (requestIndex == requests.length - 1) {
+                        var totalEnd = moment(new Date()).diff(totalStart, 'seconds');
+                        console.log('All requests done in ' + totalEnd + ' sec');
+                        var result = data.flatMap(function(d){ return d; }).reduce(function(acc, part) {
+                            if (!acc[part.type]) {
+                                acc[part.type] = [];
+                            }
+                            acc[part.type] = acc[part.type].concat(part.classNames).unique().sort();
+                            return acc;
+                        }, {});
+                        response.send(result);
+                    }
+
+                }
+            });
+
+
+        });
+    };
+
+
 
     function makeAndProcessDOM(params) {
         //params.features= {

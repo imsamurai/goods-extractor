@@ -45,6 +45,13 @@ function ExtractorComponent() {
 
     extRequire(__dirname + "/../lib2/utility/Cache.js");
 
+    var Entities = require('html-entities').AllHtmlEntities;
+    var entities = new Entities();
+
+    function getInnerText(elem) {
+        return entities.decode(elem.innerHTML.replace(/<\/?[^>]+>/gi, '').replace(/\s{2,}/gi, ' ')).trim();
+    }
+
     this.extractFields = function (window, fieldCollections) {
         fieldCollections = fieldCollections ? fieldCollections : this.extract(window);
         var fieldOutputHTML = new FieldOutputHTML();
@@ -116,10 +123,7 @@ function ExtractorComponent() {
     }
 
     this.makeExtractPropsCallback = function (window, modelName) {
-        var complexityRateNeighbour = 1;
-        var complexityRateDeep = 2;
-        var complexityCutoff = 0.51;
-        var model = eval("new " + modelName + "(new Dict(), new TreeComplexity(complexityRateNeighbour, complexityRateDeep, complexityCutoff));");
+        var model = eval("new " + modelName + "(new Dict());");
         return function (selector, attribute, labels) {
             var data = [];
             var elements = window.jQuery(selector);
@@ -127,7 +131,7 @@ function ExtractorComponent() {
                 var element = elements[elNum];
                 var value;
                 if (attribute === 'innerText') {
-                    value = element['innerHTML'].replace(/<\/?[^>]+>/gi, '').trim();
+                    value = getInnerText(element);
                 } else if (attribute.indexOf('data-') === 0) {
                     value = window.jQuery(element).data(attribute.substr(5));
                 } else {
@@ -143,6 +147,25 @@ function ExtractorComponent() {
             }
             return data;
         }
+    }
+
+    this.extractClassesNorm = function (window, selector) {
+        return getClassesNorm(Array.prototype.slice.call(window.jQuery(selector)), []).unique();
+    }
+
+    function getClassesNorm(elems, classesAcc) {
+        if (elems.length == 0) {
+            return classesAcc;
+        }
+        var classes = elems.flatMap(function (elem) {
+            return elem.className.toUpperCase().replace(/\d+/g, '').trim().split(/(?:\s+|-|_)/g);
+        }).filter(function(cl) {
+            return cl && cl.length >= 3;
+        });
+        var childrens = elems.flatMap(function(elem) {
+            return Array.prototype.slice.call(elem.children);
+        });
+        return getClassesNorm(childrens, classesAcc.concat(classes));
     }
 }
 
