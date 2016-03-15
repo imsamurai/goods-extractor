@@ -60,7 +60,8 @@ function XpathExtractor(xPathRefine) {
             //console.log(parser.parse(self.getXpath(dOMNode, type)).toString());
             return parser.parse(self.getXpath(dOMNode, type));
         }), []).map(function (path) {
-            return simplifyXpath(path).toString();
+            simplifyXpathNocheck(path);
+            return path.toString();
         });
     };
 
@@ -131,6 +132,21 @@ function XpathExtractor(xPathRefine) {
         }
     }
 
+    /**
+     * Try to simplify xpath without check elements
+     *
+     * @param path
+     * @returns XPathNode
+     */
+    function simplifyXpathNocheck(path) {
+        if (path.children instanceof XPathEmptyNode) {
+            path.attributes = path.attributes.filter(function(attr) {
+              return attr.name === "NUMBER";
+            });
+        } else {
+            simplifyXpathNocheck(path.removeAttributes().children);
+        }
+    }
 
 
     function isSameElems(elems1, elems2) {
