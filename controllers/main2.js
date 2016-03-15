@@ -33,8 +33,8 @@ exports.MainController = function (request, response) {
         makeAndProcessDOM({
             url: url,
             src: [
-                fs.readFileSync(__dirname + '/../lib/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
-                fs.readFileSync(__dirname + '/../lib/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
+                fs.readFileSync(__dirname + '/../lib2/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
+                fs.readFileSync(__dirname + '/../lib2/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
             ],
             done: function (e, window) {
                 window.document.evaluate = null;
@@ -58,8 +58,8 @@ exports.MainController = function (request, response) {
         makeAndProcessDOM({
             html: html,
             src: [
-                fs.readFileSync(__dirname + '/../lib/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
-                fs.readFileSync(__dirname + '/../lib/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
+                fs.readFileSync(__dirname + '/../lib2/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
+                fs.readFileSync(__dirname + '/../lib2/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
             ],
             done: function (e, window) {
                 window.document.evaluate = null;
@@ -131,8 +131,8 @@ exports.MainController = function (request, response) {
             makeAndProcessDOM({
                 html: requestData,
                 src: [
-                    fs.readFileSync(__dirname + '/../lib/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
-                    fs.readFileSync(__dirname + '/../lib/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
+                    fs.readFileSync(__dirname + '/../lib2/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
+                    fs.readFileSync(__dirname + '/../lib2/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
                 ],
                 done: function (e, window) {
                     window.document.evaluate = null;
@@ -218,8 +218,8 @@ exports.MainController = function (request, response) {
             makeAndProcessDOM({
                 html: requestData,
                 src: [
-                    fs.readFileSync(__dirname + '/../lib/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
-                    fs.readFileSync(__dirname + '/../lib/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
+                    fs.readFileSync(__dirname + '/../lib2/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
+                    fs.readFileSync(__dirname + '/../lib2/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
                 ],
                 done: function (e, window) {
                     window.document.evaluate = null;
@@ -316,8 +316,8 @@ exports.MainController = function (request, response) {
             makeAndProcessDOM({
                 html: requestData,
                 src: [
-                    fs.readFileSync(__dirname + '/../lib/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
-                    fs.readFileSync(__dirname + '/../lib/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
+                    fs.readFileSync(__dirname + '/../lib2/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
+                    fs.readFileSync(__dirname + '/../lib2/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
                 ],
                 done: function (e, window) {
                     window.document.evaluate = null;
