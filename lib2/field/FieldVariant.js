@@ -20,19 +20,36 @@ function FieldVariant(fields) {
         self.field = field;
     }
 
+    /**
+     * Reset to first field
+     */
     this.refresh = function() {
         setField(fields[0]);
-    }
+    };
 
-
+    /**
+     * Add field
+     *
+     * @param field
+     */
     this.addField = function(field) {
         fields.push(field);
-    }
+    };
 
+    /**
+     * Get all fields
+     *
+     * @returns Field[]
+     */
     this.getFields = function() {
         return fields;
-    }
+    };
 
+    /**
+     * Set best field as current depends on type and rate
+     *
+     * @param type
+     */
     this.setBestField = function(type) {
         var field = fields.sort(function (field1, field2) {
             if (field1.rates[type] > field2.rates[type]) {

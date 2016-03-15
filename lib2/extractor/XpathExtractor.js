@@ -7,6 +7,13 @@ function XpathExtractor(xPathRefine) {
     xPathRefine.setItemsMode(1);
     xPathRefine.setDebugMode(0);
 
+    /**
+     * Returns xpath of dOMNode
+     *
+     * @param dOMNode
+     * @param type
+     * @returns string
+     */
     this.getXpath = function (dOMNode, type) {
         var tr = new xPathRefine.Rect(0, 0, 0, 0);
         var irs = xPathRefine.findIntersection(tr, tr);
@@ -16,6 +23,13 @@ function XpathExtractor(xPathRefine) {
         return tagItem.xpath;
     };
 
+    /**
+     * Returns xpath of dOMNode without node number identified as bottom node of rootDOMNode
+     *
+     * @param dOMNode
+     * @param type
+     * @returns string
+     */
     this.getMultiXpath = function (rootDOMNode, dOMNode, type) {
         var rootXpath = this.getXpath(rootDOMNode, 'text');
         var nodeXpath = this.getXpath(dOMNode, type);
@@ -23,10 +37,23 @@ function XpathExtractor(xPathRefine) {
         return nodeXpath.replace(rootXpath, rootXpathMulti);
     };
 
+    /**
+     * Returns xpath object
+     *
+     * @param dOMNode
+     * @returns XPathNode
+     */
     this.getXpathObject = function(dOMNode) {
         return parser.parse(self.getXpath(dOMNode));
     }
 
+    /**
+     * Returns reduced amount of simplified xpath's that must cover all of dOMNodes
+     *
+     * @param dOMNodes
+     * @param type
+     * @returns string[]
+     */
     this.getMultiItemXpath = function (dOMNodes, type) {
         return reduceXPaths(dOMNodes.map(function (dOMNode) {
             //console.log(self.getXpath(dOMNode, type));
@@ -37,6 +64,13 @@ function XpathExtractor(xPathRefine) {
         });
     };
 
+    /**
+     * Merge xpaths based on structure equality
+     *
+     * @param inPaths
+     * @param outPats
+     * @returns XPathNode[]
+     */
     function reduceXPaths(inPaths, outPats) {
         if (inPaths.length < 2) {
             return outPats.concat(inPaths);
@@ -54,6 +88,12 @@ function XpathExtractor(xPathRefine) {
         return reduceXPaths(inPaths, outPats.concat([path1]));
     }
 
+    /**
+     * Try to simplify xpath
+     *
+     * @param path
+     * @returns XPathNode
+     */
     function simplifyXpath(path) {
         var path1 = path.clone();
         var pathCur1 = path1;

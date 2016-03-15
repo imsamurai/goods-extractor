@@ -8,13 +8,13 @@ function RecordsMetrics(metricCompare, metricComplexity, cutoff) {
         var similarity = metricCompare.run(tree1, tree2);
         var complexity = metricComplexity.run(tree1, tree2);
         return similarity * complexity;
-    }
+    };
 
     this.rateAvg = function (records) {
         return records.reduce(function (acc, record) {
                 return acc + record.rate;
             }, 0) / records.length;
-    }
+    };
 
     this.rateTotal = function (records) {
         var avgRate = this.rateAvg(records);

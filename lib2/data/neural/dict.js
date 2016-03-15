@@ -240,15 +240,22 @@ function Dict() {
         ]
     };
 
-
-    this.findEntries = function(str, dict, strict) {
+    /**
+     * Find entries of words from dic[dict] in str and returns them
+     *
+     * @param str String to search in
+     * @param dict Dictionary name
+     * @param strict If true check that prev and next char not word or digit
+     * @returns string[]
+     */
+    this.findEntries = function (str, dict, strict) {
         var input = str.toUpperCase();
-        return dic[dict].filter(function(word) {
+        return dic[dict].filter(function (word) {
             var i = input.indexOf(word);
             if (i === -1) {
                 return false;
             }
-            if (!strict || ((input[i-1] === undefined || input[i-1].match(/(?:\W|\d)/)) && (input[i+word.length] === undefined || input[i+word.length].match(/(?:\W|\d)/)))) {
+            if (!strict || ((input[i - 1] === undefined || input[i - 1].match(/(?:\W|\d)/)) && (input[i + word.length] === undefined || input[i + word.length].match(/(?:\W|\d)/)))) {
                 return true;
             }
 

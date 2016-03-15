@@ -5,6 +5,12 @@ function FieldCollection(fieldGroups, recordCollection, rate) {
     this.fieldGroups = fieldGroups;
     this.recordCollection = recordCollection;
     this.rate = rate;
+
+    /**
+     * Returns best groups by rate and type
+     *
+     * @returns FieldGroup[]
+     */
     this.getBestGroups = function() {
         var filterType = {};
         return this.fieldGroups.filter(function(fieldGroup) {

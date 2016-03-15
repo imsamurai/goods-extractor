@@ -5,19 +5,14 @@ exports.MainController = function (request, response) {
     var jsdom = require("jsdom");
     var extractorComponent = require(__dirname + "/../component/ExtractorComponent.js");
     var wgxpath = require('wgxpath');
-    //var xpath = require('xpath');
 
-    //var extractor = require(__dirname+"/../component/extractor.js");
-
+    /**
+     * Returns html table of fields extracted from given url
+     */
     this.extract_fields_by_url = function () {
         var url = request.body.url;
         makeAndProcessDOM({
             url: url,
-            //features: {
-            //    FetchExternalResources: ["script"],
-            //    ProcessExternalResources: ["script"],
-            //    SkipExternalResources: false
-            //},
             done: function (e, window) {
                 var fields = extractorComponent.extractFields(window);
                 if (fields) {
@@ -29,6 +24,9 @@ exports.MainController = function (request, response) {
         });
     };
 
+    /**
+     * Returns json template with fields xpath's extracted from given url
+     */
     this.extract_template_by_url = function () {
         var url = request.body.url;
         var fs = require("fs");
@@ -38,20 +36,9 @@ exports.MainController = function (request, response) {
                 fs.readFileSync(__dirname + '/../lib/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
                 fs.readFileSync(__dirname + '/../lib/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
             ],
-            //features: {
-            //    FetchExternalResources: ["script"],
-            //    ProcessExternalResources: ["script"],
-            //    SkipExternalResources: false
-            //},
             done: function (e, window) {
                 window.document.evaluate = null;
                 wgxpath.install(window);
-                //TODO: find perfomance problem
-                //window.document.evaluate = function (expressionString, contextNode, resolver, type, result) {
-                //    var expression = window.document.createExpression(expressionString, resolver);
-                //    return expression.evaluate(contextNode,type, result);
-                //    return xpath.select(expressionString, contextNode);
-                //};
                 var template = extractorComponent.extractTemplate(window);
                 if (template) {
                     response.send(template);
@@ -62,6 +49,9 @@ exports.MainController = function (request, response) {
         });
     };
 
+    /**
+     * Returns json template with fields xpath's extracted from given html
+     */
     this.extract_template_by_html = function () {
         var html = request.body;
         var fs = require("fs");
@@ -71,20 +61,9 @@ exports.MainController = function (request, response) {
                 fs.readFileSync(__dirname + '/../lib/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
                 fs.readFileSync(__dirname + '/../lib/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
             ],
-            //features: {
-            //    FetchExternalResources: ["script"],
-            //    ProcessExternalResources: ["script"],
-            //    SkipExternalResources: false
-            //},
             done: function (e, window) {
                 window.document.evaluate = null;
                 wgxpath.install(window);
-                //TODO: find perfomance problem
-                //window.document.evaluate = function (expressionString, contextNode, resolver, type, result) {
-                //    //var expression = window.document.createExpression(expressionString, resolver);
-                //    //return expression.evaluate(contextNode,type, result);
-                //    return "";
-                //};
                 var template = extractorComponent.extractTemplate(window);
                 if (template) {
                     response.send(template);
@@ -95,15 +74,13 @@ exports.MainController = function (request, response) {
         });
     };
 
+    /**
+     * Returns html table of fields extracted from given html
+     */
     this.extract_fields_by_html = function () {
         var html = request.body;
         makeAndProcessDOM({
             html: html,
-            //features: {
-            //    FetchExternalResources: ["script"],
-            //    ProcessExternalResources: ["script"],
-            //    SkipExternalResources: false
-            //},
             done: function (e, window) {
                 var fields = extractorComponent.extractFields(window);
                 if (fields) {
@@ -115,6 +92,10 @@ exports.MainController = function (request, response) {
         });
     };
 
+    /**
+     * Extract fields html and json from all test requests from tests/requests/
+     * and save results into tests/results/
+     */
     this.tests = function () {
         var moment = require('moment');
         var fs = require("fs");
@@ -124,7 +105,7 @@ exports.MainController = function (request, response) {
 
         var requestsPath = __dirname + '/../tests/requests/';
         var resultsPath = __dirname + '/../tests/results/';
-        var requests = fs.readdirSync(requestsPath).filter(function(r) {
+        var requests = fs.readdirSync(requestsPath).filter(function (r) {
             return !filter || filter.indexOf(r) !== -1;
         });
         var totalStart = moment(new Date());
@@ -149,11 +130,6 @@ exports.MainController = function (request, response) {
 
             makeAndProcessDOM({
                 html: requestData,
-                //features: {
-                //    FetchExternalResources: ["script"],
-                //    ProcessExternalResources: ["script"],
-                //    SkipExternalResources: false
-                //},
                 src: [
                     fs.readFileSync(__dirname + '/../lib/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
                     fs.readFileSync(__dirname + '/../lib/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
@@ -201,11 +177,14 @@ exports.MainController = function (request, response) {
 
                 }
             });
-
-
         });
     };
 
+    /**
+     * Train neural network for field classification based on test data from tests/requests
+     * and rules from tests/learning. Trained network settings saved into lib2/data/neural/<modelFileName>
+     * and labeled data (csv format, not used by app; just for external analysis) - into tests/neural_train_data/
+     */
     this.learn = function () {
         var csv = require('fast-csv');
         var moment = require('moment');
@@ -220,7 +199,7 @@ exports.MainController = function (request, response) {
         var learningPath = __dirname + '/../tests/learning/';
         var modelDataPath = __dirname + '/../lib2/data/neural/';
         var trainDataPath = __dirname + '/../tests/neural_train_data/';
-        var requests = fs.readdirSync(learningPath).filter(function(r) {
+        var requests = fs.readdirSync(learningPath).filter(function (r) {
             return !filter || filter.indexOf(r) !== -1;
         });
         var data = [];
@@ -238,11 +217,6 @@ exports.MainController = function (request, response) {
 
             makeAndProcessDOM({
                 html: requestData,
-                //features: {
-                //    FetchExternalResources: ["script"],
-                //    ProcessExternalResources: ["script"],
-                //    SkipExternalResources: false
-                //},
                 src: [
                     fs.readFileSync(__dirname + '/../lib/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
                     fs.readFileSync(__dirname + '/../lib/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
@@ -255,7 +229,7 @@ exports.MainController = function (request, response) {
 
                     var start = moment(new Date());
                     console.log(logPrefix + 'Extract');
-                    var trainData = (require(learningPath + request)).flatMap(function(d) {
+                    var trainData = (require(learningPath + request)).flatMap(function (d) {
                         return propsExtractor(d[0], d[1], d[2]);
                     });
                     data.push(trainData);
@@ -267,9 +241,11 @@ exports.MainController = function (request, response) {
                     window.close();
                     if (requestIndex == requests.length - 1) {
                         console.log('Export to csv');
-                        var dataCollected = data.flatMap(function(d){ return d; });
+                        var dataCollected = data.flatMap(function (d) {
+                            return d;
+                        });
                         csv
-                            .write(dataCollected.map(function(one) {
+                            .write(dataCollected.map(function (one) {
                                 var d = Object.clone(one.input);
                                 if (Object.keys(one.output).length !== 1) {
                                     var type = "skip";
@@ -282,15 +258,17 @@ exports.MainController = function (request, response) {
                                 d['LABEL'] = type;
                                 return d;
                             }), {headers: true, delimiter: ';'})
-                            .pipe(fs.createWriteStream(trainDataPath+timestamp+'.csv'));
+                            .pipe(fs.createWriteStream(trainDataPath + timestamp + '.csv'));
                         start = moment(new Date());
                         console.log('Start train');
 
                         //train start
-                        var net = extractorComponent.trainNet(data.flatMap(function(d){ return d; }));
-                        fs.renameSync(modelDataPath+modelFileName+'.js', modelDataPath+modelFileName+'_'+timestamp+'.js');
-                        var out = 'function getProductNeural() { return '+JSON.stringify(net.toJSON())+';}';
-                        fs.writeFileSync(modelDataPath+modelFileName+'.js', out);
+                        var net = extractorComponent.trainNet(data.flatMap(function (d) {
+                            return d;
+                        }));
+                        fs.renameSync(modelDataPath + modelFileName + '.js', modelDataPath + modelFileName + '_' + timestamp + '.js');
+                        var out = 'function getProductNeural() { return ' + JSON.stringify(net.toJSON()) + ';}';
+                        fs.writeFileSync(modelDataPath + modelFileName + '.js', out);
                         //train end
 
                         end = moment(new Date()).diff(start, 'seconds');
@@ -308,6 +286,10 @@ exports.MainController = function (request, response) {
         });
     };
 
+    /**
+     * Returns json structure of dictionary where words are collected from elements class names.
+     * Elements selected based on rules for neural network from tests/learning from all test data /tests/requests
+     */
     this.makeDict = function () {
         var moment = require('moment');
         var fs = require("fs");
@@ -315,7 +297,7 @@ exports.MainController = function (request, response) {
 
         var requestsPath = __dirname + '/../tests/requests/';
         var learningPath = __dirname + '/../tests/learning/';
-        var requests = fs.readdirSync(learningPath).filter(function(r) {
+        var requests = fs.readdirSync(learningPath).filter(function (r) {
             return !filter || filter.indexOf(r) !== -1;
         });
         var data = [];
@@ -333,11 +315,6 @@ exports.MainController = function (request, response) {
 
             makeAndProcessDOM({
                 html: requestData,
-                //features: {
-                //    FetchExternalResources: ["script"],
-                //    ProcessExternalResources: ["script"],
-                //    SkipExternalResources: false
-                //},
                 src: [
                     fs.readFileSync(__dirname + '/../lib/utility/jquery-2.2.0.min.js', {encoding: 'utf8'}),
                     fs.readFileSync(__dirname + '/../lib/utility/xpath/xpathrefine.js', {encoding: 'utf8'})
@@ -349,7 +326,7 @@ exports.MainController = function (request, response) {
 
                     var start = moment(new Date());
                     console.log(logPrefix + 'Extract');
-                    var classData = (require(learningPath + request)).flatMap(function(d) {
+                    var classData = (require(learningPath + request)).flatMap(function (d) {
                         if (Object.keys(d[2]).length !== 1) {
                             var type = "skip";
                         } else {
@@ -370,7 +347,9 @@ exports.MainController = function (request, response) {
                     if (requestIndex == requests.length - 1) {
                         var totalEnd = moment(new Date()).diff(totalStart, 'seconds');
                         console.log('All requests done in ' + totalEnd + ' sec');
-                        var result = data.flatMap(function(d){ return d; }).reduce(function(acc, part) {
+                        var result = data.flatMap(function (d) {
+                            return d;
+                        }).reduce(function (acc, part) {
                             if (!acc[part.type]) {
                                 acc[part.type] = [];
                             }
@@ -387,15 +366,13 @@ exports.MainController = function (request, response) {
         });
     };
 
-
-
+    /**
+     * Wrapper for DOM engine
+     *
+     * @param params
+     */
     function makeAndProcessDOM(params) {
-        //params.features= {
-        //        FetchExternalResources: ["script"],
-        //        ProcessExternalResources: ["script"],
-        //        SkipExternalResources: false
-        //    };
         jsdom.env(params);
     }
 
-}
+};

@@ -3,23 +3,36 @@
  */
 function RecordsExtractor(metricRate, metricSeedRate) {
 
-    this.run = function(tree) {
+    /**
+     * Entry point
+     *
+     * @param tree
+     * @returns RecordCollection[]
+     */
+    this.run = function (tree) {
         return sortRecords(findRecordsDeep(findRecords(tree), []));
-    }
+    };
 
+    /**
+     * Try to reduce records collections amount by compare them and join based on similarity rate
+     *
+     * @param inRecordCollections
+     * @param outRecordCollections
+     * @returns RecordCollection[]
+     */
     function findRecordsDeep(inRecordCollections, outRecordCollections) {
         if (inRecordCollections.length < 2) {
             return outRecordCollections.concat(inRecordCollections);
         }
 
         var recordCollectionFirst = inRecordCollections.shift();
-        for (var c2=0;c2<inRecordCollections.length;c2++) {
+        for (var c2 = 0; c2 < inRecordCollections.length; c2++) {
             var seedTree = recordCollectionFirst.tree.merge([recordCollectionFirst.tree, inRecordCollections[c2].tree]);
             var seedRecords = findRecordsOne(seedTree, metricSeedRate);
             if (!seedRecords.rate) {
                 continue;
             }
-            var tree = recordCollectionFirst.tree.merge(recordCollectionFirst.records.concat(inRecordCollections[c2].records).map(function(record) {
+            var tree = recordCollectionFirst.tree.merge(recordCollectionFirst.records.concat(inRecordCollections[c2].records).map(function (record) {
                 return record.tree;
             }));
             var recordCollection = findRecordsOne(tree, metricRate);
@@ -28,12 +41,18 @@ function RecordsExtractor(metricRate, metricSeedRate) {
             }
             return findRecordsDeep([recordCollection]
                 .concat(inRecordCollections.slice(0, c2))
-                .concat(inRecordCollections.slice(c2+1)), outRecordCollections);
+                .concat(inRecordCollections.slice(c2 + 1)), outRecordCollections);
 
         }
         return findRecordsDeep(inRecordCollections, outRecordCollections.concat(recordCollectionFirst));
     }
 
+    /**
+     * Recursive extract records collections where records found on the same level of structure
+     *
+     * @param tree
+     * @returns  RecordCollection[]
+     */
     function findRecords(tree) {
         var res = findRecordsOne(tree, metricRate);
         var childRes = [];
@@ -41,11 +60,18 @@ function RecordsExtractor(metricRate, metricSeedRate) {
             childRes = childRes.concat(findRecords(tree.children[i]));
 
         }
-        return [res].concat(childRes).filter(function(records) {
+        return [res].concat(childRes).filter(function (records) {
             return !!records.rate;
         });
     }
 
+    /**
+     * Extraction iteration
+     *
+     * @param tree
+     * @param metricRate
+     * @returns RecordCollection
+     */
     function findRecordsOne(tree, metricRate) {
         if (tree.children.length <= 1) {
             return new RecordCollection();
@@ -74,15 +100,7 @@ function RecordsExtractor(metricRate, metricSeedRate) {
         var records = recordsRaw.map(function (records) {
             var rate = metricRate.rateAvg(records);
             return new Record(records[0].tree, rate);
-        });/*.sort(function (record1, record2) {
-            if (record1.rate > record2.rate) {
-                return -1;
-            } else if (record1.rate < record2.rate) {
-                return 1;
-            }
-            return 0;
-        });*/
-
+        });
 
         var seed = records.slice(1).reduce(function (seed, record) {
             return seed.mergeAligned(record.tree.clone());
@@ -90,6 +108,12 @@ function RecordsExtractor(metricRate, metricSeedRate) {
         return new RecordCollection(seed, metricRate.rateTotal(records), records);
     }
 
+    /**
+     * Sort record collections by rank
+     *
+     * @param recordCollections
+     * @returns RecordCollection
+     */
     function sortRecords(recordCollections) {
         return recordCollections.sort(function (recordCollection1, recordCollection2) {
             if (recordCollection1.rate > recordCollection2.rate) {

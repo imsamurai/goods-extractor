@@ -5,14 +5,11 @@ var morgan         = require('morgan');
 var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
 
-//app.use(express.favicon()); // отдаем стандартную фавиконку, можем здесь же свою задать
 app.use(morgan('dev')); // выводим все запросы со статусами в консоль
 app.use(bodyParser.json({limit: '50mb'})); // стандартный модуль, для парсинга JSON в запросах
 app.use(bodyParser.raw({limit: '50mb'})); // стандартный модуль, для парсинга JSON в запросах
 app.use(bodyParser.text({limit: '50mb'})); // стандартный модуль, для парсинга JSON в запросах
 app.use(methodOverride()); // поддержка put и delete
-//app.use(app.router); // модуль для простого задания обработчиков путей
-//app.use(express.static(path.join(__dirname, "public"))); // запуск статического файлового сервера, который смотрит на папку public/ (в нашем случае отдает index.html)
 
 
 app.post('/extract_fields_by_url', function (request, response) {
@@ -42,13 +39,6 @@ app.post('/extract_fields_by_html', function (request, response) {
     var constructor = require('./controllers/main2');
     var controller = new constructor.MainController(request, response);
     controller.extract_fields_by_html();
-});
-
-app.post('/learn_fields', function (request, response) {
-    console.log('Controller main learn_fields');
-    var constructor = require('./controllers/main2');
-    var controller = new constructor.MainController(request, response);
-    controller.learn_fields();
 });
 
 app.post('/tests', function (request, response) {
